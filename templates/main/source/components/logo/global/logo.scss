@@ -1,0 +1,44 @@
+.logo {
+	// margin: auto 0;
+	display: flex;
+	// height: 51px;
+	margin-top: -6px;
+
+	&__link {
+		text-decoration: none;
+		display: block;
+		width: 168px;
+	}
+
+	&__pic {
+		display: block;
+		max-width: 100%;
+		width: auto;
+		height: 100%;
+	}
+
+	@media screen and (max-width: 767px) {
+		position: unset;
+		order: -1;
+		max-width: 117px;
+		width: auto;
+		height: 27px;
+		display: flex;
+		margin-right: 10px;
+		align-items: center;
+
+		.logo__link {
+			min-width: unset;
+			width: auto;
+		}
+
+		&__pic {
+			display: flex;
+			height: auto;
+		}
+	}
+
+	// @media screen and (max-width: 480px) {
+	// 	width: 118px;
+	// }
+}

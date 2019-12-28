@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<link rel="icon" type="image/png" href="images/Icon-16.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<!-- <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.css"> -->
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change ">
+								<div class="city-change__title">Санкт-Петербург</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
+									<a class="city-change__link" href="#">Регионы</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+								</li>
+								<li class="menu__item">
+									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+							<a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button" id="js-abuse-opener">Обратиться к руководству
+							</a>
+						</div>
+						<!--end menu-->
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket  active">
+								<span class="header__number">1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														∙ Однокамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Двухкамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Side-by-Side
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Морозильные камеры
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Морозильные лари
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														∙ Встраиваемые однокамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Двухкамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Встраиваемые двухкамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Встраиваемые Side-by-Side
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Встраиваемые морозильные камеры
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														∙ Встраиваемые
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Отдельностоящие
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для пекарен</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#">Сервис</a>
+								</span>
+							</nav>
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
+									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00
+									</div>
+									<a href="mailto:shop@l-rus.ru" class="time-work__email">
+										<i>Email:</i>shop@l-rus.ru</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+		<div class="section">
+			<div class="content">
+				<div class="container">
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs__link">Grohe</a>
+						<span class="breadcrumbs__sep">/</span>
+						<span class="breadcrumbs__text">Инструкции</span>
+					</div>
+					<div class="instructions-category">
+						<div class="instructions-category__title">Инструкции для термостатов Grohe</div>
+						<div class="instructions-category__form">
+							<form class="search-found__form" action="" method="get">
+								<input type="text" name="q" value="" placeholder="Введите название товара">
+								<input type="submit" value="Найти" class="btn-sub3 abuse-popup__submit">
+							</form>
+						</div>
+
+						<div class="instructions-category__items">
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+									<img data-src="https://l-rus.ru/upload/resize_cache/iblock/0e1/245_230_1/0e18d7ed4aa90682b0d47a3a79f23d22.jpg" alt="Холодильник Liebherr ECBN 6256 PremiumPlus preview 1" title="Холодильник Liebherr ECBN 6256 PremiumPlus фото 1" class="special-offers__img catalog__img lazyloaded"
+									src="https://l-rus.ru/upload/resize_cache/iblock/0e1/245_230_1/0e18d7ed4aa90682b0d47a3a79f23d22.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Grohtherm 1000 для душа DN 15 34143003
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) preview 1" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) фото 1"
+									class="special-offers__img catalog__img lazyloaded loaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" data-was-processed="true">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="special-offers__text catalog__text"
+								data-mh="my-group">Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg" alt="Термостат Grohe Rapido Smartbox универсальный 35600000 preview 1" title="Термостат Grohe Rapido Smartbox универсальный 35600000 фото 1"
+									class="special-offers__img catalog__img lazyloaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Rapido Smartbox универсальный 35600000
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+									<img data-src="https://l-rus.ru/upload/resize_cache/iblock/0e1/245_230_1/0e18d7ed4aa90682b0d47a3a79f23d22.jpg" alt="Холодильник Liebherr ECBN 6256 PremiumPlus preview 1" title="Холодильник Liebherr ECBN 6256 PremiumPlus фото 1" class="special-offers__img catalog__img lazyloaded"
+									src="https://l-rus.ru/upload/resize_cache/iblock/0e1/245_230_1/0e18d7ed4aa90682b0d47a3a79f23d22.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Grohtherm 1000 для душа DN 15 34143003
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) preview 1" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) фото 1"
+									class="special-offers__img catalog__img lazyloaded loaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" data-was-processed="true">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="special-offers__text catalog__text"
+								data-mh="my-group">Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg" alt="Термостат Grohe Rapido Smartbox универсальный 35600000 preview 1" title="Термостат Grohe Rapido Smartbox универсальный 35600000 фото 1"
+									class="special-offers__img catalog__img lazyloaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Rapido Smartbox универсальный 35600000
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+									<img data-src="/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg" alt="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 preview 1" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 фото 1" class="special-offers__img catalog__img lazyloaded"
+									src="https://grohe.l-rus.ru/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Grohtherm 1000 для душа DN 15 34143003
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) preview 1" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) фото 1"
+									class="special-offers__img catalog__img lazyloaded loaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" data-was-processed="true">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="special-offers__text catalog__text"
+								data-mh="my-group">Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+								<a href="/doc-view/6253/16557/" title="Рекомендации по уходу" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Рекомендации по уходу</span>
+									pdf, 676.44 KB
+								</a>
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg" alt="Термостат Grohe Rapido Smartbox универсальный 35600000 preview 1" title="Термостат Grohe Rapido Smartbox универсальный 35600000 фото 1"
+									class="special-offers__img catalog__img lazyloaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Rapido Smartbox универсальный 35600000
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+									<img data-src="/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg" alt="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 preview 1" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 фото 1" class="special-offers__img catalog__img lazyloaded"
+									src="https://grohe.l-rus.ru/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Grohtherm 1000 для душа DN 15 34143003
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) preview 1" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) фото 1"
+									class="special-offers__img catalog__img lazyloaded loaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" data-was-processed="true">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="special-offers__text catalog__text"
+								data-mh="my-group">Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg" alt="Термостат Grohe Rapido Smartbox универсальный 35600000 preview 1" title="Термостат Grohe Rapido Smartbox универсальный 35600000 фото 1"
+									class="special-offers__img catalog__img lazyloaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Rapido Smartbox универсальный 35600000
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+								<a href="/doc-view/6253/16559/" title="Схема встраивания" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Схема встраивания</span>
+									jpg, 79.25 KB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+									<img data-src="/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg" alt="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 preview 1" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 фото 1" class="special-offers__img catalog__img lazyloaded"
+									src="https://grohe.l-rus.ru/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Grohtherm 1000 для душа DN 15 34143003
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) preview 1" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть) фото 1"
+									class="special-offers__img catalog__img lazyloaded loaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/d30/245_230_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" data-was-processed="true">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="special-offers__text catalog__text"
+								data-mh="my-group">Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+									<img data-src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg" alt="Термостат Grohe Rapido Smartbox универсальный 35600000 preview 1" title="Термостат Grohe Rapido Smartbox универсальный 35600000 фото 1"
+									class="special-offers__img catalog__img lazyloaded" src="https://grohe.l-rus.ru//upload/resize_cache/iblock/208/245_230_1/20826193f6dad7356dfe6ce0577f9efa.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru//catalog/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html" title="Термостат Grohe Rapido Smartbox универсальный 35600000" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Rapido Smartbox универсальный 35600000
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+
+							</div>
+							<div class="catalog__item instructions-category__item">
+								<a class="catalog__pic" href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+									<img data-src="/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg" alt="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 preview 1" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003 фото 1" class="special-offers__img catalog__img lazyloaded"
+									src="https://grohe.l-rus.ru/upload/resize_cache/iblock/bcb/245_230_1/bcb0da928271d7cd428a8dacfaae2f76.jpg">
+								</a>
+								<a href="https://grohe.l-rus.ru/catalog/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html" title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003" class="special-offers__text catalog__text" data-mh="my-group">Термостат Grohe Grohtherm 1000 для душа DN 15 34143003
+								</a>
+								<a href="/doc-view/6253/16558/" title="Инструкция по установке" target="_blank" class="doc_loading ">
+									<i class="icon_doc"></i>
+									<span>Инструкция по установке</span>
+									pdf, 1.61 MB
+								</a>
+
+							</div>
+						</div>
+						<div class="all-video__bottom">
+
+							<a href="#" id="load-items" class="load-more">Загрузить еще</a>
+
+							<!-- begin nav -->
+
+							<div class="pagination">
+
+								<span class="pagination__item pagination__item_state_current">1</span>
+								<a class="pagination__item" href="/video/?PAGEN_1=2">2</a>
+								<a class="pagination__next" href="/video/?PAGEN_1=2"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Бытовые холодильники</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Холодильники</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Отдельностоящие морозильные камеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Встраиваемые холодильники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Встраиваемые морозильные камеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Винные шкафы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Хьюмидоры</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Профессиональная техника</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Медицинское и лабораторное оборудование
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для гостиниц и ресторанов
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для охлаждения напитков</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для пекарен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для хранения замороженных продуктов и мороженого
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">О Liebherr</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Акции и статьи</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Глоссарий</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Оплата и доставка</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подключение</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Гарантия</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Сервис и обслуживание</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Liebherr</div>
+					<a href="tel:+74951912633" class="footer__tel">+7 495 191-26-33</a>
+					<a href="tel:+78003331936" class="footer__tel">+7 800 333-19-36</a>
+					<a href="#" data-url="ajax/callback.html" data-ajax="" class="footer__call-phone-button js-callback">
+						<span>
+							Заказать звонок
+						</span>
+
+					</a>
+					<a href="mailto:shop@l-rus.ru" class="footer__email">
+						<i>Email:</i>shop@l-rus.ru</a>
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин LIEBHERR.
+					<br>«NTK LTD TM all rights reserved»
+				</div>
+				<div class="social-items">
+					<a href="#" class="social-link vk"></a>
+					<a href="#" class="social-link fb"></a>
+					<a href="#" class="social-link tw"></a>
+					<a href="#" class="social-link ok"></a>
+				</div>
+				<a class="privacy-policy" href="https://lbhr.ret-team.ru/personal-data/">Политика конфиденциальности</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+.instructions-category {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+
+	// .instructions-category__title
+
+	&__title {
+		color: #333333;
+		font-family: "Roboto Condensed";
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 44px;
+		text-transform: uppercase;
+	}
+
+	// .instructions-category__form
+
+	&__form {
+		width: 100%;
+	}
+
+	// .instructions-category__items
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	// ..instructions-category__items
+
+	&__item {
+		width: calc(25% - 21px);
+		flex: 0 0 calc(25% - 21px);
+
+		&:nth-child(3n-1) {
+			margin: 0 28px 24px 0;
+		}
+
+		margin-right: 28px;
+
+		&:nth-child(4n+4) {
+			margin-right: 0px;
+		}
+	}
+
+
+	.special-offers {
+
+		// .special-offers__img
+
+		&__img {
+			width: auto;
+			height: auto;
+		}
+
+		// .special-offers__text
+
+		&__text {
+			// margin-bottom: auto;
+		}
+	}
+
+	// .doc_loading
+
+	.doc {
+
+		&_loading {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			text-align: left;
+			color: #666666;
+			padding: 2px 9px 11px 30px;
+			align-items: center;
+			// text-decoration: to-upper-case;
+			text-transform: uppercase;
+
+			span {
+				color: #394791;
+				font-family: "Roboto Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 20px;
+				width: calc(100% - 10px);
+				text-transform: none;
+			}
+		}
+	}
+
+
+	.icon_doc {
+		background: url("../images/documentation__pic.svg") no-repeat 100% 4px;
+		width: 33px;
+		height: 28px;
+		margin-right: 12px;
+		margin-left: -44px;
+	}
+
+
+
+	.all-video {
+
+		// .all-video__bottom
+
+		&__bottom {}
+	}
+
+	@media screen and (max-width: 767px) {
+
+		// .instructions__item
+
+		&__item {
+			margin: 0 8px 16px !important;
+			flex-grow: 1;
+			max-width: unset;
+
+			&:nth-child(4n+4) {}
+			.special-offers__text {
+				color: #333;
+				font-family: Roboto Condensed;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				padding: 20px 0 18px;
+			}
+		}
+
+	}
+}

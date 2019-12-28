@@ -1,0 +1,167 @@
+.category {
+	font-family: "Roboto Condensed";
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	// .category__items
+
+	.category__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	// .category__item
+
+	.category__item {
+		width: calc((100%/3)-20px);
+		display: flex;
+		flex-direction: column;
+		background-repeat: no-repeat;
+		background-position: calc(100%-5px) bottom;
+		padding: 22px 150px 16px 26px;
+		background-color: #f1f1f1;
+		height: 144px;
+		text-decoration: none !important;
+
+		&:nth-child(-n+3) {
+			margin-bottom: 28px;
+		}
+
+		&:nth-child(3n+2) {
+			margin-left: 29px;
+			margin-right: 29px;
+		}
+
+		&:last-child {
+			padding: 22px 125px 16px 26px;
+		}
+
+		&:hover {
+			background-color: #394791;
+
+			.category__caption {
+				color: #ffffff;
+				text-decoration: none !important;
+			}
+
+			.category__price {
+				color: #ffffff;
+			}
+		}
+		*{
+			text-decoration: none !important;
+		}
+	}
+
+	// .category__caption
+
+	&__caption {
+		color: #394791;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 26px;
+		margin-bottom: 23px;
+	}
+
+	// .category__price
+
+	&__price {
+		color: #333333;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+
+
+	.swiper-pagination {
+		display: none;
+	}
+
+	&+.special-offers {
+		margin-top: 56px;
+	}
+
+	@media screen and (max-width: 767px) {
+		padding-bottom: 0px;
+
+		.category__items {
+			flex-wrap: nowrap;
+		}
+
+		.swiper-pagination {
+			display: flex;
+			transform: translateX(-50%);
+			left: 50%;
+			bottom: 0;
+
+			&-bullet {
+				margin: 5px 3px !important;
+				background-color: #d8d8d8;
+				opacity: 1;
+
+				&-active {
+					background-color: #394791;
+				}
+			}
+
+		}
+
+		.category__item {
+			background-position: calc(100% + 29px) bottom;
+			background-size: auto;
+			padding: 23px 99px 26px 16px !important;
+			height: auto;
+			justify-content: space-between;
+
+			&:nth-child(-n+3) {
+				margin-bottom: 0px;
+			}
+
+			&:nth-child(3n+2) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			&:hover {
+				background-color: #394791;
+
+				.category__caption {
+					color: #ffffff;
+					text-decoration: underline;
+				}
+
+				.category__price {
+					color: #ffffff;
+				}
+			}
+		}
+
+		.category__caption {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 26px;
+			margin-bottom: 3px;
+		}
+
+		.category__price {
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 1;
+		}
+
+		.swiper-pagination {
+			position: static;
+			transform: none;
+			justify-content: center;
+		}
+
+		.category-container {
+			margin-bottom: 19px;
+		}
+	}
+}

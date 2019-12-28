@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<link rel="icon" type="image/png" href="images/Icon-16.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change ">
+								<div class="city-change__title">Санкт-Петербург</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
+									<a class="city-change__link" href="#">Регионы</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+								</li>
+								<li class="menu__item">
+									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+							<a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button" id="js-abuse-opener">Обратиться к руководству
+							</a>
+						</div>
+						<!--end menu-->
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket  active">
+								<span class="header__number">1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														∙ Однокамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Двухкамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Side-by-Side
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Морозильные камеры
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Морозильные лари
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														∙ Встраиваемые однокамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Двухкамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Встраиваемые двухкамерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Встраиваемые Side-by-Side
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Встраиваемые морозильные камеры
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														∙ Встраиваемые
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														∙ Отдельностоящие
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для пекарен</a>
+										</li>
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#">Сервис</a>
+								</span>
+							</nav>
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
+									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00
+									</div>
+									<a href="mailto:shop@l-rus.ru" class="time-work__email">
+										<i>Email:</i>shop@l-rus.ru</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+
+		<div class="section">
+			<div class="content-top">
+				<div class="content-top__inner">
+					<div class="container">
+						<div class="breadcrumbs">
+							<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a href="/" title="Главная" itemprop="item">
+										<span itemprop="name">Liebherr</span>
+									</a>
+									<meta itemprop="position" content="1">
+								</div>
+								<div class="breadcrumbs__sep">»</div>
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a href="/" title="Главная" itemprop="item">
+										<span itemprop="name">Бытовые холодильники</span>
+									</a>
+									<meta itemprop="position" content="1">
+								</div>
+								<div class="breadcrumbs__sep">»</div>
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a href="/">
+										<span itemprop="name">Холодильники</span>
+									</a>
+									<meta itemprop="position" content="1">
+								</div>
+								<div class="breadcrumbs__sep">»</div>
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<span itemprop="name">Холодильники Side-by-Side Liebherr из нержавейки в Санкт-Пeтербурге
+									</span>
+									<a itemprop="item" href="/liebherr/holodilniki/" title="Холодильники"></a>
+									<meta itemprop="position" content="2">
+								</div>
+							</div>
+						</div>
+						<div class="content-top__aside">
+							<h1 class="page__title content-top__title content-top__title_top">
+								Холодильники Side-by-Side Liebherr из нержавейки в Санкт-Пeтербурге
+								<span>
+									страница 3
+								</span>
+							</h1>
+							<div class="page__title content-top__title content-top__title_bottom">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="container">
+					<div class="col-md-3">
+						<div class="filter__date">Обновление цен от 14 июля 2018</div>
+						<div class="bx-filter filter-new bx-blue active">
+							<div class="bx-filter-section container-fluid">
+
+								<form name="_form" action="/liebherr/holodilniki/" method="get" class="smartfilter">
+									<input type="hidden" name="IBLOCK_CODE" id="IBLOCK_CODE" value="holodilniki">
+									<div class="row">
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span>Цена, руб.
+													<i data-role="prop_angle" class="fa fa-angle-down"></i>
+												</span>
+											</div>
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-6 bx-filter-parameters-box-container-block bx-left">
+														<i class="bx-ft-sub">От</i>
+														<div class="bx-filter-input-container">
+															<input class="min-price" type="text" name="arrFilter2_P1_MIN" id="arrFilter2_P1_MIN" value="" size="5" onkeyup="smartFilter.keyup(this)">
+														</div>
+													</div>
+													<div class="col-xs-6 bx-filter-parameters-box-container-block bx-right">
+														<i class="bx-ft-sub">До</i>
+														<div class="bx-filter-input-container">
+															<input class="max-price" type="text" name="arrFilter2_P1_MAX" id="arrFilter2_P1_MAX" value="" size="5" onkeyup="smartFilter.keyup(this)">
+														</div>
+													</div>
+
+													<div class="col-xs-10 col-xs-offset-1 bx-ui-slider-track-container">
+														<div class="bx-ui-slider-track" id="drag_track_c4ca4238a0b923820dcc509a6f75849b">
+															<div class="bx-ui-slider-part p1">
+																<span>13 230</span>
+															</div>
+															<div class="bx-ui-slider-part p2">
+																<span>97 422.50</span>
+															</div>
+															<div class="bx-ui-slider-part p3">
+																<span>181 615</span>
+															</div>
+															<div class="bx-ui-slider-part p4">
+																<span>265 807.50</span>
+															</div>
+															<div class="bx-ui-slider-part p5">
+																<span>350 000</span>
+															</div>
+
+															<div class="bx-ui-slider-pricebar-vd" style="left: 0;right: 0;" id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b">
+															</div>
+															<div class="bx-ui-slider-pricebar-vn" style="left: 0%; right: 0%;" id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b">
+															</div>
+															<div class="bx-ui-slider-pricebar-v" style="left: 0%; right: 0%;" id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b">
+															</div>
+															<div class="bx-ui-slider-range" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b" style="left: 0%; right: 0%;">
+																<a class="bx-ui-slider-handle left" style="left:0;" href="javascript:void(0)" id="left_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+																<a class="bx-ui-slider-handle right" style="right:0;" href="javascript:void(0)" id="right_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<script type="text/javascript">
+											BX.ready(function () {
+												window['trackBarc4ca4238a0b923820dcc509a6f75849b'] = new BX.Iblock.SmartFilter({
+													'leftSlider': 'left_slider_c4ca4238a0b923820dcc509a6f75849b',
+													'rightSlider': 'right_slider_c4ca4238a0b923820dcc509a6f75849b',
+													'tracker': 'drag_tracker_c4ca4238a0b923820dcc509a6f75849b',
+													'trackerWrap': 'drag_track_c4ca4238a0b923820dcc509a6f75849b',
+													'minInputId': 'arrFilter2_P1_MIN',
+													'maxInputId': 'arrFilter2_P1_MAX',
+													'minPrice': '13230',
+													'maxPrice': '350000',
+													'curMinPrice': '',
+													'curMaxPrice': '',
+													'fltMinPrice': '13230',
+													'fltMaxPrice': '350000',
+													'precision': '0',
+													'colorUnavailableActive': 'colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b',
+													'colorAvailableActive': 'colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b',
+													'colorAvailableInactive': 'colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b'
+												});
+											});
+										</script>
+
+
+
+
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">
+													Подборки
+												</span>
+											</div>
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-12">
+
+														<div class="filter__checkbox">
+															<a href="/liebherr/holodilniki/type-nov/" class="filter-collections ">Новинки</a>
+															<a href="/liebherr/holodilniki/type-hit/" class="filter-collections ">Лучшие</a>
+															<a href="/liebherr/holodilniki/type-akcii/" class="filter-collections ">Акции</a>
+														</div>
+
+													</div>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+
+
+
+
+
+
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Тип
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container more">
+													<div class="col-xs-12">
+														<span class="more-text js-more-text">Показать еще
+														</span>
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_1538_532509844" class="bx-filter-param-label " for="arrFilter2_1538_532509844">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1538_532509844" id="arrFilter2_1538_532509844" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="морозильник-шкаф">морозильник-шкаф&nbsp;(
+																		<span data-role="count_arrFilter2_1538_532509844">42</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_1538_3059817806" class="bx-filter-param-label " for="arrFilter2_1538_3059817806">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1538_3059817806" id="arrFilter2_1538_3059817806" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="морозильник-ларь">морозильник-ларь&nbsp;(
+																		<span data-role="count_arrFilter2_1538_3059817806">29</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_1538_3244699096" class="bx-filter-param-label " for="arrFilter2_1538_3244699096">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1538_3244699096" id="arrFilter2_1538_3244699096" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="холодильник без морозильника">холодильник без морозильника&nbsp;(
+																		<span data-role="count_arrFilter2_1538_3244699096">39</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox js-autoHeight" style="display: none;">
+															<label data-role="label_arrFilter2_1538_1483701346" class="bx-filter-param-label " for="arrFilter2_1538_1483701346">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1538_1483701346" id="arrFilter2_1538_1483701346" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="холодильник с винным шкафом">холодильник с винным шкафом&nbsp;(
+																		<span data-role="count_arrFilter2_1538_1483701346">2</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_1538_795364596" class="bx-filter-param-label " for="arrFilter2_1538_795364596">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1538_795364596" id="arrFilter2_1538_795364596" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="холодильник с морозильником">холодильник с морозильником&nbsp;(
+																		<span data-role="count_arrFilter2_1538_795364596">235</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_1538_2970409303" class="bx-filter-param-label " for="arrFilter2_1538_2970409303">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1538_2970409303" id="arrFilter2_1538_2970409303" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="морозильник с винным шкафом">морозильник с винным шкафом&nbsp;(
+																		<span data-role="count_arrFilter2_1538_2970409303">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+													</div>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Высота [см]
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-6 bx-filter-parameters-box-container-block bx-left">
+														<i class="bx-ft-sub">От</i>
+														<div class="bx-filter-input-container">
+															<input class="min-price" type="text" name="arrFilter2_1541_MIN" id="arrFilter2_1541_MIN" value="" size="5" onkeyup="smartFilter.keyup(this)">
+														</div>
+													</div>
+													<div class="col-xs-6 bx-filter-parameters-box-container-block bx-right">
+														<i class="bx-ft-sub">До</i>
+														<div class="bx-filter-input-container">
+															<input class="max-price" type="text" name="arrFilter2_1541_MAX" id="arrFilter2_1541_MAX" value="" size="5" onkeyup="smartFilter.keyup(this)">
+														</div>
+													</div>
+
+													<div class="col-xs-10 col-xs-offset-1 bx-ui-slider-track-container">
+														<div class="bx-ui-slider-track" id="drag_track_1541">
+															<div class="bx-ui-slider-part p1">
+																<span>61.00</span>
+															</div>
+															<div class="bx-ui-slider-part p2">
+																<span>96.75</span>
+															</div>
+															<div class="bx-ui-slider-part p3">
+																<span>132.50</span>
+															</div>
+															<div class="bx-ui-slider-part p4">
+																<span>168.25</span>
+															</div>
+															<div class="bx-ui-slider-part p5">
+																<span>204.00</span>
+															</div>
+
+															<div class="bx-ui-slider-pricebar-vd" style="left: 0;right: 0;" id="colorUnavailableActive_1541"></div>
+															<div class="bx-ui-slider-pricebar-vn" style="left: 0%; right: 0%;" id="colorAvailableInactive_1541"></div>
+															<div class="bx-ui-slider-pricebar-v" style="left: 0%; right: 0%;" id="colorAvailableActive_1541"></div>
+															<div class="bx-ui-slider-range" id="drag_tracker_1541" style="left: 0;right: 0;">
+																<a class="bx-ui-slider-handle left" style="left:0;" href="javascript:void(0)" id="left_slider_1541"></a>
+																<a class="bx-ui-slider-handle right" style="right:0;" href="javascript:void(0)" id="right_slider_1541"></a>
+															</div>
+														</div>
+													</div>
+													<script type="text/javascript">
+														BX.ready(function () {
+															window['trackBar1541'] = new BX.Iblock.SmartFilter({
+																'leftSlider': 'left_slider_1541',
+																'rightSlider': 'right_slider_1541',
+																'tracker': 'drag_tracker_1541',
+																'trackerWrap': 'drag_track_1541',
+																'minInputId': 'arrFilter2_1541_MIN',
+																'maxInputId': 'arrFilter2_1541_MAX',
+																'minPrice': '61',
+																'maxPrice': '204',
+																'curMinPrice': '',
+																'curMaxPrice': '',
+																'fltMinPrice': '61',
+																'fltMaxPrice': '204',
+																'precision': '2',
+																'colorUnavailableActive': 'colorUnavailableActive_1541',
+																'colorAvailableActive': 'colorAvailableActive_1541',
+																'colorAvailableInactive': 'colorAvailableInactive_1541'
+															});
+														});
+													</script>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Ширина [см]
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-6 bx-filter-parameters-box-container-block bx-left">
+														<i class="bx-ft-sub">От</i>
+														<div class="bx-filter-input-container">
+															<input class="min-price" type="text" name="arrFilter2_1542_MIN" id="arrFilter2_1542_MIN" value="" size="5" onkeyup="smartFilter.keyup(this)">
+														</div>
+													</div>
+													<div class="col-xs-6 bx-filter-parameters-box-container-block bx-right">
+														<i class="bx-ft-sub">До</i>
+														<div class="bx-filter-input-container">
+															<input class="max-price" type="text" name="arrFilter2_1542_MAX" id="arrFilter2_1542_MAX" value="" size="5" onkeyup="smartFilter.keyup(this)">
+														</div>
+													</div>
+
+													<div class="col-xs-10 col-xs-offset-1 bx-ui-slider-track-container">
+														<div class="bx-ui-slider-track" id="drag_track_1542">
+															<div class="bx-ui-slider-part p1">
+																<span>42.0</span>
+															</div>
+															<div class="bx-ui-slider-part p2">
+																<span>72.8</span>
+															</div>
+															<div class="bx-ui-slider-part p3">
+																<span>103.5</span>
+															</div>
+															<div class="bx-ui-slider-part p4">
+																<span>134.3</span>
+															</div>
+															<div class="bx-ui-slider-part p5">
+																<span>165.0</span>
+															</div>
+
+															<div class="bx-ui-slider-pricebar-vd" style="left: 0;right: 0;" id="colorUnavailableActive_1542"></div>
+															<div class="bx-ui-slider-pricebar-vn" style="left: 0%; right: 0%;" id="colorAvailableInactive_1542"></div>
+															<div class="bx-ui-slider-pricebar-v" style="left: 0%; right: 0%;" id="colorAvailableActive_1542"></div>
+															<div class="bx-ui-slider-range" id="drag_tracker_1542" style="left: 0;right: 0;">
+																<a class="bx-ui-slider-handle left" style="left:0;" href="javascript:void(0)" id="left_slider_1542"></a>
+																<a class="bx-ui-slider-handle right" style="right:0;" href="javascript:void(0)" id="right_slider_1542"></a>
+															</div>
+														</div>
+													</div>
+													<script type="text/javascript">
+														BX.ready(function () {
+															window['trackBar1542'] = new BX.Iblock.SmartFilter({
+																'leftSlider': 'left_slider_1542',
+																'rightSlider': 'right_slider_1542',
+																'tracker': 'drag_tracker_1542',
+																'trackerWrap': 'drag_track_1542',
+																'minInputId': 'arrFilter2_1542_MIN',
+																'maxInputId': 'arrFilter2_1542_MAX',
+																'minPrice': '42',
+																'maxPrice': '165',
+																'curMinPrice': '',
+																'curMaxPrice': '',
+																'fltMinPrice': '42',
+																'fltMaxPrice': '165',
+																'precision': '1',
+																'colorUnavailableActive': 'colorUnavailableActive_1542',
+																'colorAvailableActive': 'colorAvailableActive_1542',
+																'colorAvailableInactive': 'colorAvailableInactive_1542'
+															});
+														});
+													</script>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Цвет
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container more">
+													<div class="col-xs-12">
+														<span class="more-text js-more-text">Показать еще
+														</span>
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_2250_1738692762" class="bx-filter-param-label " for="arrFilter2_2250_1738692762">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_1738692762" id="arrFilter2_2250_1738692762" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="бежевый">бежевый&nbsp;(
+																		<span data-role="count_arrFilter2_2250_1738692762">7</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_2250_841265288" class="bx-filter-param-label " for="arrFilter2_2250_841265288">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_841265288" id="arrFilter2_2250_841265288" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="белый">белый&nbsp;(
+																		<span data-role="count_arrFilter2_2250_841265288">176</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_2250_3303624126" class="bx-filter-param-label " for="arrFilter2_2250_3303624126">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_3303624126" id="arrFilter2_2250_3303624126" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="бронза">бронза&nbsp;(
+																		<span data-role="count_arrFilter2_2250_3303624126">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox js-autoHeight" style="display: none;">
+															<label data-role="label_arrFilter2_2250_3834431074" class="bx-filter-param-label " for="arrFilter2_2250_3834431074">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_3834431074" id="arrFilter2_2250_3834431074" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="зеленый KiwiGreen">зеленый KiwiGreen&nbsp;(
+																		<span data-role="count_arrFilter2_2250_3834431074">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_2587736799" class="bx-filter-param-label " for="arrFilter2_2250_2587736799">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_2587736799" id="arrFilter2_2250_2587736799" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="зеленый авокадо">зеленый авокадо&nbsp;(
+																		<span data-role="count_arrFilter2_2250_2587736799">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_3761914965" class="bx-filter-param-label " for="arrFilter2_2250_3761914965">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_3761914965" id="arrFilter2_2250_3761914965" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="красный">красный&nbsp;(
+																		<span data-role="count_arrFilter2_2250_3761914965">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_2871910706" class="bx-filter-param-label " for="arrFilter2_2250_2871910706">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_2871910706" id="arrFilter2_2250_2871910706" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="нержавеющая сталь">нержавеющая сталь&nbsp;(
+																		<span data-role="count_arrFilter2_2250_2871910706">47</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_1949555699" class="bx-filter-param-label " for="arrFilter2_2250_1949555699">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_1949555699" id="arrFilter2_2250_1949555699" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="оранжевый NeonOrange">оранжевый NeonOrange&nbsp;(
+																		<span data-role="count_arrFilter2_2250_1949555699">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_1239821711" class="bx-filter-param-label " for="arrFilter2_2250_1239821711">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_1239821711" id="arrFilter2_2250_1239821711" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="серебристый">серебристый&nbsp;(
+																		<span data-role="count_arrFilter2_2250_1239821711">71</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_3685956360" class="bx-filter-param-label " for="arrFilter2_2250_3685956360">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_3685956360" id="arrFilter2_2250_3685956360" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="серебристый + нержавеющая сталь">серебристый + нержавеющая сталь&nbsp;(
+																		<span data-role="count_arrFilter2_2250_3685956360">16</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_965531904" class="bx-filter-param-label " for="arrFilter2_2250_965531904">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_965531904" id="arrFilter2_2250_965531904" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="синий">синий&nbsp;(
+																		<span data-role="count_arrFilter2_2250_965531904">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_2475423476" class="bx-filter-param-label " for="arrFilter2_2250_2475423476">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_2475423476" id="arrFilter2_2250_2475423476" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="синий FrozenBlue">синий FrozenBlue&nbsp;(
+																		<span data-role="count_arrFilter2_2250_2475423476">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_1842303647" class="bx-filter-param-label " for="arrFilter2_2250_1842303647">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_1842303647" id="arrFilter2_2250_1842303647" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="цветной StickerArt">цветной StickerArt&nbsp;(
+																		<span data-role="count_arrFilter2_2250_1842303647">1</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_3693793700" class="bx-filter-param-label " for="arrFilter2_2250_3693793700">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_3693793700" id="arrFilter2_2250_3693793700" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="черный">черный&nbsp;(
+																		<span data-role="count_arrFilter2_2250_3693793700">6</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_53799781" class="bx-filter-param-label " for="arrFilter2_2250_53799781">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_53799781" id="arrFilter2_2250_53799781" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="черный / серебристый">черный / серебристый&nbsp;(
+																		<span data-role="count_arrFilter2_2250_53799781">2</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+														<div class="checkbox" style="display: none;">
+															<label data-role="label_arrFilter2_2250_1865533099" class="bx-filter-param-label " for="arrFilter2_2250_1865533099">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_2250_1865533099" id="arrFilter2_2250_1865533099" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="черный BlackSteel">черный BlackSteel&nbsp;(
+																		<span data-role="count_arrFilter2_2250_1865533099">14</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+													</div>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Зона свежести BioFresh
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-12">
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_1619_2457050331" class="bx-filter-param-label " for="arrFilter2_1619_2457050331">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1619_2457050331" id="arrFilter2_1619_2457050331" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="Есть">Есть&nbsp;(
+																		<span data-role="count_arrFilter2_1619_2457050331">86</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+													</div>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Система замораживания NoFrost
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-12">
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_1642_1644890287" class="bx-filter-param-label " for="arrFilter2_1642_1644890287">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1642_1644890287" id="arrFilter2_1642_1644890287" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="Есть">Есть&nbsp;(
+																		<span data-role="count_arrFilter2_1642_1644890287">184</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+													</div>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+										<div class="col-lg-12 bx-filter-parameters-box bx-active">
+											<span class="bx-filter-container-modef"></span>
+											<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
+												<span class="bx-filter-parameters-box-hint">Система SmartFrost
+													<i data-role="prop_angle" class="fa fa-angle-up"></i>
+												</span>
+											</div>
+
+
+											<div class="bx-filter-block" data-role="bx_filter_block">
+												<div class="row bx-filter-parameters-box-container">
+													<div class="col-xs-12">
+														<div class="checkbox">
+															<label data-role="label_arrFilter2_1665_3263599987" class="bx-filter-param-label " for="arrFilter2_1665_3263599987">
+																<span class="bx-filter-input-checkbox">
+																	<input type="checkbox" value="Y" name="arrFilter2_1665_3263599987" id="arrFilter2_1665_3263599987" onclick="smartFilter.click(this)">
+																	<span class="bx-filter-param-text" title="есть">есть&nbsp;(
+																		<span data-role="count_arrFilter2_1665_3263599987">46</span>)</span>
+																</span>
+															</label>
+
+
+
+														</div>
+													</div>
+												</div>
+												<div style="clear: both"></div>
+											</div>
+										</div>
+									</div>
+									<!--//row-->
+									<div class="row">
+										<div class="col-xs-12 bx-filter-button-box">
+											<div class="bx-filter-block">
+												<div class="bx-filter-parameters-box-container">
+													<input class="btn btn-themes" type="submit" id="set_filter" name="set_filter" value="Показать">
+													<input class="btn btn-link" type="submit" id="del_filter" name="del_filter" value="Сбросить">
+													<div class="bx-filter-popup-result right" id="modef" style="display:none">
+														Выбрано:
+														<span id="modef_num">0</span>
+														<span class="arrow"></span>
+														<br>
+														<a href="/liebherr/holodilniki/?set_filter=y" target="">Показать</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clb"></div>
+								</form>
+							</div>
+						</div>
+						<script type="text/javascript">
+							var smartFilter = new JCSmartFilter('/liebherr/holodilniki/', 'VERTICAL', []);
+						</script>
+						<div class="sidebar">
+
+							<ul class="work-link">
+								<li class="work-link__item">
+									<a class="work-link__a" href="/service/">Сервисные центры</a>
+								</li>
+								<li class="work-link__item">
+									<a class="work-link__a" href="/documentation/">Техническая документация</a>
+								</li>
+								<li class="work-link__item">
+									<a class="work-link__a" href="/warranty/">Официальная гарантия</a>
+								</li>
+							</ul>
+							<div class="yandex">
+								<div class="yandex__inner">
+									<div class="yandex__logo">
+										<img src="images/ylogo.png" alt="" srcset="" class="yandex__img">
+									</div>
+									<div class="yandex__ratings">
+										<img src="images/5-stars.png" alt="" srcset="">
+									</div>
+									<a href="#" target="_blank" class="yandex__button">Оставить отзыв</a>
+									<a href="#" target="_blank" class="yandex__button">Читать все отзывы</a>
+								</div>
+							</div>
+							<div class="quality">
+								<span class="quality__title">Контроль качества</span>
+								<span class="quality__text">Номер для претензий и предложений:</span>
+								<a href="tel:+74951201196" class="quality__number">+7 (495) 120-11-96</a>
+								<span class="quality__worktime">с 9:00 до 18:00</span>
+								<a href="#" class="quality__button" id="js-quality-opener">Написать</a>
+							</div>
+						</div>
+					</div>
+					<div class="special-offers catalog">
+						<div class="catalog__sorting">
+							<ul class="catalog__ul">
+								Сортировать по:
+								<li class="catalog__li">
+									<a href="#" sort="popular" order="ASC" class="catalog__sort">
+										<span>популярности</span>
+										<i></i>
+									</a>
+								</li>
+								<li class="catalog__li">
+									<a href="#" sort="new" order="ASC" class="catalog__sort">
+										<span>новизне</span>
+										<i></i>
+									</a>
+								</li>
+								<li class="catalog__li">
+									<a href="#" sort="price" order="DESC" class="catalog__sort">
+										<span>цене</span>
+										<i></i>
+									</a>
+								</li>
+							</ul>
+							<div class="sorting__info">
+								<span class="sorting__number">294</span>
+								<span class="sorting__number">позиции</span>
+							</div>
+						</div>
+						<div class="tags">
+							<ul class="tags__list">
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Все
+									</a>
+								</li>
+								<li class="tags__item active">
+									<a href="#" class="tags__link">
+										Холодильник с ящиками
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Холодильники Side-by-Side
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Морозильные камеры
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Холодильники Side-by-Side
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Морозильные камеры
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Однокамерные холодильники
+									</a>
+								</li>
+								<!-- <li class="tags__item button js-button">
+				<a href="#" class="tags__link">
+					Показать все
+				</a>
+			</li> -->
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										полуавтомат
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с инверторным двигателем
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с прямым приводом
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										узкие LG
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										мини
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с функцией пара
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 45 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										черные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										компактные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 33 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 35 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										холодильники
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Однокамерные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										полуавтомат
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с инверторным двигателем
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с прямым приводом
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										узкие LG
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										мини
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с функцией пара
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 45 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										черные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										компактные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 33 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 35 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										холодильники
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Однокамерные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										полуавтомат
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с инверторным двигателем
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с прямым приводом
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										узкие LG
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										мини
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										с функцией пара
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 45 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										черные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										компактные
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 33 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										глубиной 35 см
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										холодильники
+									</a>
+								</li>
+								<li class="tags__item">
+									<a href="#" class="tags__link">
+										Однокамерные
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="catalog__items">
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+								<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor
+								</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/A+.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/A++.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/A+++.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Bio Cool.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Bio Fresh- Plus.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Bio Fresh.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale">
+									<span class="special-offers__price catalog__price">134 200
+										<i class="special-offers__rub catalog__rub">руб.</i>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+
+									<a href="#" class="catalog__simile active"></a>
+									<a href="#" class="catalog__favorite active"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+								<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Black Steel.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/BLU Performance.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Central-Power Coolin.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Colour Line.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Comfort Glass Line.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Duo Cooling.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale price__dashed">
+									<span class="special-offers__price catalog__price">
+										199 000
+										<i class="special-offers__rub catalog__rub">руб.</i>
+										<span class="price__absolute">
+											250 000 руб.
+										</span>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+
+								<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Flex System.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Fresh Air.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Frost Control.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Frost Protect.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Frost Safe.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Glass Edition.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale">
+									<span class="special-offers__price catalog__price price__dashed">
+
+										82 500
+										<i class="special-offers__rub catalog__rub">руб.</i>
+										<span class="price__absolute">83 500 руб.</span>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_4.jpg" srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+
+								<a href="#" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Grand Cru.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Hard Line.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Ice Maker.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/LED.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Magic Eye.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/No Frost.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale">
+									<span class="special-offers__price catalog__price">134 200
+										<i class="special-offers__rub catalog__rub">руб.</i>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить в 1 клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item stock">
+								<a class=upsale__parent href="#">
+									<img class="stock_img" src="images/Catalog_stock.jpg" srcset="images/Catalog_stock@2x.jpg 2x,images/Catalog_stock@3x.jpg 3x" alt="">
+								</a>
+								<div class="stock__info">
+									<span class="stock__title">30%</span>
+									<span class="stock__text">Морозильник
+										<br>Liebherr GN 2723 Comfort NoFrost
+										<span>скидка до 30%</span>
+									</span>
+									<a class="stock__link" href="#">
+										<span class="stock__arrow">Узнать больше</span>
+									</a>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+								<a href="#" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Power Cooling.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Premium Glass Line.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Side by Side.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Silver.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Smart Device.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Smart Frost.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale">
+									<span class="special-offers__price catalog__price">134 200
+										<i class="special-offers__rub catalog__rub">руб.</i>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+									<!-- <span class="catalog__presence grey">под заказ</span> -->
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+								<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor
+								</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Smart Steel.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Soft System.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Soft Telescopic.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Stainless Steel Look.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Stop Frost.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Super Cool.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale">
+									<span class="special-offers__price catalog__price">134 200
+										<i class="special-offers__rub catalog__rub">руб.</i>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+								<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Super Frost.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Swing Desing.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Swing Line.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Telescopic Rails.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Tip Open.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Vario Box.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale">
+									<span class="special-offers__price catalog__price">98 400
+										<i class="special-offers__rub catalog__rub">руб.</i>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+
+								<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Vario Safe.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Vario Space.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Vinidor.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Vinothek.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Аккумулятор холода.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Класс Comfort.svg" class="icons-prop-item">
+									</a>
+								</div>
+								<div class="special-offers__sale catalog__sale price__dashed">
+									<span class="special-offers__price catalog__price">115 000
+										<i class="special-offers__rub catalog__rub">руб.</i>
+										<span class="price__absolute">122 750 руб.
+										</span>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<a class="catalog__pic" href="#">
+									<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x" class="special-offers__img catalog__img">
+								</a>
+
+								<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
+								<span class="catalog__presence">В наличии</span>
+								<div class="catalog__specification">
+									<span class="catalog__feature">Цвет:
+										<span class="catalog__bold">белый</span>
+									</span>
+									<span class="catalog__feature">Габариты (см):
+										<span class="catalog__bold">63x55.4x62.4</span>
+									</span>
+									<span class="catalog__feature">Полезный объем холодильной камеры (л):
+										<span class="catalog__bold">107</span>
+									</span>
+									<span class="catalog__feature">Полезный объем морозильной камеры (л):
+										<span class="catalog__bold">15</span>
+									</span>
+									<span class="catalog__feature">Тип размораживания:
+										<span class="catalog__bold">ручная</span>
+									</span>
+								</div>
+								<div class="catalog__prop">
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Класс Premium Plus.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Класс Premium.svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Режим «Отпуск».svg" class="icons-prop-item">
+									</a>
+									<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary" class="link-pop-glossary">
+										<img src="images/benefits-icons/Функция защиты от де.svg" class="icons-prop-item">
+									</a>
+
+								</div>
+								<div class="special-offers__sale catalog__sale price__dashed">
+									<span class="special-offers__price catalog__price">115 000
+										<i class="special-offers__rub catalog__rub">руб.</i>
+										<span class="price__absolute">122 750 руб.
+										</span>
+									</span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
+								</div>
+								<div class="catalog__existence">
+
+									<a href="#" class="catalog__simile"></a>
+									<a href="#" class="catalog__favorite"></a>
+									<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+								</div>
+								<div class="announcing">
+									<div class="announcing__item">
+										<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии" title="сделано в Австрии">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									</div>
+									<div class="announcing__item">
+										<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="load-more" href="#">Загрузить еще</a>
+						<div class="pagination">
+							<a href="#" class="pagination__prev"></a>
+							<a href="#" class="pagination__item pagination__item_state_current">1</a>
+							<a href="#" class="pagination__item">2</a>
+							<a href="#" class="pagination__item">3</a>
+							<a href="#" class="pagination__more">...</a>
+							<a href="#" class="pagination__item">12</a>
+							<a href="#" class="pagination__next"></a>
+						</div>
+						<!-- /.pagination -->
+						<div class="recently-watched js-recently-watched">
+							<div class="recently-watched__title">
+								Вы недавно смотрели
+							</div>
+							<div class="swiper-pagination-recently-watched swiper-pagination"></div>
+							<div class="swiper-button-prev recently-watched__prev"></div>
+							<div class="swiper-button-next recently-watched__next"></div>
+							<a href="#" class="recently-watched__reset">Сбросить просмотренное</a>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_3.jpg" alt="">
+										</a>
+										<a href='#' class="recently-watched__text">
+											Винный шкаф Liebherr EWTgw 3583 Vinidor
+											<span class="recently-watched__price">134 200
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_1.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+											<span class="recently-watched__price">
+												34 200
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_2.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Морозильник Liebherr GN 2723 Comfort NoFrost
+											<span class="recently-watched__price">
+												14 200
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_1.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+											<span class="recently-watched__price">
+												13 200
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_3.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Винный шкаф Liebherr EWTgw 3583 Vinidor
+											<span class="recently-watched__price">
+												1 200
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_1.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_2.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Морозильник Liebherr GN 2723 Comfort NoFrost
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="recently-watched__pic">
+											<img src="images/new-items_1.jpg" alt="">
+										</a>
+										<a href="#" class="recently-watched__text">
+											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+										</a>
+										<div class="recently-watched__close"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Бытовые холодильники</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Холодильники</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Отдельностоящие морозильные камеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Встраиваемые холодильники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Встраиваемые морозильные камеры
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Винные шкафы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Хьюмидоры</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Профессиональная техника</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Медицинское и лабораторное оборудование
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для гостиниц и ресторанов
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для охлаждения напитков</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для пекарен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Для хранения замороженных продуктов и мороженого
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">О Liebherr</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Акции и статьи</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Глоссарий</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Оплата и доставка</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подключение</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Гарантия</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Сервис и обслуживание</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Liebherr</div>
+					<a href="tel:+74951912633" class="footer__tel">+7 495 191-26-33</a>
+					<a href="tel:+78003331936" class="footer__tel">+7 800 333-19-36</a>
+					<a href="#" data-url="ajax/callback.html" data-ajax="" class="footer__call-phone-button js-callback">
+						<span>
+							Заказать звонок
+						</span>
+
+					</a>
+					<a href="mailto:shop@l-rus.ru" class="footer__email">
+						<i>Email:</i>shop@l-rus.ru</a>
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин LIEBHERR.
+					<br>«NTK LTD TM all rights reserved»
+				</div>
+				<div class="social-items">
+					<a href="#" class="social-link vk"></a>
+					<a href="#" class="social-link fb"></a>
+					<a href="#" class="social-link tw"></a>
+					<a href="#" class="social-link ok"></a>
+				</div>
+				<a class="privacy-policy" href="https://lbhr.ret-team.ru/personal-data/">Политика конфиденциальности</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>
