@@ -13,7 +13,7 @@
 	display: flex;
 	align-items: center;
 	flex-shrink: 1;
-	width:701px;
+	width:790px;
 	flex-grow: 1;
 
 	nav {
@@ -25,17 +25,18 @@
 		padding: 0;
 		list-style-type: none;
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
 		width: 100%;
 	}
 
 	&__item {
+		margin-left: 40px;
 
 		&:hover {
 
 			a,
 			span {
-				color: #394791;
+				color:  $base;
 				text-decoration: none;
 			}
 		}
@@ -43,11 +44,15 @@
 		&:last-child {
 			padding-right: 0;
 		}
+
+		&:first-child {
+			margin-left: 4px;
+		}
 	}
 
 	&__link {
 		display: block;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		font-weight: normal;
 		font-style: normal;
@@ -59,11 +64,11 @@
 
 	.city-change {
 		display: flex;
-		color: #394791;
-		font-family: Arial,sans-serif;
+		color:  $base;
+		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
-		margin-right: 15px;
+		margin-right: 48px;
 		cursor: pointer;
 		position: relative;
 
@@ -75,7 +80,7 @@
 		}
 
 		&__title {
-			border-bottom: 1px dashed rgba(57, 71, 145, 0.78);
+			border-bottom: 1px dashed $base;
 			margin-right: 10px;
 			white-space: nowrap;
 		}
@@ -89,6 +94,7 @@
 			white-space: nowrap;
 			margin-bottom: 10px;
 			text-decoration: none !important;
+			color: $base;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -175,7 +181,8 @@
 			max-height: 125px;
 			padding-top: 1rem;
 			padding-bottom: 0;
-			&:nth-of-type(4){
+
+			&:nth-of-type(4) {
 				display: none;
 			}
 		}
@@ -198,7 +205,7 @@
 		&__item {
 			width: 50%;
 			margin-top: 17px;
-			cursor:pointer;
+			cursor: pointer;
 		}
 
 		.header__block_bottom & {
@@ -206,7 +213,8 @@
 			flex-direction: column;
 			width: 100%;
 		}
-		&+.menu{
+
+		&+.menu {
 			display: none;
 		}
 
@@ -226,7 +234,7 @@
 
 		.time-work {
 			color: #666;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 			text-align: left;
@@ -234,7 +242,7 @@
 
 			i {
 				color: #666;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 13px;
 				line-height: 22px;
 				text-align: left;
