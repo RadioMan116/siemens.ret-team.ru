@@ -816,62 +816,7 @@ $(document).ready(function () {
 		}
 		$(".labels__popup").css('left', handel);
 	});
-	// $(".js-characteristic-glossary").click(function () {
-	// 	var text = $(this).find('.characteristic-glossary__text').text()
-	// 	var $this = $(this);
 
-
-	// 	if ($(this).hasClass('active')) {
-	// 		$(this).removeClass('active');
-
-	// 	} else {
-	// 		$('.characteristic-glossary ').removeClass('active');
-	// 		$(this).addClass('active');
-	// 		console.log(text)
-	// 		$(this).find('.characteristic-glossary__link').attr('target', 'blank');
-
-	// 		if ($(this).find(".button-close").length < 1) {
-	// 			var buttonClose = document.createElement("div");
-	// 			buttonClose.className = ('button-close');
-	// 			$(this).find('.popup-gloss').append(buttonClose);
-
-	// 		}
-	// 		if (text.length > 300) {
-	// 			text = text.substring(0, 300);
-	// 			var lastIndex = text.lastIndexOf(" "); // позиция последнего пробела
-	// 			text = text.substring(0, lastIndex) + '...';
-	// 			$(this).find('.characteristic-glossary__text').text(text);
-	// 		}
-	// 		// $('body').on("click", function (event) {
-	// 		// 	// $('body').css('overflow','hidden');
-	// 		// 	$this.removeClass('active');
-	// 		// });
-	// 		$(document).mouseup(function (e) { // событие клика по веб-документу
-	// 			var div = $("#popup"); // тут указываем ID элемента
-	// 			if (!$this.is(e.target) // если клик был не по нашему блоку
-	// 				&&
-	// 				$this.has(e.target).length === 0) { // и не по его дочерним элементам
-	// 				$this.removeClass('active'); // скрываем его
-	// 			}
-	// 		});
-	// 		var target = $this.children('.popup-gloss');
-
-	// 		var targetPos = target.offset().top;
-	// 		var windowHeight = $(window).height();
-	// 		var elHeight = target.height();
-	// 		var scrollToElem = targetPos + elHeight;
-
-	// 		$(window).scroll(function () {
-	// 			var winScrollTop = $(this).scrollTop();
-	// 			if (winScrollTop > scrollToElem) {
-	// 				$(target).parent().removeClass("active");
-	// 			}
-	// 			if (scrollToElem - windowHeight - elHeight > winScrollTop) {
-	// 				$(target).parent().removeClass("active");
-	// 			}
-	// 		});
-	// 	}
-	// });
 	$(".catalog__prop .js-link-pop-glossary").hover(function () {
 
 		var text = $(this).find('.popup-prop__text').text();
@@ -1045,21 +990,6 @@ $(document).ready(function () {
 		}
 		this.remove();
 	});
-
-	// (function() {
-	// 	var glossaries = document.querySelectorAll('.js-filter-glossary');
-	// 	[].forEach.call(glossaries, function(node) {
-	// 		node.addEventListener('click', function(e) {
-	// 			e.stopPropagation();
-	// 			if(this.getAttribute('data-glossary') == 'show') {
-	// 				this.setAttribute('data-glossary', 'hide');
-	// 			} else {
-	// 				glossaries.setAttribute('data-glossary','hide');
-	// 				this.setAttribute('data-glossary', 'show');
-	// 			}
-	// 		});
-	// 	});
-	// })();
 
 	if (windowWidth2 > 767) {
 
@@ -1341,15 +1271,15 @@ $(document).ready(function () {
 		$(this).addClass('active');
 	});
 	$(window).scroll(function () {
-		var scroll = $(window).scrollTop();
-		// var asideHeightSum = asideHeight + asideOffsetTop - 600;
-		if (scroll > 10) {
-			$(".dropdown-menu").removeClass("active");
-			$(".header__overlay").removeClass("header__overlay-open");
-			$(".header .search__popup").removeClass("search__popup-open");
-			$(".header__search").removeClass("header__search-open");
-			$(".header__overlay").removeClass("header__overlay-open");
-		}
+		// var scroll = $(window).scrollTop();
+		// // var asideHeightSum = asideHeight + asideOffsetTop - 600;
+		// if (scroll > 10) {
+		// 	$(".dropdown-menu").removeClass("active");
+		// 	$(".header__overlay").removeClass("header__overlay-open");
+		// 	$(".header .search__popup").removeClass("search__popup-open");
+		// 	$(".header__search").removeClass("header__search-open");
+		// 	$(".header__overlay").removeClass("header__overlay-open");
+		// }
 	});
 	$(".header__overlay").click(function () {
 		$(".header .search__popup").removeClass("search__popup-open");

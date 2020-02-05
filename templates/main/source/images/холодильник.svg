@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="24" viewBox="0 0 16 24">
+  <defs>
+    <path id="холодильник-b" d="M11,13 L11,12 L12,12 L11.999,3 L11,3 L11,2 L13,2 L13,3 L12.999,3 L13,12 L13,13 L11,13 Z"/>
+    <filter id="холодильник-a" width="600%" height="190.9%" x="-250%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.404747596 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="15" height="23" x=".5" y=".5" stroke="#000"/>
+    <rect width="1" height="16" x="7.5" y="7.5" fill="#000" transform="rotate(90 8 15.5)"/>
+    <rect width="12" height="1" x="2" y="17" fill="#000" opacity=".152"/>
+    <use fill="#000" filter="url(#холодильник-a)" xlink:href="#холодильник-b"/>
+    <use fill="#B00" xlink:href="#холодильник-b"/>
+  </g>
+</svg>

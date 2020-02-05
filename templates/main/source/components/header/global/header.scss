@@ -529,8 +529,8 @@
 				}
 
 				.header__call-phone-button {
-					color: #394791;
-					color: #394791;
+
+					color: $base;
 					font-family: Arial, sans-serif;
 					font-size: 10px;
 					line-height: 22px;
@@ -556,7 +556,7 @@
 
 					&::after {
 						content: '';
-						border-bottom: 1px dashed #394791;
+						border-bottom: 1px dashed $base;
 						width: calc(100% - 24px);
 						height: 0px;
 						margin-top: -5px;

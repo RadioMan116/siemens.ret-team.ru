@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="25" viewBox="0 0 20 25">
+  <defs>
+    <circle id="сушилка-b" cx="10" cy="13" r="7"/>
+    <filter id="сушилка-a" width="171.4%" height="171.4%" x="-35.7%" y="-28.6%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0"/>
+    </filter>
+    <rect id="сушилка-d" width="6" height="3" x="7" y="1"/>
+    <filter id="сушилка-c" width="266.7%" height="433.3%" x="-83.3%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.404747596 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+    <rect width="19" height="23" x=".5" y=".5" stroke="#000"/>
+    <use fill="#000" filter="url(#сушилка-a)" xlink:href="#сушилка-b"/>
+    <circle cx="10" cy="13" r="6.5" fill="#B00" fill-opacity=".65" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#сушилка-c)" xlink:href="#сушилка-d"/>
+    <use fill="#B00" xlink:href="#сушилка-d"/>
+    <circle cx="2.5" cy="2.5" r="1" fill="#000"/>
+    <circle cx="4.5" cy="2.5" r="1" fill="#000"/>
+    <circle cx="15.5" cy="2.5" r="1" fill="#000"/>
+    <circle cx="17.5" cy="2.5" r="1" fill="#000"/>
+  </g>
+</svg>

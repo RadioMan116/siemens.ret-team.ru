@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="26" viewBox="0 0 17 26">
+  <defs>
+    <rect id="морозилка-b" width="11" height="14" x="2" y="8"/>
+    <filter id="морозилка-a" width="190.9%" height="171.4%" x="-45.5%" y="-28.6%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-d" cx="5.5" cy="19.5" r="1.5"/>
+    <filter id="морозилка-c" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-f" cx="5.5" cy="16.5" r="1.5"/>
+    <filter id="морозилка-e" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-h" cx="5.5" cy="13.5" r="1.5"/>
+    <filter id="морозилка-g" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-j" cx="5.5" cy="10.5" r="1.5"/>
+    <filter id="морозилка-i" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-l" cx="9.5" cy="19.5" r="1.5"/>
+    <filter id="морозилка-k" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-n" cx="9.5" cy="16.5" r="1.5"/>
+    <filter id="морозилка-m" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-p" cx="9.5" cy="13.5" r="1.5"/>
+    <filter id="морозилка-o" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+    <circle id="морозилка-r" cx="9.5" cy="10.5" r="1.5"/>
+    <filter id="морозилка-q" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.251311189 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1)">
+    <rect width="14" height="23" x=".5" y=".5" stroke="#000"/>
+    <rect width="15" height="1" y="6" fill="#040404"/>
+    <rect width="11" height="1" x="2" y="2" fill="#040404"/>
+    <rect width="11" height="1" x="2" y="4" fill="#000" opacity=".152"/>
+    <use fill="#000" filter="url(#морозилка-a)" xlink:href="#морозилка-b"/>
+    <rect width="10" height="13" x="2.5" y="8.5" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-c)" xlink:href="#морозилка-d"/>
+    <circle cx="5.5" cy="19.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-e)" xlink:href="#морозилка-f"/>
+    <circle cx="5.5" cy="16.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-g)" xlink:href="#морозилка-h"/>
+    <circle cx="5.5" cy="13.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-i)" xlink:href="#морозилка-j"/>
+    <circle cx="5.5" cy="10.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-k)" xlink:href="#морозилка-l"/>
+    <circle cx="9.5" cy="19.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-m)" xlink:href="#морозилка-n"/>
+    <circle cx="9.5" cy="16.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-o)" xlink:href="#морозилка-p"/>
+    <circle cx="9.5" cy="13.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#морозилка-q)" xlink:href="#морозилка-r"/>
+    <circle cx="9.5" cy="10.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+  </g>
+</svg>

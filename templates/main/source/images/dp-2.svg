@@ -9,9 +9,9 @@
   </defs>
   <g fill="none" fill-rule="evenodd">
     <rect width="15" height="23" x=".5" y=".5" stroke="#394791"/>
-    <rect width="1" height="16" x="7.5" y="7.5" fill="#394791" transform="rotate(90 8 15.5)"/>
+    <rect width="1" height="16" x="7.5" y="7.5" fill="#00b2b2" transform="rotate(90 8 15.5)"/>
     <rect width="12" height="1" x="2" y="17" fill="#000" opacity=".152"/>
     <use fill="#000" filter="url(#двухкамерный-a)" xlink:href="#двухкамерный-b"/>
-    <use fill="#394791" xlink:href="#двухкамерный-b"/>
+    <use fill="#00b2b2" xlink:href="#двухкамерный-b"/>
   </g>
 </svg>
