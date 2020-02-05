@@ -2,6 +2,17 @@
 
 $(document).ready(function () {
 
+	(function () {
+		let bgAttr = document.querySelectorAll('.dropdown-menu__item');
+		if (bgAttr) {
+			bgAttr.forEach(element => {
+				let url = element.getAttribute('data-bg');
+				element.style.background = `url('${url}')`;
+			});
+		}
+
+	})();
+
 	function hamburger(element, menu) {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu),
