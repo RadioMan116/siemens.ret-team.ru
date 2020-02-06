@@ -46,7 +46,7 @@
 
 			.category__caption {
 				color: white;
-				text-decoration: none !important;
+				text-decoration: underline !important;
 			}
 
 			.category__price {
@@ -119,7 +119,8 @@
 		}
 
 		.category__item {
-			background-position: calc(100%) top;
+			// background-position: calc(100%) top;
+			    background-position: calc(100% + 60px) center;
 			background-size: auto;
 			padding: 23px 99px 19px 16px !important;
 			height: auto;

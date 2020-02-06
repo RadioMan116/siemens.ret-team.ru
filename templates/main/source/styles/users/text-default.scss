@@ -2,7 +2,7 @@
 .articles-main__info,
 .about-store,
 .description {
-	margin-bottom: 48px;
+	margin-bottom: 14px;
 	display: flex;
 	flex-direction: column;
 
@@ -355,13 +355,21 @@
 			font-weight: 400;
 			line-height: 24px;
 		}
+
+		&:first-of-type {
+			background: red;
+		}
 	}
 
-	.official-dealers {
+	&.official-dealers {
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
 		margin-bottom: 29px;
+
+		.container {
+			display: flex;
+		}
 
 		h2 {
 			text-align: center;
@@ -381,7 +389,7 @@
 
 		// .official-dealers__link
 
-		&__link {
+		.official-dealers__link {
 			width: calc(50%-16px);
 			display: flex;
 			position: relative;
@@ -413,7 +421,8 @@
 					transform: scale(1.1);
 				}
 			}
-			picture{
+
+			picture {
 				min-height: 340px;
 			}
 		}
@@ -527,8 +536,8 @@
 			}
 		}
 
-		.official-dealers {
-			&__link {
+		&.official-dealers {
+			.official-dealers__link {
 				width: calc(100%);
 				display: flex;
 				position: relative;
@@ -545,7 +554,8 @@
 					margin: 0 0 0px !important;
 					height: auto !important;
 				}
-				picture{
+
+				picture {
 					min-height: 100%;
 				}
 			}
@@ -655,7 +665,7 @@
 		}
 
 		&.seo-text {
-			height: 700px;
+			// height: 700px;
 			overflow: hidden;
 			position: relative;
 		}

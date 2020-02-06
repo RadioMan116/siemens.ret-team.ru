@@ -38,8 +38,11 @@
 
 
 		&:hover {
-			box-shadow: unset;
-			border: 1px solid transparent;
+			box-shadow: 0 2px 21px rgba(0, 0, 0, .1);
+
+
+
+			// border: 1px solid transparent;
 		}
 	}
 
@@ -267,8 +270,6 @@
 		}
 	}
 
-
-
 	.swiper-pagination-bullet {
 		background: #000 !important;
 
@@ -301,7 +302,8 @@
 	}
 
 	&.promotional-goods {
-		margin-top: 0;
+		// margin-top: 0;
+		margin-top: 44px;
 		margin-bottom: 47px;
 
 		.swiper-pagination {
@@ -310,9 +312,8 @@
 			display: flex;
 			justify-content: flex-end;
 		}
-		.special-offers__title{
-			    margin-top: 44px;
-		}
+
+		.special-offers__title {}
 
 		.price__dashed {
 			position: relative;
@@ -478,7 +479,7 @@
 			padding: 19px 0 17px;
 		}
 
-		.swiper-pagination_2 {
+		.swiper-pagination {
 			display: flex;
 			bottom: -30px;
 			width: 100%;
@@ -507,6 +508,7 @@
 			.swiper-pagination {
 				position: unset;
 				margin: 28px auto 0;
+				width: auto;
 			}
 
 			.special-offers__slide {
