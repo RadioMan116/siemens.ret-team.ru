@@ -51,12 +51,17 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
-		padding-top: 24px;
+		padding-top: 19px;
+
+	}
+
+	.special-offers__pic {
+		max-height: 257px;
 
 	}
 
 	.special-offers__sale {
-		padding-top: 14px;
+		padding-top: 38px;
 	}
 
 
@@ -78,7 +83,7 @@
 
 		a,
 		i {
-			color: #394791;
+			color: $base;
 			font-style: initial;
 			padding: 0 5px;
 
@@ -88,7 +93,7 @@
 	&__link {
 		padding: 7px;
 		border-radius: 3px;
-		border: solid 1px #394791;
+		border: solid 1px #666666;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -96,7 +101,7 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #394791;
+		color: #333333;
 		margin: 41px auto;
 		text-transform: uppercase;
 		text-decoration: none !important;
@@ -168,10 +173,10 @@
 		.new-items__how {
 
 			color: #2e2e2e;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			margin-right: -3px;
-			margin-top: 27px;
+			margin-top: 0px;
 		}
 
 
@@ -183,77 +188,5 @@
 
 	}
 
-	// @media screen and (max-width: 480px) {
-	// 	padding-top: 28px !important;
-	// 	padding-bottom: 0px !important;
 
-	// 	.new-items__caption {
-	// 		align-items: center;
-	// 		width: 100%;
-	// 		margin-bottom: 27px
-	// 	}
-
-	// 	.new-items__title {
-	// 		margin-top: 0px;
-	// 	}
-
-	// 	.new-items__how {
-	// 		margin-bottom: 0;
-	// 		margin-left: auto;
-	// 	}
-
-	// 	.swiper-slide {
-	// 		align-content: flex-end;
-
-	// 		img {
-	// 			max-height: 250px;
-	// 		}
-	// 	}
-
-	// 	.swiper-container {
-	// 		.new-items__slide {}
-
-	// 		.special-offers__text {
-	// 			font-size: 18px;
-	// 			padding: 19px 0 18px;
-	// 		}
-
-	// 	}
-
-	// 	.swiper-pagination_3 {
-	// 		display: flex;
-	// 		bottom: 92px;
-	// 		left: 50%;
-	// 		transform: translateX(-50%);
-	// 		top: unset;
-	// 		width: 100%;
-	// 		margin: 0 auto;
-	// 		justify-content: center;
-
-	// 		* {
-	// 			margin: 0 5px;
-	// 		}
-	// 	}
-
-	// 	.new-items__link {
-	// 		margin-top: 62px;
-	// 		margin-bottom: 23px;
-	// 	}
-
-	// 	.announcing {
-	// 		top: 20px;
-	// 		left: 20px;
-	// 	}
-	// }
-
-	// @media screen and (max-width: 375px) {
-
-
-
-
-	// 	/*AGENT_SHEET*/
-	// 	.swiper-pagination_3 .swiper-pagination-bullet-active {
-	// 		background: #ffffff !important;
-	// 	}
-	// }
 }

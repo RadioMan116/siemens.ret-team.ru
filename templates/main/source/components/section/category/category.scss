@@ -22,7 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		background-repeat: no-repeat;
-		background-position: calc(100%-5px) bottom;
+		background-position: calc(100%-5px) 10px;
 		padding: 22px 150px 16px 26px;
 		background-color: #f1f1f1;
 		height: 144px;
@@ -42,18 +42,20 @@
 		}
 
 		&:hover {
-			background-color: #394791;
+			background-color: $base;
 
 			.category__caption {
-				color: #ffffff;
+				color: white;
 				text-decoration: none !important;
 			}
 
 			.category__price {
 				color: #ffffff;
+				margin-top: auto;
 			}
 		}
-		*{
+
+		* {
 			text-decoration: none !important;
 		}
 	}
@@ -61,7 +63,7 @@
 	// .category__caption
 
 	&__caption {
-		color: #394791;
+		color: $base;
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
@@ -75,6 +77,11 @@
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 24px;
+		margin-top: auto;
+
+		br {
+			display: none;
+		}
 	}
 
 
@@ -105,16 +112,16 @@
 				opacity: 1;
 
 				&-active {
-					background-color: #394791;
+					background-color: $base;
 				}
 			}
 
 		}
 
 		.category__item {
-			background-position: calc(100% + 29px) bottom;
+			background-position: calc(100%) top;
 			background-size: auto;
-			padding: 23px 99px 26px 16px !important;
+			padding: 23px 99px 19px 16px !important;
 			height: auto;
 			justify-content: space-between;
 
@@ -127,31 +134,37 @@
 				margin-right: auto;
 			}
 
-			&:hover {
-				background-color: #394791;
+			// &:hover {
+			// 	background-color: $base;
 
-				.category__caption {
-					color: #ffffff;
-					text-decoration: underline;
-				}
+			// 	.category__caption {
+			// 		color: #ffffff;
+			// 		text-decoration: underline;
+			// 	}
 
-				.category__price {
-					color: #ffffff;
-				}
-			}
+			// 	.category__price {
+			// 		color: #ffffff;
+			// 	}
+			// }
 		}
 
 		.category__caption {
+			// color: #bb0000;
+			font-family: "Roboto Condensed";
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 26px;
-			margin-bottom: 3px;
+			margin-bottom: 18px;
 		}
 
 		.category__price {
 			font-size: 14px;
 			font-weight: 700;
-			line-height: 1;
+			line-height: 1.3;
+
+			br {
+				display: block;
+			}
 		}
 
 		.swiper-pagination {
@@ -161,7 +174,7 @@
 		}
 
 		.category-container {
-			margin-bottom: 19px;
+			margin-bottom: 8px;
 		}
 	}
 }
