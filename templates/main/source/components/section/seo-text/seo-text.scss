@@ -1,5 +1,5 @@
 .about-brand {
-	margin-bottom: 53px;
+	margin-bottom: 36px;
 	// .about-brand__title
 
 	&__title {
@@ -9,11 +9,12 @@
 		font-weight: 400;
 		line-height: 24px;
 		margin-bottom: 24px;
+		margin-top: 44px;
 	}
 
 	p {
 		color: #262626;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 22px;
 
@@ -25,6 +26,10 @@
 
 	br {
 		line-height: 1;
+	}
+
+	.container {
+		display: block;
 	}
 
 	@media screen and (max-width: 767px) {
@@ -45,7 +50,7 @@
 			align-items: baseline;
 			width: 100%;
 			color: #262626;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 
@@ -72,11 +77,12 @@
 		font-weight: 400;
 		line-height: 24px;
 		margin-bottom: 24px;
+
 	}
 
 	p {
 		color: #262626;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 22px;
 
@@ -129,7 +135,7 @@
 			align-items: baseline;
 			width: 100%;
 			color: #262626;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 
@@ -145,7 +151,7 @@
 
 		.about-store__button {
 			color: #394791;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			display: block;
 			padding-bottom: 2px;

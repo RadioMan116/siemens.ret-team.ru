@@ -28,10 +28,10 @@
 		margin-right: 4px;
 		margin-bottom: 3px;
 		padding: 5px 11px;
-		display: none;
+
 
 		a {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 28px;
@@ -47,25 +47,33 @@
 		// 	margin-right: 0;
 		// }
 
-		&:hover {
-			border: 1px solid #334399;
-		}
 
 		&.active {
-			border: 1px solid #334399;
+			border: 1px solid #666666;
+			background-color: #F1F1F1;
 
 			a {
-				color: #394791;
-				font-family: Arial, sans-serif;
-				font-size: 14px;
-				font-weight: 700;
-				letter-spacing: 0.6px;
+				color:$base;
+				// font-family: Arial, sans-serif;
+				// font-size: 14px;
+				// font-weight: 700;
+				// letter-spacing: 0.6px;
 			}
 		}
 
 		&:hover {
-			background-color: rgba(238, 238, 238, 0.29);
+			border: 1px solid $base;
+			background-color: #F1F1F1;
+
+			a {
+				color: $base;
+				// font-family: Arial, sans-serif;
+				// font-size: 14px;
+				// font-weight: 700;
+				// letter-spacing: 0.6px;
+			}
 		}
+
 
 		&.button {
 			order: 2;
@@ -91,8 +99,8 @@
 
 	&__all {
 		border-radius: 3px;
-		border: 1px solid #394791;
-		color: #394791;
+		border: 1px solid $base;
+		color:$base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -111,8 +119,16 @@
 	}
 
 	&.main-tags {
-		margin-bottom: 48px;
+		margin-bottom: 41px;
 		position: relative;
+		// width: 1176px;
+		// max-width: 100%;
+		@media screen and (max-width: 1200px) {
+			margin: 0 16px 41px;
+			max-width: 100%;
+			width: calc(100% - 32px);
+		}
+
 	}
 
 	.text-default & {
@@ -145,6 +161,7 @@
 			max-width: 1176px;
 			overflow-x: scroll;
 			width: 1176px;
+			width: max-content;
 		}
 
 		&__title {
@@ -157,6 +174,34 @@
 
 		&__all {
 			display: none;
+		}
+
+		&__item {
+
+			&.last,
+			&.js-tags_data {
+				border: none;
+				display: flex;
+				align-items: center;
+				background-color: transparent;
+				color: $base;
+
+				a {
+					border-bottom: 1px dashed #bb0000;
+					line-height: 1;
+				}
+
+				&:after {
+					content: "";
+					background: url("https://icongr.am/entypo/chevron-small-down.svg?color=bb0000&size=50");
+					width: 12px;
+					height: 12px;
+					background-size: 22px;
+					background-position: 50%;
+					background-repeat: no-repeat;
+					margin-left: 5px
+				}
+			}
 		}
 	}
 }

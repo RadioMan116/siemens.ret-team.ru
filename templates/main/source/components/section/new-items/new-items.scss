@@ -93,7 +93,7 @@
 	&__link {
 		padding: 7px;
 		border-radius: 3px;
-		border: solid 1px #666666;
+		border: solid 1px $base;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -101,10 +101,20 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #333333;
+		color: $base;
 		margin: 41px auto;
 		text-transform: uppercase;
 		text-decoration: none !important;
+	}
+
+	&.special-offers {
+		.swiper-button-prev {
+			background: url("../images/new-items_prev.png") 0/34px no-repeat;
+		}
+
+		.swiper-button-next {
+			background: url("../images/new-items_next.png") 0/34px no-repeat;
+		}
 	}
 
 
@@ -187,6 +197,5 @@
 
 
 	}
-
 
 }

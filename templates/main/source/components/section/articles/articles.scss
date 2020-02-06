@@ -1,5 +1,5 @@
 .articles {
-	padding: 0 0 88px;
+	padding: 0 0 30px;
 
 	.container {
 		display: flex;
@@ -28,7 +28,7 @@
 		margin-left: auto;
 		padding: 10px 12px;
 		border-radius: 2px;
-		border: solid 1px #394791;
+		border: solid 1px $base;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -36,7 +36,7 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #394791;
+		color: $base;
 		text-transform: uppercase;
 		text-decoration: none !important;
 	}
@@ -99,7 +99,7 @@
 		color: #333333;
 
 		&:hover {
-			color: #394791;
+			color: $base;
 		}
 
 	}
@@ -188,11 +188,12 @@
 			flex-direction: column;
 			width: 100%;
 			height: auto;
+			align-items: baseline;
 
 			img {
 				max-width: 100%;
 				height: auto;
-				max-height: fit-content;
+				// max-height: fit-content;
 				width: 100%;
 			}
 

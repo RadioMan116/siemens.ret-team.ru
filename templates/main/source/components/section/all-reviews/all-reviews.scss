@@ -55,14 +55,14 @@
 	}
 
 	.reviews-main__link {
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
 		border-radius: 3px;
-		border: 1px solid #394791;
+		border: 1px solid $base;
 		margin: 0 auto;
 		padding: 5px 13px;
 		text-decoration: none !important;
@@ -109,10 +109,10 @@
 		}
 
 		.all-reviews__link {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			line-height: 1;
 			margin-right: 16px;
 			text-decoration: none !important;
@@ -132,7 +132,7 @@
 		width: fit-content;
 		height: 34px;
 		border-radius: 3px;
-		background-color: #394791;
+		background-color: $base;
 		color: #ffffff;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
@@ -162,10 +162,10 @@
 		}
 
 		.reviews-all__link {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			line-height: 1;
 
 			&.active {
@@ -204,11 +204,11 @@
 		align-self: flex-end;
 		margin-left: 7px;
 		line-height: 1;
-		color: #394791;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 14px;
 		margin-right: 30px;
-		border-bottom: 1px dashed #394791;
+		border-bottom: 1px dashed $base;
 
 		&:first-of-type {
 			// margin-right: auto;
@@ -237,7 +237,7 @@
 		// margin-top: 31px;
 		border-radius: 3px;
 		border: 1px solid #f1f1f1;
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -325,7 +325,7 @@
 	// 	text-decoration: none;
 
 	// 	&:hover {
-	// 		color: #394791;
+	// 		color: $base;
 	// 	}
 
 	// }
@@ -588,7 +588,7 @@
 	}
 
 	&__all {
-		color: #666666;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 24px;
@@ -914,6 +914,15 @@
 			// background-position: 50%;
 			// background-size: 21px 20px;
 		}
+
+		.ratings__number {
+			color: #333333;
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+			margin-left: 5px;
+		}
 	}
 
 	.reviews-list__col_desc {
@@ -958,14 +967,14 @@
 	}
 
 	.reviews-main__link {
-		color: #394791;
+		color:$base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
 		border-radius: 3px;
-		border: 1px solid #394791;
+		border: 1px solid $base;
 		margin: 0 auto;
 		padding: 5px 13px;
 		text-decoration: none !important;
@@ -978,16 +987,16 @@
 		position: relative;
 	}
 
-	.swiper-pagination-reviews-main {
+	.swiper-pagination {
 		position: absolute;
 	}
 
 
 
 	.swiper-button-prev {
-		background: url("../images/special-offers_prev.svg") 0/34px no-repeat;
+		background: url("../images/new-items_prev.png") 0/34px no-repeat;
 		position: absolute;
-		top: 68px;
+		top: 82px;
 		right: 48px;
 		left: unset;
 		width: 34px;
@@ -999,8 +1008,8 @@
 	}
 
 	.swiper-button-next {
-		background: url("../images/special-offers_next.svg") 0/34px no-repeat;
-		top: 68px;
+		background: url("../images/new-items_next.png") 0/34px no-repeat;
+		top: 82px;
 		right: 3px;
 		width: 34px;
 		height: 34px;
@@ -1010,8 +1019,8 @@
 		}
 	}
 
-	.swiper-pagination-reviews-main {
-		top: 50px;
+	.swiper-pagination {
+		top: 63px;
 		right: 124px;
 	}
 
@@ -1026,7 +1035,7 @@
 		width: 100%;
 		background: #fff;
 		padding: 8px 15px;
-		color: #394791;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 14px;
 		display: -webkit-box;
@@ -1037,12 +1046,13 @@
 		align-items: center;
 		z-index: 9;
 		cursor: pointer;
+
 		&:before {
 			content: "";
 			width: 119px;
 			position: absolute;
 			height: 1px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			bottom: 9px;
 		}
 
@@ -1059,10 +1069,11 @@
 
 	.swiper-container {
 		margin-bottom: 39px;
-		height: 208px;
+		height: 196px;
 
 		&.active {
 			height: auto;
+
 			.reviews-main__switch {
 
 				&:before {
@@ -1112,7 +1123,7 @@
 			display: none;
 		}
 
-		.swiper-pagination-reviews-main {
+		.swiper-pagination {
 			position: unset;
 			order: 4;
 			margin: 14px auto 20px;
@@ -1161,7 +1172,7 @@
 		}
 
 		.reviews__all {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 24px;
