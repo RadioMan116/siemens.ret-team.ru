@@ -368,7 +368,8 @@
 
 @media (max-width: 767px) {
 	.menu.active {
-		height: 500px;
+		// height: 500px;
+		height: auto;
 		// overflow-y: scroll;
 	}
 
