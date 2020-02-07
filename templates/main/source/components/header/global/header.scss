@@ -5,6 +5,9 @@
 	width: 100%;
 	margin-right: auto;
 	position: relative;
+	*{
+		transition: 0s;
+	}
 
 	.header-inner & {
 		flex-direction: row-reverse;
