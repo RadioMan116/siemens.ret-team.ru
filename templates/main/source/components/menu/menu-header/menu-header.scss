@@ -36,7 +36,7 @@
 
 			a,
 			span {
-				color:  $base;
+				color: $base;
 				text-decoration: none;
 			}
 		}
@@ -64,7 +64,7 @@
 
 	.city-change {
 		display: flex;
-		color:  $base;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
@@ -142,7 +142,8 @@
 			border-top: 1px solid #f1f1f1;
 			width: 100%;
 			padding-top: 1em;
-			padding-left: 10px;
+			padding-left: 0px;
+			margin-right: 0;
 
 
 			&.active {
@@ -157,6 +158,13 @@
 
 
 			&__title {}
+
+			color: $base;
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+			text-align: right;
 
 			&__bullet {}
 
@@ -178,9 +186,10 @@
 			order: 3;
 			flex-wrap: wrap;
 			height: unset;
-			max-height: 125px;
+			max-height: 120px;
 			padding-top: 1rem;
 			padding-bottom: 0;
+			margin-bottom: auto;
 
 			&:nth-of-type(4) {
 				display: none;
@@ -200,12 +209,18 @@
 			width: calc(100% + 32px);
 			flex-wrap: wrap;
 			background-color: #f1f1f1;
+			justify-content: space-between;
 		}
 
 		&__item {
-			width: 50%;
+			width: 40%;
 			margin-top: 17px;
 			cursor: pointer;
+			margin-left: 0 !important;
+
+			a {
+				white-space: nowrap;
+			}
 		}
 
 		.header__block_bottom & {
@@ -224,10 +239,10 @@
 		}
 
 		.header__phone {
-			margin-bottom: 2px;
+			margin-bottom: 5px;
 			color: #333333;
 			font-family: "Roboto Condensed";
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 400;
 			line-height: 26px;
 		}
@@ -251,8 +266,22 @@
 			}
 		}
 
+		.time-work__email {
+			color: #666666;
+			font-family: Arial;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 22px;
+			display: flex;
+			margin-top: 6px;
+
+			i {
+				display: none;
+			}
+		}
+
 		.abuse__button {
-			color: #394791;
+			color: $base;
 			font-family: Roboto Condensed;
 			font-size: 14px;
 			font-weight: 400;
@@ -262,13 +291,14 @@
 			padding-top: 5px;
 			padding-bottom: 5px;
 			width: 100%;
-			border: 1px solid #394791;
+			border: 1px solid $base;
 			text-align: center;
 			border-radius: 4px;
-			margin-top: 23px;
+			margin-top: 17px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			margin-top: 27px;
 		}
 	}
 

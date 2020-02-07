@@ -465,79 +465,82 @@
 			display: none;
 		}
 
-		.gallery {
-
-			&__items {
-				padding: 16px;
-			}
-
-			&__item {
-				display: none;
-			}
-
-			&__article {
-				color: #212121;
-				font-family: "Roboto Condensed";
-				font-size: 16px;
-				font-weight: 400;
-				line-height: 22px;
-				padding: 6px 16px 4px;
-			}
-
-			&__text {
-				color: #666666;
-				font-family: Arial;
-				font-size: 14px;
-				line-height: 19px;
-				padding: 0px 12px 5px 16px;
-			}
 
 
-			&__tablet {
-				display: flex;
-				flex-direction: column;
-				flex-grow: 1;
-				// padding-left: 10%;
-			}
+		&__items {
+			// padding: 16px;
+			padding: 16px 0;
+			max-width: 100%;
+			margin: 0;
+		}
 
-			&__el {
-				height: unset;
-				margin-left: unset;
-				width: 100%;
-				margin-bottom: 7px;
-				flex-basis: unset;
+		&__item {
+			display: none;
+		}
 
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
+		&__article {
+			color: #212121;
+			font-family: "Roboto Condensed";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+			padding: 6px 16px 4px;
+		}
 
-			&__link {
-				flex-direction: row;
-				margin: 0 auto;
-				align-items: center;
+		&__text {
+			color: #666666;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 19px;
+			padding: 0px 12px 5px 16px;
+		}
 
-				picture {
-					width: 21%;
-					height: auto;
-					height: 100%;
-					position: relative;
-					top: 0;
-					overflow: hidden;
-					padding-top: 12%;
-				}
 
-				img {
-					height: auto;
-					max-width: unset;
-					min-height: 56px;
-					position: absolute;
-					top: 0;
-					/* left: 0; */
-					right: 0;
-				}
+		&__tablet {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			// padding-left: 10%;
+		}
+
+		&__el {
+			height: unset;
+			margin-left: unset;
+			width: 100%;
+			margin-bottom: 7px;
+			flex-basis: unset;
+
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
+
+		&__link {
+			flex-direction: row;
+			margin: 0 auto;
+			align-items: center;
+
+			picture {
+				width: 21%;
+				height: auto;
+				height: 100%;
+				position: relative;
+				top: 0;
+				overflow: hidden;
+				padding-top: 12%;
+			}
+
+			img {
+				height: auto;
+				max-width: unset;
+				min-height: 56px;
+				position: absolute;
+				top: 0;
+				/* left: 0; */
+				right: 0;
+			}
+		}
+
 
 		&+.special-offers {
 			margin-top: 0px;

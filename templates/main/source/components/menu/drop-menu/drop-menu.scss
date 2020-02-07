@@ -161,6 +161,9 @@
 				margin-bottom: 22px;
 				align-items: baseline;
 
+
+
+
 				&:nth-child(4n+1) {
 					// width: calc(25% + 6px);
 					width: 28%;
@@ -176,13 +179,51 @@
 					margin: 0 0 22px 2%;
 				}
 
+				&:nth-child(1) {
+					background-size: 17% !important;
+					// background-position: calc(100% + 2px) 10px;
+				}
 
+				&:nth-child(2) {
+					background-size: 20% !important;
+				}
+
+				&:nth-child(3) {
+					background-size: 23% !important;
+					// background-position: calc(100%-3px) 2px;
+				}
+
+				&:nth-child(4) {
+					background-size: 22% !important;
+					// background-position: calc(100% - 20px) 10px;
+				}
+
+				&:nth-child(5) {
+					background-size: 17% !important;
+					// background-position: calc(100% - 12px) 10px;
+				}
+
+				&:nth-child(6) {
+					background-size: 20% !important;
+					// background-position: calc(100% - 9px) 14px;
+				}
+
+				&:nth-child(7) {
+					background-size: 22% !important;
+					// background-position: calc(100% - 9px) 14px;
+				}
+
+				&:nth-child(8) {
+					background-size: 22% !important;
+					// background-position: calc(100% - 9px) 14px;
+				}
 
 				&.accessory {
 					padding: 18px 18px 26px;
 					margin: 18px 0 24px;
-					background: #f8f8f8;
+					background-color: #f8f8f8 !important;
 					width: 100%;
+					background-size: 0% !important;
 
 
 					.dropdown-menu__link {
@@ -223,16 +264,16 @@
 				color: $base;
 				background: url("https://icongr.am/entypo/chevron-up.svg?color=00b2b2") calc(100%-14px)/14px no-repeat;
 
-					&:after {
-						content: '';
-						position: absolute;
-						width: 100%;
-						height: 5px;
-						background: white;
-						// top: 0;
-						left: 0;
-						bottom: -5px;
-					}
+				&:after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 5px;
+					background: white;
+					// top: 0;
+					left: 0;
+					bottom: -5px;
+				}
 			}
 
 			.dropdown-menu__parent {
@@ -252,7 +293,7 @@
 				display: flex;
 				justify-content: center;
 				background: white;
-				 box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+				box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 
 				// &:before,
 				// &:after {
@@ -494,29 +535,68 @@
 					box-shadow: none !important;
 				}
 
-				.dropdown-menu__item {
+				.dropdown-menu__item,
+				.dropdown-menu__item.accessory {
 					width: 100% !important;
 					background-position: 0px 18px !important;
 					background-size: auto 32px !important;
-					margin:0 0 5px 0 !important;
+					margin: 0 0 5px 0 !important;
 					flex-basis: unset;
 					flex-grow: 1;
 					max-width: 100%;
+					padding: 0 !important;
 
-					&:nth-child(5) {
-						background-position: 0px 25px !important;
-						background-size: 32px !important;
-						margin-bottom: 5px;
+					// &:nth-child(5) {
+					// 	background-position: 0px 25px !important;
+					// 	background-size: 32px !important;
+					// 	margin-bottom: 5px;
+					// }
+
+					&:nth-child(1) {
+						background-size: 48px !important;
+						// background-position: calc(100% + 2px) 10px;
 					}
 
-					&.banner {
-						width: auto;
-						margin-right: 0;
-						padding-left: 0;
-						padding-right: 0;
-						flex-basis: 288px;
-						flex-grow: 0;
-						margin-top: 16px;
+					&:nth-child(2) {
+						background-size: 48px !important;
+					}
+
+					&:nth-child(3) {
+						background-size: 48px !important;
+						// background-position: calc(100%-3px) 2px;
+					}
+
+					&:nth-child(4) {
+						background-size: 48px !important;
+						// background-position: calc(100% - 20px) 10px;
+					}
+
+					&:nth-child(5) {
+						background-size: 48px !important;
+						// background-position: calc(100% - 12px) 10px;
+					}
+
+					&:nth-child(6) {
+						background-size: 14% !important;
+						// background-position: calc(100% - 9px) 14px;
+					}
+
+					&:nth-child(7) {
+						background-size: 48px !important;
+						// background-position: calc(100% - 9px) 14px;
+					}
+
+					&:nth-child(8) {
+						background-size: 48px !important;
+						// background-position: calc(100% - 9px) 14px;
+					}
+
+					&.accessory {
+
+						background: url("../images/siemens-menu-9.png") no-repeat !important;
+						background-size: 48px !important;
+						background-color: unset !important;
+						background-position: 0px 18px !important;
 
 						a {
 							display: flex;
@@ -525,26 +605,52 @@
 						}
 
 						.dropdown-menu__link {
-							margin: 0px auto 24px 0;
-							height: auto;
-							display: flex;
-							flex-direction: row;
+							padding: 8px 0 2.2px !important;
+							margin-top: 12px;
+							white-space: normal !important;
+							font-weight: 400;
+							// line-height: 24px;
+							color: #333333;
 							font-size: 16px;
-							padding: 9px 11px;
-							flex-wrap: wrap;
-							text-decoration: unset !important;
+							font-weight: 400;
+							margin-left: 63px;
+							line-height: 36px;
+							background: white;
 
-							b {
-								margin-left: 0px;
-							}
+
 						}
+							.sub-menu__list {
+								padding-left: 24px;
+								margin-bottom: 0px;
+								flex-direction: column;
+							}
+
+							.sub-menu__link {
+								color: #666666;
+								font-size: 13px;
+								font-weight: 400;
+								line-height: 24px;
+								display: flex;
+								align-items: center;
+								flex-direction: row;
+
+
+								&:before {
+									content: " ∙ ";
+									margin-right: 6px;
+								}
+							}
+								.sub-menu__item {
+									padding-left: 36px;
+									width: 100% !important;
+								}
 					}
 				}
 			}
 		}
 
 		.sub-menu__list {
-			padding-left: 13px;
+			padding-left: 24px;
 			margin-bottom: 0px;
 			flex-direction: column;
 		}
@@ -566,7 +672,7 @@
 
 		.dropdown-menu__link,
 		.dropdown-menu__text {
-			padding: 5px 0 2.2px;
+			padding: 8px 0 2.2px !important;
 			margin-top: 12px;
 			white-space: normal !important;
 			font-weight: 400;
@@ -574,7 +680,7 @@
 			color: #333333;
 			font-size: 16px;
 			font-weight: 400;
-			margin-left: 49px;
+			margin-left: 63px;
 			line-height: 36px;
 		}
 
