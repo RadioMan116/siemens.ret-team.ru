@@ -35,6 +35,7 @@
 	@media screen and (max-width: 767px) {
 		margin-bottom: 22px;
 
+
 		&__title {
 			color: #262626;
 			font-family: "Roboto Condensed";
@@ -146,17 +147,17 @@
 				order: 2;
 				margin-top: 15px;
 				max-width: calc(100% + 32px);
-width:calc(100% + 32px);
+				width: calc(100% + 32px);
 			}
 		}
 
 		.about-store__button {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			display: block;
 			padding-bottom: 2px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			width: fit-content;
 			position: absolute;
 			left: 16px;

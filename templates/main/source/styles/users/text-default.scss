@@ -51,7 +51,7 @@
 		font-stretch: normal;
 		line-height: 32px;
 		letter-spacing: normal;
-		color: #394791;
+		color: $base;
 		margin-bottom: 40px;
 	}
 
@@ -80,7 +80,7 @@
 		margin: 6px 0 16px;
 
 		a {
-			color: #394791;
+			color: $base;
 
 			&[href^="tel:"] {
 				font-size: 14px;
@@ -335,7 +335,7 @@
 		padding: 16px;
 
 		a {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 12px;
 			margin-right: 26px;
@@ -358,6 +358,20 @@
 
 		&:first-of-type {
 			background: red;
+		}
+
+		.container {
+			* {
+				display: none;
+				&:nth-child(-n+5) {
+					display: block;
+				}
+			}
+			&.active{
+				*{
+					display: block;
+				}
+			}
 		}
 	}
 
@@ -559,6 +573,9 @@
 					min-height: 100%;
 				}
 			}
+			p{
+				margin-bottom: 23px;
+			}
 		}
 
 
@@ -672,15 +689,15 @@
 
 		.about-store__button {
 			position: absolute;
-			bottom: 0px;
+			bottom: -10px;
 			left: 0;
 			width: 100%;
 			background: white;
 			padding: 8px 15px;
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
-			display: flex;
+			display: flex !important;
 			align-items: center;
 
 			&:before {
@@ -688,8 +705,8 @@
 				width: 119px;
 				position: absolute;
 				height: 1px;
-				border-bottom: 1px dashed #394791;
-				bottom: 9px;
+				border-bottom: 1px dashed $base;
+				bottom: 10px;
 			}
 
 			&:after {
@@ -702,11 +719,12 @@
 			}
 		}
 
-		&.active {
+		.active {
 			height: auto;
 
 			.about-store__button {
 				position: static;
+				padding-left: 0;
 
 				&:before {
 					width: 63px;
@@ -715,7 +733,7 @@
 				&:after {
 					content: '';
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=666666") center/16px no-repeat;
-					left: 80px;
+					left: 100px;
 				}
 			}
 

@@ -472,6 +472,7 @@
 			padding: 16px 0;
 			max-width: 100%;
 			margin: 0;
+			position: relative;
 		}
 
 		&__item {
@@ -492,7 +493,7 @@
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 19px;
-			padding: 0px 12px 5px 16px;
+			padding: 0px 12px 5px 12px;
 		}
 
 
@@ -536,8 +537,8 @@
 				min-height: 56px;
 				position: absolute;
 				top: 0;
-				/* left: 0; */
-				right: 0;
+				left: 0;
+				// right: 0;
 			}
 		}
 
