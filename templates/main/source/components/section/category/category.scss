@@ -53,7 +53,7 @@
 
 		&:nth-child(3) {
 			background-size: 49%;
-				background-position: calc(100%-3px) 2px;
+			background-position: calc(100%-3px) 2px;
 		}
 
 		&:nth-child(4) {
@@ -152,7 +152,7 @@
 
 		.category__item {
 			// background-position: calc(100%) top;
-		 	background-position: calc(100% + 30px) center !important;
+			background-position: calc(100% + 30px) center !important;
 			background-size: 130px !important;
 			padding: 23px 99px 19px 16px !important;
 			height: auto;
@@ -208,6 +208,10 @@
 
 		.category-container {
 			margin-bottom: 8px;
+		}
+
+		&+.special-offers {
+			margin-top: 26px;
 		}
 	}
 }
