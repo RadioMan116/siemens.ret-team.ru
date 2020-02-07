@@ -247,6 +247,7 @@ picture {
 
 	.fixed {
 		width: 100%;
+		overflow: hidden;
 
 		.header {
 			+.section {

@@ -403,6 +403,7 @@
 			padding-left: 0px;
 			width: 100%;
 
+
 			&__three {
 				margin-bottom: 0;
 				border-bottom: 0;
@@ -525,7 +526,7 @@
 				}
 
 				.dropdown-menu__list {
-					overflow: unset;
+					overflow: hidden;
 					max-height: unset;
 					flex-direction: column;
 				}
