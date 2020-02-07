@@ -18,9 +18,12 @@ img {
 }
 
 .fixed {
-	overflow: hidden;
-	// width:calc(100% - 17px);
 
+	// overflow: hidden;
+	// width:calc(100% - 17px);
+	@media (min-width: 767px) {
+		// overflow: hidden;
+	}
 }
 
 // .swiper-container,

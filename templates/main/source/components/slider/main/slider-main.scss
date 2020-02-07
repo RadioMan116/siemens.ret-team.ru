@@ -254,6 +254,7 @@
 			flex-wrap: wrap;
 			padding-top: 44px;
 			// background: #0000006b
+
 		}
 
 		&__title {
@@ -298,6 +299,8 @@
 			h1.span__small {
 				margin-bottom: 32px;
 			}
+
+
 
 		}
 
@@ -360,10 +363,22 @@
 
 	}
 
+	@media screen and (max-width: 1024px) {
+		.swiper__item {
+			padding-top: 10px;
+		}
+
+		.swiper__title {
+			margin-left: 18px;
+		}
+
+		&__items {
+			margin: 0 0 -7px;
+		}
+	}
 }
 
 
-@media screen and (max-width: 900px) {}
 
 @media screen and (max-width: 767px) {
 	.gallery {
