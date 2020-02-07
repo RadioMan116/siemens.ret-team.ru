@@ -507,6 +507,7 @@
 
 			.dropdown-menu__parent {
 				margin-left: -31px;
+
 			}
 
 			&.active {
@@ -529,6 +530,7 @@
 					flex-direction: row;
 					flex-wrap: wrap;
 					width: 100%;
+					padding: 0;
 				}
 
 				.dropdown-menu__list {
