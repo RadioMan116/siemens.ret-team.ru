@@ -146,6 +146,9 @@
 				height: 100%;
 				align-content: baseline;
 				// justify-content: space-between;
+					@media screen and (max-width: 1024px) {
+						justify-content: center;
+					}
 			}
 
 			.dropdown-menu__item {
@@ -294,6 +297,7 @@
 				justify-content: center;
 				background: white;
 				box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+				padding: 0 16px;
 
 				// &:before,
 				// &:after {
@@ -313,6 +317,7 @@
 				// &:after {
 				// 	right: calc(-100% + 1px);
 				// }
+
 			}
 
 		}
