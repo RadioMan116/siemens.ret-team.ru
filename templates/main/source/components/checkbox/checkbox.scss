@@ -61,7 +61,7 @@
 }
 
 .checkbox__input:checked~.checkbox__icon {
-	border: 1px solid #394791;
+	border: 1px solid  $base;
 }
 
 .checkbox__input:checked~.checkbox__icon:before {

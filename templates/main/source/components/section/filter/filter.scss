@@ -16,7 +16,7 @@
 		&::before {
 			width: 14px;
 			height: 14px;
-			content: url('../images/price updated.svg');
+			content: url('../images/price_updated.svg');
 			margin-right: 9px;
 			flex-shrink: 0;
 		}
@@ -88,7 +88,7 @@
 			/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
 			&:hover+.checkbox-custom {
 				color: #ffffff;
-				background: #394791 !important;
+				background: $base !important;
 				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 			}
 
@@ -122,7 +122,7 @@
 		}
 
 		.close__filter {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 16px;
 			font-weight: 400;
@@ -250,14 +250,14 @@
 			background-position: 0 0;
 			height: 4px;
 			border-radius: 2px;
-			background-color: #394791;
+			background-color: $base;
 		}
 
 		.ui-slider-handle {
 			width: 15px;
 			height: 15px;
 			border-radius: 2px;
-			border: 3px solid #394791;
+			border: 3px solid $base;
 			background-color: #ffffff;
 			padding: 0;
 			position: absolute;
@@ -316,7 +316,7 @@
 
 			&:hover {
 				color: #fff;
-				background: #394791 !important;
+				background: $base !important;
 
 				&:after {
 					margin-left: 10px;
@@ -343,7 +343,7 @@
 		}
 
 		.more-text {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 18px;
@@ -357,6 +357,7 @@
 			order: 5;
 			width: 100%;
 			margin-top: 10px;
+			border-bottom: 1px dashed $base;
 		}
 	}
 
@@ -378,12 +379,12 @@
 			line-height: normal;
 			letter-spacing: normal;
 			text-align: center;
-			color: #394791;
+			color: $base;
 
 			padding: 14px 0;
 			width: 100%;
 			border-radius: 2px;
-			border: solid 1px #394791;
+			border: solid 1px $base;
 			text-transform: uppercase;
 			margin-bottom: 19px;
 		}
@@ -395,7 +396,7 @@
 			margin-right: 20px;
 		}
 
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -459,7 +460,7 @@
 			background: none;
 			width: auto;
 			height: auto;
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 18px;
@@ -557,7 +558,7 @@
 				position: absolute;
 				right: 20px;
 				bottom: -100%;
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -697,7 +698,7 @@
 
 
 			span {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -767,6 +768,7 @@
 }
 
 .filter-new.bx-filter.bx-blue {
+	margin-bottom: 20px;
 
 	// max-width: 100%;
 	// margin: 0 -6px;
@@ -900,6 +902,7 @@
 		display: flex;
 		position: relative;
 		padding-right: 13px;
+		max-width: 235px;
 
 		span {
 			color: #333333;
@@ -918,12 +921,13 @@
 		i[data-role="prop_angle"] {
 			position: absolute;
 			right: 0;
-			left: 220px;
+			left: 228px;
 			width: 12px;
 			height: 12px;
 			background-size: 22px;
 			background-position: center;
 			background-repeat: no-repeat;
+			top: 5px;
 		}
 
 		.fa-angle-up {
@@ -959,7 +963,7 @@
 			padding-left: 28px;
 
 			&[name="del_filter"] {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -990,6 +994,15 @@
 
 			.more-text {
 				position: absolute;
+
+				&:after {
+					content: '';
+					position: absolute;
+					border-bottom: 1px dashed $base;
+					bottom: 5px;
+					width: 85px;
+					left: 0px;
+				}
 			}
 
 			.col-xs-12 {
@@ -998,7 +1011,7 @@
 		}
 
 		.more-text {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 18px;
@@ -1011,6 +1024,18 @@
 			cursor: pointer;
 			order: 5;
 			width: calc(100% - 50px);
+
+			&:after {
+				content: '';
+				position: absolute;
+				border-bottom: 1px dashed $base;
+				bottom: 5px;
+				width: 58px;
+				left: 19px;
+			}
+
+			// border-bottom: 1px dashed $base;
+
 		}
 	}
 
@@ -1074,7 +1099,7 @@
 		// border-radius: 2px;
 		// background-color: #dbdbdb;
 		// background: url(../images/slider.png) 100% 5px repeat-x;
-		background: #394791;
+		background: $base;
 	}
 
 	.bx-ui-slider-pricebar-vn {
@@ -1087,14 +1112,14 @@
 
 	.bx-ui-slider-pricebar-v {
 		border-radius: 2px;
-		background: #394791;
+		background: $base;
 	}
 
 	.bx-ui-slider-handle {
 		width: 15px;
 		height: 15px;
 		border-radius: 2px;
-		border: 3px solid #394791;
+		border: 3px solid $base;
 		background-color: #fff;
 		padding: 0;
 		position: absolute;
@@ -1136,7 +1161,7 @@
 
 			&:hover+.bx-filter-param-text {
 				color: #ffffff;
-				background: #394791 !important;
+				background: $base !important;
 
 				span {
 					color: #ffffff;
@@ -1165,6 +1190,10 @@
 		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 20px;
+
+		span {
+			color: #999999;
+		}
 	}
 
 	.bx-filter-button-box {
@@ -1207,6 +1236,7 @@
 			width: 14px;
 			height: 14px;
 			background: url('../images/chara__on.png') no-repeat;
+			background-size: contain !important;
 		}
 
 		.popup-gloss {
@@ -1279,7 +1309,7 @@
 		}
 
 		.filter-glossary__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1292,7 +1322,7 @@
 		// background: white;
 		box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
 		border-radius: 3px;
-		background-color: #394791;
+		background-color: $base;
 		border-image: none;
 		color: #ffffff;
 		font-family: Arial, sans-serif;
@@ -1311,7 +1341,7 @@
 			height: 31px;
 			// transform:;
 			border-radius: 4px;
-			background-color: #394791;
+			background-color: $base;
 			top: 42%;
 			transform: rotate(-45deg)translateY(-50%);
 			left: 5px;
@@ -1336,7 +1366,8 @@
 				content: '.     ';
 				margin-right: 4px;
 			}
-			&:after{
+
+			&:after {
 				content: '';
 				position: absolute;
 				width: 100%;
@@ -1345,13 +1376,34 @@
 				left: 0;
 			}
 		}
-		&[style="display: inline-block;"]{
+
+		&[style="display: inline-block;"] {
 			display: flex !important;
 		}
-		#modef_num{
+
+		#modef_num {
 			margin-left: 4px;
 		}
 	}
+
+	input#del_filter {
+		display: flex;
+		align-items: center;
+		width: 176px;
+		height: 40px;
+		border-radius: 3px;
+		padding: 9px 43px 8px 16px;
+		// background: $base;
+		color: #ffffff;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
+		margin-left: -8px;
+	}
+
 
 	@media screen and (max-width: 767px) {
 		display: flex;
@@ -1392,17 +1444,17 @@
 		.filter-new__button {
 			background-color: #f8f8f8;
 			order: -1;
-			padding: 11px 0 11px 16px;
+			padding: 11px 16px;
 
 
 			span {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
 				text-transform: uppercase;
-				border-bottom: 1px dashed #394791;
+				border-bottom: 1px dashed $base;
 				width: 110px;
 				height: 28px;
 			}
@@ -1462,6 +1514,131 @@
 
 		&~.sidebar {
 			display: none;
+		}
+
+		.new-catalog & {
+			position: relative;
+
+			&:before {
+				content: 'Фильтр';
+				color: $base;
+				font-family: "Roboto Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				text-transform: uppercase;
+				height: 48px;
+				background: url('../images/open-filter.svg')no-repeat 18px 50% #f8f8f8;
+				display: flex;
+				align-items: center;
+				padding-left: 48px;
+				width: calc(100% - 90px);
+				border-left: solid 1px #eeeeee;
+				border-top: solid 1px #eeeeee;
+				z-index: 1;
+			}
+
+			.filter-new__button {
+				background-color: #f8f8f8;
+				order: unset;
+				padding: 0;
+				width: 78px;
+				height: 40px;
+				border-radius: 3px;
+				border: solid 1px $base;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				bottom: 17px;
+				right: 10px;
+
+				span {
+					color: $base;
+					font-family: "Roboto Condensed";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 24px;
+					text-transform: uppercase;
+					border-bottom: none;
+					width: auto;
+					height: auto;
+				}
+			}
+
+
+			&.active {
+				min-width: 188px;
+				width: calc(100% - 100px);
+
+
+				&:before {
+					display: none;
+				}
+
+
+				.filter-new__button {
+					background-color: $base;
+					display: flex;
+					align-items: center;
+					min-height: 48px;
+					width: auto;
+					padding: 11px 16px;
+					position: static;
+
+					&:before {
+						content: '';
+						width: 20px;
+						height: 16px;
+						background: url('../images/close-filter.svg');
+						margin-right: 10px;
+					}
+
+					&:after {
+						content: '';
+						background: url('https://icongr.am/entypo/chevron-small-down.svg?color=ffffff&size=50');
+						width: 12px;
+						height: 12px;
+						background-size: 22px;
+						background-position: center;
+						background-repeat: no-repeat;
+						margin-left: auto;
+					}
+
+					span {
+						color: #ffffff;
+						font-family: "Roboto Condensed";
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 24px;
+						text-transform: uppercase;
+						width: auto;
+						height: auto;
+					}
+				}
+
+				.bx-filter-section {
+					border: none;
+				}
+			}
+
+			input#del_filter {
+				display: flex;
+				align-items: center;
+				width: 176px;
+				height: 40px;
+				border-radius: 3px;
+				padding: 9px 43px 8px 16px;
+				// background: $base;
+				color: #ffffff;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				text-transform: uppercase;
+				background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
+				margin-left: -8px;
+			}
 		}
 	}
 }

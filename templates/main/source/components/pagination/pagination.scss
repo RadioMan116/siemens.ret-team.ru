@@ -49,10 +49,12 @@
 			width: 32px;
 			height: 32px;
 			border-radius: 2px;
-			border: 1px solid #394791;
+			// border: 1px solid #394791;
+			background: #f1f1f1;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			color: $base;
 		}
 	}
 

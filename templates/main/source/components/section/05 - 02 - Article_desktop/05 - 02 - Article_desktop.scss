@@ -22,7 +22,7 @@
 	&__slider {
 		.container {
 			background-color: #f8f8f8;
-			padding-top: 40px;
+			padding-top: 0px;
 			padding-bottom: 58px;
 
 			&::before {
@@ -70,7 +70,7 @@
 		line-height: 30px;
 		letter-spacing: normal;
 		text-align: left;
-		color: #394791;
+		color: $base;
 		margin: 42px 0 32px;
 	}
 
@@ -138,7 +138,7 @@
 
 
 		.article-back {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
@@ -185,6 +185,10 @@
 
 			.special-offers {
 				margin-top: 0;
+
+				&__title {
+					margin-top: 46px;
+				}
 			}
 
 			.swiper-container-two {
@@ -193,7 +197,7 @@
 				flex-direction: column;
 
 				.swiper-wrapper {
-					padding-top: 44px;
+					padding-top: 24px;
 					height: unset !important;
 					max-height: 700px !important;
 					align-items: unset;
@@ -285,7 +289,7 @@
 			flex-basis: 200px;
 
 			.sof-req {
-				color: #394791;
+				color: $base;
 			}
 		}
 	}
@@ -371,11 +375,11 @@
 			line-height: 1.5;
 			letter-spacing: normal;
 			text-align: left;
-			// color: #394791;
+			// color: $base;
 			margin: 31px 0 41px;
 
 			a {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -383,7 +387,7 @@
 			width: 272px;
 			height: 46px;
 			border-radius: 2px;
-			background-color: #394791;
+			background-color: $base;
 			color: white;
 			margin-left: -25px;
 			text-transform: uppercase;
@@ -413,19 +417,20 @@
 
 	}
 
-	.swiper-scrollbar {
-		display: flex !important;
-		width: 100%;
-		height: 10px;
-		border-radius: 8.5px;
-		margin-top: 41px;
+	.special-offers {
 
-		&-drag {
-			background-color: #394791;
+		.swiper-scrollbar {
+			display: flex;
+			width: 100%;
+			// height: 10px;
+			border-radius: 8.5px;
+			// margin-top: 41px;
+
+			&-drag {
+				background-color: $base;
+			}
 		}
 	}
-
-
 
 	@media screen and (max-width: 767px) {
 
@@ -436,6 +441,7 @@
 			font-size: 24px;
 			font-weight: 400;
 			margin-bottom: 22px;
+			margin-top: 0 !important;
 		}
 
 		&__section {
@@ -473,7 +479,11 @@
 
 			.container {
 				margin: 0;
-				padding-bottom: 11px;
+				padding-bottom: 11px !important;
+			}
+
+			.swiper-wrapper {
+				padding-top: 0 !important;
 			}
 		}
 
@@ -485,7 +495,7 @@
 			line-height: 1.67;
 			letter-spacing: normal;
 			text-align: left;
-			color: #394791;
+			color: $base;
 			margin: 33px 0 17px;
 		}
 
@@ -524,7 +534,7 @@
 			line-height: 1.63;
 			letter-spacing: normal;
 			text-align: left;
-			color: #394791;
+			color: $base;
 			margin: 28px 0 22px;
 		}
 
@@ -610,7 +620,7 @@
 			margin: 0 5px;
 
 			&-active {
-				background: #394791 !important;
+				background: $base !important;
 			}
 		}
 

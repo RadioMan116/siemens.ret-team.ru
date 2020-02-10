@@ -124,7 +124,7 @@
 			height: 36px;
 			font-family: Roboto Condensed;
 			font-size: 14px;
-			background-color: #394791;
+			background-color: $base;
 			background-repeat: no-repeat;
 			box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
 			text-decoration: none;
@@ -244,7 +244,7 @@
 		// .marking__item
 
 		&__item {
-			background-color: #394791;
+			background-color: $base;
 			padding: 12px 18px 18px 24px;
 		}
 
@@ -379,7 +379,7 @@
 			}
 
 			span {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -400,10 +400,10 @@
 			margin-left: auto;
 			padding: 9px 12px;
 			border-radius: 2px;
-			border: 1px solid #394791;
+			border: 1px solid $base;
 			font-size: 14px;
 			line-height: normal;
-			color: #394791;
+			color: $base;
 			text-transform: uppercase;
 			text-decoration: none !important;
 			display: flex;
@@ -556,7 +556,7 @@
 		font-stretch: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #394791;
+		color: $base;
 		margin-left: 47px;
 	}
 
@@ -596,10 +596,10 @@
 //       letter-spacing: normal;
 //       text-align: center;
 //       text-transform: uppercase;
-//       color: #394791;
+//       color: $base;
 //       padding: 4px 27px;
 //       border-radius: 2px;
-//       border: solid 1px #394791;
+//       border: solid 1px $base;
 //       text-decoration: none !important;
 //       white-space: nowrap;
 //       margin-left: auto;
@@ -643,10 +643,10 @@
 	letter-spacing: normal;
 	text-align: center;
 	text-transform: uppercase;
-	color: #394791;
+	color: $base;
 	padding: 7px 13px 5px 14px;
 	border-radius: 2px;
-	border: 1px solid #394791;
+	border: 1px solid $base;
 	text-decoration: none !important;
 	margin-bottom: 7px;
 
@@ -776,10 +776,10 @@
 		letter-spacing: normal;
 		text-align: left;
 		text-transform: uppercase;
-		color: #394791;
+		color: $base;
 		padding: 7px 13px 5px 14px;
 		border-radius: 2px;
-		border: solid 1px #394791;
+		border: solid 1px $base;
 		text-decoration: none !important;
 		width: 150px !important;
 	}
@@ -832,7 +832,7 @@
 	}
 
 	&__text {
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
