@@ -48,7 +48,7 @@
 	.seach-found {}
 
 	.catalog__text {
-		padding: 15px 0 2px !important;
+		padding: 20px 0 3px !important;
 		min-height: 95px;
 		flex-shrink: 0;
 		color: #333333;
@@ -62,7 +62,7 @@
 		display: flex;
 		align-items: flex-end;
 		padding: 0px;
-		flex-grow: 99;
+		flex-grow: 1;
 		flex-wrap: wrap;
 		align-content: baseline;
 
@@ -100,7 +100,6 @@
 			padding-right: 5px;
 		}
 	}
-
 
 	&__ul {
 		display: flex;
@@ -529,7 +528,6 @@
 		}
 	}
 
-
 	.description {
 		padding: 45px 0 20px;
 		margin-bottom: 2rem;
@@ -844,7 +842,7 @@
 			line-height: 24px;
 			text-transform: uppercase;
 			border-radius: 3px;
-			border: 1px solid  $base;
+			border: 1px solid $base;
 			padding: 4px 15px;
 			margin-right: 21px;
 
@@ -859,7 +857,7 @@
 			text-transform: uppercase;
 			border-radius: 3px;
 			background-color: #394791;
-			border: 1px solid  $base;
+			border: 1px solid $base;
 			padding: 4px 15px;
 			margin-right: 16px;
 			display: flex;
@@ -974,6 +972,7 @@
 			font-size: 26px;
 			font-weight: 400;
 			line-height: 24px;
+			margin: 23px 0;
 		}
 
 		// .reviews__top
@@ -1126,7 +1125,7 @@
 		// .advantages__title
 
 		&__title {
-			color: $base;
+		  color: #212121;
 			font-family: "Roboto Condensed";
 			font-size: 26px;
 			font-weight: 400;
@@ -1136,7 +1135,11 @@
 
 		// .advantages__container
 
-		&__container {}
+		&__container.swiper-container {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
 
 		// .advantages__wrapper
 
@@ -1279,7 +1282,7 @@
 		// .all-video__link
 
 		&__more {
-			color: #333333;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1287,11 +1290,11 @@
 			text-transform: uppercase;
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: 0px;
 			width: 97px;
 			height: 36px;
 			border-radius: 3px;
-			border: 1px solid #666666;
+			border: 1px solid $base;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -1375,7 +1378,7 @@
 
 		&__link {
 			border-radius: 3px;
-			border: 1px solid  $base;
+			border: 1px solid $base;
 			color: #333333;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
@@ -1391,7 +1394,11 @@
 
 		// .instructions__items
 
-		&__items {}
+		&__items.swiper-container {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
 
 		// .instructions__item
 
@@ -1494,6 +1501,12 @@
 
 	&.catalog__thumb,
 	&.catalog__list {
+		.swiper-container {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
 		.instructions {
 			align-items: flex-start;
 			padding-top: 12px;
@@ -1667,7 +1680,7 @@
 		.articles {
 			display: flex;
 			flex-wrap: wrap;
-			align-items: baseline;
+			align-items: flex-start;
 
 			&__list {
 				width: 100%;
@@ -1871,6 +1884,8 @@
 			.swiper-container {
 				max-width: 100%;
 				width: 100%;
+				margin: 0;
+				padding: 0;
 			}
 
 			.swiper-wrapper {}
@@ -2051,8 +2066,6 @@
 
 		.load-more {}
 	}
-
-
 
 	@media screen and (max-width: 767px) {
 		width: 100% !important;
@@ -2500,6 +2513,8 @@
 				top: unset;
 				right: unset;
 				bottom: 0;
+				width: 100%;
+				justify-content: center;
 			}
 
 			.advantages__slide {
@@ -2837,7 +2852,7 @@
 			.swiper-pagination-articles {
 				display: flex;
 				justify-content: center;
-				margin-bottom: 24px;
+				margin-bottom: 14px;
 			}
 
 			&__pic {
