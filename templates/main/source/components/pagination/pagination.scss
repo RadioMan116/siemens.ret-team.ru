@@ -1,20 +1,23 @@
 .pagination {
 	display: flex;
 	align-items: center;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 40px auto;
 	justify-content: center;
 
 	&__prev {
-		margin-right: 33px;
+		margin-right: 8px;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 32px;
+		height: 32px;
+
 
 		&:after {
 			content: '';
-			border-left: 2px solid #666666;
-			border-bottom: 2px solid #666666;
+				border-left: 2px solid #666666;
+				border-bottom: 2px solid #666666;
 			display: block;
 			width: 10px;
 			height: 10px;
@@ -22,10 +25,19 @@
 			transform: rotate(45deg)
 		}
 
+		&.active {
+			&:after {
+				content: '';
+				border-left: 2px solid #666666;
+				border-bottom: 2px solid #666666;
+
+			}
+		}
+
 	}
 
 	&__item {
-		margin-right: 33px;
+		margin-right: 8px;
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;
@@ -40,6 +52,8 @@
 		align-items: center;
 		text-decoration: none;
 		color: #333333;
+		width: 32px;
+		height: 32px;
 
 		&:hover {
 			color: $base;
@@ -59,7 +73,7 @@
 	}
 
 	&__more {
-		margin-right: 33px;
+		margin-right: 8px;
 		font-size: 16px;
 		font-weight: 500;
 		font-style: normal;
@@ -76,6 +90,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 32px;
+		height: 32px;
 
 		&:after {
 			content: '';
@@ -88,7 +104,15 @@
 			transform: rotate(45deg)
 		}
 
+		&.active {
+			&:after {
+				border-top: 2px solid #666666;
+				border-right: 2px solid #666666;
+			}
+		}
+
 	}
+
 
 	@media screen and (max-width: 480px) {
 		margin: 15px auto !important;

@@ -200,7 +200,9 @@
 			width: 100%;
 			margin-top: 18px;
 			text-align: center;
-			padding: 0 8px;
+			padding: 0;
+			background-color: unset;
+
 
 			div[itemtype="http://schema.org/BreadcrumbList"] {
 				justify-content: center;
