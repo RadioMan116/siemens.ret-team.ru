@@ -13,18 +13,12 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
 
 	<link rel="icon" type="image/png" href="images/Icon-16.png">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&font-display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
-	<script id="__bs_script__">
-		//<![CDATA[
-		    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
-		//]]>
-	</script>
-
 
 	<div class="wrapper" id="js-wrapper">
 
@@ -45,9 +39,9 @@
 								</div>
 							</div>
 							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
-								</li>
+								<!-- <li class="menu__item">
+			<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+		</li> -->
 								<li class="menu__item">
 									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
 								</li>
@@ -61,32 +55,29 @@
 									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
 								</li>
 								<li class="menu__item">
-									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									<a href="06 - 05 - Help_desktop" class="menu__link">Новости</a>
 								</li>
 								<li class="menu__item">
 									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
 								</li>
 							</ul>
-							<div class="header__telephones">
-								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
-								<div class="telephones">
-									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
-									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
-								</div>
-							</div>
+
+							<a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button" id="js-abuse-opener">Обратиться к руководству
+							</a>
 						</div>
 						<!--end menu-->
+
 						<div class="header__icons">
 							<div class="header__search js-header__search"></div>
 							<a class="header__mobile-tel" href="tel:+74959297078"></a>
-							<a href="#" class="header__favorite">
-								<span class="header__number">0</span>
+							<a title="Перейти в отложенные" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
 							</a>
-							<a href="04 - Comparison_desktop.html" class="header__compare">
-								<span class="header__number">0</span>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
+								<span class="header__number">2</span>
 							</a>
-							<a href="03 - Order Form.html" class="header__basket">
-								<span class="header__number">0</span>
+							<a href="03 - Order Form.html" class="header__basket  active">
+								<span class="header__number">1</span>
 							</a>
 						</div>
 					</div>
@@ -100,175 +91,236 @@
 						</div>
 						<!-- /.logo -->
 						<div class="header__dropdown-menu" id="js-menu">
+
 							<nav class="dropdown-menu">
-								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовая техника Siemens</span>
 								<div class="dropdown-menu__parent">
 									<ul class="dropdown-menu__list">
-										<li class="dropdown-menu__item">
+
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-1.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Варочные панели</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Газовые
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Индукционные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Электрические
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-2.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Духовые шкафы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Полноразмерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Компактные
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-3.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Вытяжки</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Встраиваемые
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Настенные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Островные
+													</a>
+												</li>
+
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-4.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Компактные приборы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Микроволновые печи
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Пароварки
+													</a>
+												</li>
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Кофемашины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Подогреватели посуды
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-5.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Посудомоечные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Посудомоечные машины 45 см
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Посудомоечные машины 60 см
+													</a>
+												</li>
+											</ul>
+										</li>
+
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-6.png'>
 											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
 											<ul class="sub-menu__list">
 												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Отдельностоящие
+													</a>
+												</li>
+												<li class="sub-menu__item">
 													<a class="sub-menu__link" target="_blank" href="#">
-														∙ Однокамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Двухкамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Side-by-Side
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Морозильные камеры
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Морозильные лари
+														Встраиваемые
 													</a>
 												</li>
 											</ul>
 										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-7.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Стиральные машины</a>
 											<ul class="sub-menu__list">
 												<li class="sub-menu__item">
 													<a class="sub-menu__link" target="_blank" href="#">
-														∙ Встраиваемые однокамерные
+														Отдельностоящие
 													</a>
 												</li>
 												<li class="sub-menu__item">
 													<a class="sub-menu__link" href="#">
-														∙ Двухкамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Встраиваемые двухкамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Встраиваемые Side-by-Side
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Встраиваемые морозильные камеры
+														Встраиваемые
 													</a>
 												</li>
 											</ul>
 										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-8.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Сушильные машины</a>
 											<ul class="sub-menu__list">
 												<li class="sub-menu__item">
 													<a class="sub-menu__link" target="_blank" href="#">
-														∙ Встраиваемые
+														Отдельностоящие
 													</a>
 												</li>
 												<li class="sub-menu__item">
 													<a class="sub-menu__link" href="#">
-														∙ Отдельностоящие
+														Встраиваемые
 													</a>
 												</li>
 											</ul>
 										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+
+										<li class="dropdown-menu__item accessory" data-bg='images/siemens-menu-9.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Аксессуары</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Для варочных панелей
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для духовых шкафов
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для стиральных машин
+													</a>
+												</li>
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для холодильников
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для вытяжек
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для микроволновых печей
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для посудомоечных машин
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для кофемашин
+													</a>
+												</li>
+											</ul>
 										</li>
 									</ul>
 								</div>
 
 							</nav>
-							<nav class="dropdown-menu">
-								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
-								<div class="dropdown-menu__parent">
-									<ul class="dropdown-menu__list">
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для пекарен</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
-										</li>
-									</ul>
-								</div>
 
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#" title="Новинки">Новинки</a>
+								</span>
 							</nav>
 							<nav class="dropdown-menu">
 								<span class="dropdown-menu__title last">
-									<a href="#">Сервис</a>
+									<a href="#" title="Сервис">Сервис</a>
 								</span>
 							</nav>
+
+							<!-- end menu-content -->
+
 							<div class="header__telephones">
-								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок</a>
 								<div class="telephones">
 									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
 									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
 								</div>
-							</div>
-						</div>
-						<div class="menu" aria-expanded="false">
-							<div class="city-change js-city-change ">
-								<div class="city-change__title">Санкт-Петербург</div>
-								<div class="city-change__bullet"></div>
-								<div class="city-change__popup">
-									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
-									<a class="city-change__link" href="#">Регионы</a>
-								</div>
-							</div>
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
-								</li>
-								<li class="menu__item">
-									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
-								</li>
-								<li class="menu__item">
-									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
-								</li>
-								<li class="menu__item">
-									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
-								</li>
-								<li class="menu__item">
-									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
-								</li>
-								<li class="menu__item">
-									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
-								</li>
-								<li class="menu__item">
-									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
-								</li>
-							</ul>
-							<div class="header__telephones">
-								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
-								<div class="telephones">
-									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
-									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@nf-rus.ru" class="time-work__email">
+										<i>Email:</i>shop@nf-rus.ru</a>
 								</div>
 							</div>
 						</div>
-						<!--end menu-->
+
 					</div>
 				</div>
 			</div>
@@ -281,97 +333,299 @@
 			<div class="header__overlay"></div>
 		</header>
 
-
 		<div class="section">
 			<div class="content">
 				<div class="container">
 					<div class="breadcrumbs">
-						<a href="#" class="breadcrumbs__link">Liebherr</a>
+						<a href="#" class="breadcrumbs__link">Siemens</a>
 						<span class="breadcrumbs__sep">/</span>
 						<a href="#" class="breadcrumbs__link">Каталог</a>
 						<span class="breadcrumbs__sep">/</span>
 						<a href="#" class="breadcrumbs__link">Бытовые холодильники</a>
 						<span class="breadcrumbs__sep">/</span>
-						<span class="breadcrumbs__text">Двухкамерный холодильник Liebherr СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
+						<span class="breadcrumbs__text">Двухкамерный холодильник Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
 					</div>
 					<div class="product-card">
-						<span class="product-card__title">Двухкамерный холодильник Liebherr СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
+						<span class="product-card__title">Двухкамерный холодильник Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
 						<div class="product-card__slider">
+							<div class="labels">
+
+								<img class=" loaded lazyloaded" src="images/new.svg" alt="Новинка">
+								<!-- <img class=" loaded lazyloaded" src="images/sale.svg" alt="Акция"> -->
+								<img class=" loaded lazyloaded" src="images/hit.svg" alt="Хит продаж">
+								<div class="labels__sale">
+									<img class=" loaded lazyloaded" src="images/goods-action.svg" alt="Товар со скидкой 10 000 руб." data-alt="Товар со скидкой 10 000 руб.">скидка 10 000 руб.
+									<div class="popup__sale">
+										<p>Товар со скидкой 10 000 руб.</p>
+										<a href='#'>Подробнее</a>
+									</div>
+								</div>
+							</div>
 							<div class="swiper-pagination gallery-top__pagination"></div>
-							<div class="swiper-container gallery-top js-gallery-top">
+							<div class="swiper-container gallery-top " data-swiper data-options='{ "spaceBetween": 0}'>
 								<div class="swiper-wrapper">
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="https://l-rus.ru/upload/resize_cache/iblock/b9e/395_395_1/b9ef4175983e6089ce7104cf90cdfb3a.jpg" data-srcset="https://l-rus.ru/upload/iblock/b9e/b9ef4175983e6089ce7104cf90cdfb3a.jpg 2x,https://l-rus.ru/upload/iblock/b9e/b9ef4175983e6089ce7104cf90cdfb3a.jpg 3x">
-											<img src="https://l-rus.ru/upload/resize_cache/iblock/b9e/395_395_1/b9ef4175983e6089ce7104cf90cdfb3a.jpg" srcset="https://l-rus.ru/upload/iblock/b9e/b9ef4175983e6089ce7104cf90cdfb3a.jpg 2x,https://l-rus.ru/upload/iblock/b9e/b9ef4175983e6089ce7104cf90cdfb3a.jpg 3x"
-											alt="Холодильник Liebherr CTPsl 2921 Comfort preview 1" title="Холодильник Liebherr CTPsl 2921 Comfort фото 1" class="special-offers__img catalog__img">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/799/400_450_1/799a99d16cfc424c83453cbfd30acda7.jpg" data-srcset='/upload/resize_cache/iblock/799/800_900_1/799a99d16cfc424c83453cbfd30acda7.jpg 2x,https://jackys-store.ru/upload/iblock/799/799a99d16cfc424c83453cbfd30acda7.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/799/400_450_1/799a99d16cfc424c83453cbfd30acda7.webp, https://jackys-store.ru/upload/resize_cache/iblock/799/800_900_1/799a99d16cfc424c83453cbfd30acda7.webp 2x, https://jackys-store.ru/upload/iblock/799/799a99d16cfc424c83453cbfd30acda7.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/799/400_450_1/799a99d16cfc424c83453cbfd30acda7.jpg, https://jackys-store.ru/upload/resize_cache/iblock/799/800_900_1/799a99d16cfc424c83453cbfd30acda7.jpg 2x,https://jackys-store.ru/upload/iblock/799/799a99d16cfc424c83453cbfd30acda7.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/799/400_450_1/799a99d16cfc424c83453cbfd30acda7.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 1" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 1" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="https://l-rus.ru/upload/resize_cache/iblock/81c/395_395_1/81ceee5c19c72127ce88c3953de5636f.jpg" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/81c/790_790_1/81ceee5c19c72127ce88c3953de5636f.jpg 2x,/upload/iblock/81c/81ceee5c19c72127ce88c3953de5636f.jpg 3x">
-											<img src="https://l-rus.ru/upload/resize_cache/iblock/81c/395_395_1/81ceee5c19c72127ce88c3953de5636f.jpg" srcset="https://l-rus.ru/upload/resize_cache/iblock/81c/790_790_1/81ceee5c19c72127ce88c3953de5636f.jpg 2x,/upload/iblock/81c/81ceee5c19c72127ce88c3953de5636f.jpg 3x"
-											alt="Холодильник Liebherr KBbs 4350 Premium BioFresh preview 1" title="Холодильник Liebherr KBbs 4350 Premium BioFresh фото 1" class="special-offers__img catalog__img">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/703/400_450_1/703e28effefb2201923a8dd7a700d9dd.jpg" data-srcset='/upload/iblock/703/703e28effefb2201923a8dd7a700d9dd.jpg 2x,https://jackys-store.ru/upload/iblock/703/703e28effefb2201923a8dd7a700d9dd.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/703/400_450_1/703e28effefb2201923a8dd7a700d9dd.webp, https://jackys-store.ru/upload/iblock/703/703e28effefb2201923a8dd7a700d9dd.webp 2x, https://jackys-store.ru/upload/iblock/703/703e28effefb2201923a8dd7a700d9dd.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/703/400_450_1/703e28effefb2201923a8dd7a700d9dd.jpg, https://jackys-store.ru/upload/iblock/703/703e28effefb2201923a8dd7a700d9dd.jpg 2x,https://jackys-store.ru/upload/iblock/703/703e28effefb2201923a8dd7a700d9dd.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/703/400_450_1/703e28effefb2201923a8dd7a700d9dd.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 2" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 2" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="images/pb_3x1.jpg" data-srcset='images/pb_3x2.jpg 2x,images/pb_3x3.jpg 3x'>
-											<img src="images/pb_3x1.jpg" srcset="images/pb_3x2.jpg 2x,images/pb_3x3.jpg 3x" class="special-offers__img catalog__img">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/f1d/400_450_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg" data-srcset='/upload/resize_cache/iblock/f1d/800_900_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg 2x,https://jackys-store.ru/upload/iblock/f1d/f1d7fcee029cf61214b920d7a4abfcdc.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/f1d/400_450_1/f1d7fcee029cf61214b920d7a4abfcdc.webp, https://jackys-store.ru/upload/resize_cache/iblock/f1d/800_900_1/f1d7fcee029cf61214b920d7a4abfcdc.webp 2x, https://jackys-store.ru/upload/iblock/f1d/f1d7fcee029cf61214b920d7a4abfcdc.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/f1d/400_450_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg, https://jackys-store.ru/upload/resize_cache/iblock/f1d/800_900_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg 2x,https://jackys-store.ru/upload/iblock/f1d/f1d7fcee029cf61214b920d7a4abfcdc.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/f1d/400_450_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 3" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 3" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="images/pb_1x1.jpg" data-srcset='images/pb_1x2.jpg 2x,images/pb_1x3.jpg 3x'>
-											<img src="images/pb_1x1.jpg" srcset="images/pb_1x2.jpg 2x,images/pb_1x3.jpg 3x" class="special-offers__img catalog__img">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/e0a/400_450_1/e0a380e85654f02208771ef8724649bb.jpg" data-srcset='/upload/iblock/e0a/e0a380e85654f02208771ef8724649bb.jpg 2x,https://jackys-store.ru/upload/iblock/e0a/e0a380e85654f02208771ef8724649bb.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/e0a/400_450_1/e0a380e85654f02208771ef8724649bb.webp, https://jackys-store.ru/upload/iblock/e0a/e0a380e85654f02208771ef8724649bb.webp 2x, https://jackys-store.ru/upload/iblock/e0a/e0a380e85654f02208771ef8724649bb.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/e0a/400_450_1/e0a380e85654f02208771ef8724649bb.jpg, https://jackys-store.ru/upload/iblock/e0a/e0a380e85654f02208771ef8724649bb.jpg 2x,https://jackys-store.ru/upload/iblock/e0a/e0a380e85654f02208771ef8724649bb.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/e0a/400_450_1/e0a380e85654f02208771ef8724649bb.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 4" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 4" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="images/pb_2x1.jpg" data-srcset='images/pb_2x2.jpg 2x,images/pb_2x3.jpg 3x'>
-											<img src="images/pb_2x1.jpg" srcset="images/pb_2x2.jpg 2x,images/pb_2x3.jpg 3x" class="special-offers__img catalog__img">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/14f/400_450_1/14f29e8eee7bcb0636e52768c55e025a.jpg" data-srcset='/upload/resize_cache/iblock/14f/800_900_1/14f29e8eee7bcb0636e52768c55e025a.jpg 2x,https://jackys-store.ru/upload/iblock/14f/14f29e8eee7bcb0636e52768c55e025a.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/14f/400_450_1/14f29e8eee7bcb0636e52768c55e025a.webp, https://jackys-store.ru/upload/resize_cache/iblock/14f/800_900_1/14f29e8eee7bcb0636e52768c55e025a.webp 2x, https://jackys-store.ru/upload/iblock/14f/14f29e8eee7bcb0636e52768c55e025a.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/14f/400_450_1/14f29e8eee7bcb0636e52768c55e025a.jpg, https://jackys-store.ru/upload/resize_cache/iblock/14f/800_900_1/14f29e8eee7bcb0636e52768c55e025a.jpg 2x,https://jackys-store.ru/upload/iblock/14f/14f29e8eee7bcb0636e52768c55e025a.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/14f/400_450_1/14f29e8eee7bcb0636e52768c55e025a.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 5" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 5" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="images/pb_3x1.jpg" data-srcset='images/pb_3x2.jpg 2x,images/pb_3x3.jpg 3x'>
-											<img src="images/pb_3x1.jpg" srcset="images/pb_3x2.jpg 2x,images/pb_3x3.jpg 3x" class="special-offers__img catalog__img">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/dc7/400_450_1/dc7cb15332ef1662f505939bb151bbf2.jpg" data-srcset='/upload/iblock/dc7/dc7cb15332ef1662f505939bb151bbf2.jpg 2x,https://jackys-store.ru/upload/iblock/dc7/dc7cb15332ef1662f505939bb151bbf2.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/dc7/400_450_1/dc7cb15332ef1662f505939bb151bbf2.webp, https://jackys-store.ru/upload/iblock/dc7/dc7cb15332ef1662f505939bb151bbf2.webp 2x, https://jackys-store.ru/upload/iblock/dc7/dc7cb15332ef1662f505939bb151bbf2.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/dc7/400_450_1/dc7cb15332ef1662f505939bb151bbf2.jpg, https://jackys-store.ru/upload/iblock/dc7/dc7cb15332ef1662f505939bb151bbf2.jpg 2x,https://jackys-store.ru/upload/iblock/dc7/dc7cb15332ef1662f505939bb151bbf2.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/dc7/400_450_1/dc7cb15332ef1662f505939bb151bbf2.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 6" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 6" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" data-type="iframe" href="https://www.youtube.com/embed/n7xbo0FVEaY">
-											<!-- <img src="images/product-card_2.jpg" srcset="images/product-card_2@2x.jpg 2x,images/product-card_2@3x.jpg 3x"
-							class="special-offers__img catalog__img"> -->
-											<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n7xbo0FVEaY" frameborder="0" allowfullscreen=""></iframe>
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/095/400_450_1/09528f87bb33c4cec00e631e5b3b1af1.jpg" data-srcset='/upload/iblock/095/09528f87bb33c4cec00e631e5b3b1af1.jpg 2x,https://jackys-store.ru/upload/iblock/095/09528f87bb33c4cec00e631e5b3b1af1.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/095/400_450_1/09528f87bb33c4cec00e631e5b3b1af1.webp, https://jackys-store.ru/upload/iblock/095/09528f87bb33c4cec00e631e5b3b1af1.webp 2x, https://jackys-store.ru/upload/iblock/095/09528f87bb33c4cec00e631e5b3b1af1.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/095/400_450_1/09528f87bb33c4cec00e631e5b3b1af1.jpg, https://jackys-store.ru/upload/iblock/095/09528f87bb33c4cec00e631e5b3b1af1.jpg 2x,https://jackys-store.ru/upload/iblock/095/09528f87bb33c4cec00e631e5b3b1af1.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/095/400_450_1/09528f87bb33c4cec00e631e5b3b1af1.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 7" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 7" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
 										</a>
 									</div>
+
+									<div class="swiper-slide">
+										<a data-fancybox="gallery" href="https://jackys-store.ru/upload/resize_cache/iblock/ce1/400_450_1/ce18a37a24d76948c052133c47aeea5f.jpg" data-srcset='/upload/iblock/ce1/ce18a37a24d76948c052133c47aeea5f.jpg 2x,https://jackys-store.ru/upload/iblock/ce1/ce18a37a24d76948c052133c47aeea5f.jpg 3x'>
+
+											<picture>
+
+												<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/ce1/400_450_1/ce18a37a24d76948c052133c47aeea5f.webp, https://jackys-store.ru/upload/iblock/ce1/ce18a37a24d76948c052133c47aeea5f.webp 2x, https://jackys-store.ru/upload/iblock/ce1/ce18a37a24d76948c052133c47aeea5f.webp 3x"
+												/>
+												<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/ce1/400_450_1/ce18a37a24d76948c052133c47aeea5f.jpg, https://jackys-store.ru/upload/iblock/ce1/ce18a37a24d76948c052133c47aeea5f.jpg 2x,https://jackys-store.ru/upload/iblock/ce1/ce18a37a24d76948c052133c47aeea5f.jpg 3x"
+												/>
+
+												<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/ce1/400_450_1/ce18a37a24d76948c052133c47aeea5f.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860 фото 8" alt="Холодильник Side-by-Side Siemens JLF FI1860 preview 8" class="special-offers__img catalog__img lazyload"
+												/>
+											</picture>
+
+										</a>
+									</div>
+
 								</div>
 								<!-- Add Arrows -->
 								<!-- <div class="swiper-button-next swiper-button-white"></div>
 				<div class="swiper-button-prev swiper-button-white"></div> -->
 							</div>
-							<div class="swiper-container gallery-thumbs js-gallery-thumbs">
-								<div class="thumbs-next"></div>
-								<div class="thumbs-prev"></div>
+							<div class="swiper-container gallery-thumbs s" data-swiper data-options='{"slidesPerView": 5,"spaceBetween": 20,"freeMode": true,"touchRatio": 1,"watchSlidesVisibility":true,"watchSlidesProgress": true,"breakpoints": {"767": {"spaceBetween": 14}}}'>
+								<div class="thumbs-next js-swiper__next"></div>
+								<div class="thumbs-prev js-swiper__prev"></div>
 								<div class="swiper-wrapper">
+
 									<div class="swiper-slide">
-										<img src="images/pc_1x1.jpg" srcset="images/pc_1x2.jpg 2x,images/pc_1x3.jpg 3x" class="special-offers__img catalog__img">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/799/70_70_1/799a99d16cfc424c83453cbfd30acda7.webp, https://jackys-store.ru/upload/resize_cache/iblock/799/140_140_1/799a99d16cfc424c83453cbfd30acda7.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/799/210_210_1/799a99d16cfc424c83453cbfd30acda7.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/799/70_70_1/799a99d16cfc424c83453cbfd30acda7.jpg, https://jackys-store.ru/upload/resize_cache/iblock/799/140_140_1/799a99d16cfc424c83453cbfd30acda7.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/799/210_210_1/799a99d16cfc424c83453cbfd30acda7.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/799/70_70_1/799a99d16cfc424c83453cbfd30acda7.jpg" title="Холодильник Side-by-Side Siemens JLF FI1860" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 1" class="special-offers__img catalog__img lazyload"
+											/>
+										</picture>
+
 									</div>
+
 									<div class="swiper-slide">
-										<img src="images/pc_2x1.jpg" srcset="images/pc_2x2.jpg 2x,images/pc_2x3.jpg 3x" class="special-offers__img catalog__img">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/703/70_70_1/703e28effefb2201923a8dd7a700d9dd.webp, https://jackys-store.ru/upload/resize_cache/iblock/703/140_140_1/703e28effefb2201923a8dd7a700d9dd.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/703/210_210_1/703e28effefb2201923a8dd7a700d9dd.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/703/70_70_1/703e28effefb2201923a8dd7a700d9dd.jpg, https://jackys-store.ru/upload/resize_cache/iblock/703/140_140_1/703e28effefb2201923a8dd7a700d9dd.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/703/210_210_1/703e28effefb2201923a8dd7a700d9dd.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/703/70_70_1/703e28effefb2201923a8dd7a700d9dd.jpg" title="Фото 2" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 2" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
 									</div>
+
 									<div class="swiper-slide">
-										<img src="images/pc_3x1.jpg" srcset="images/pc_3x2.jpg 2x,images/pc_3x3.jpg 3x" class="special-offers__img catalog__img">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/f1d/70_70_1/f1d7fcee029cf61214b920d7a4abfcdc.webp, https://jackys-store.ru/upload/resize_cache/iblock/f1d/140_140_1/f1d7fcee029cf61214b920d7a4abfcdc.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/f1d/210_210_1/f1d7fcee029cf61214b920d7a4abfcdc.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/f1d/70_70_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg, https://jackys-store.ru/upload/resize_cache/iblock/f1d/140_140_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/f1d/210_210_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/f1d/70_70_1/f1d7fcee029cf61214b920d7a4abfcdc.jpg" title="Фото 3" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 3" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
 									</div>
+
 									<div class="swiper-slide">
-										<img src="images/pc_1x1.jpg" srcset="images/pc_1x2.jpg 2x,images/pc_1x3.jpg 3x" class="special-offers__img catalog__img">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/e0a/70_70_1/e0a380e85654f02208771ef8724649bb.webp, https://jackys-store.ru/upload/resize_cache/iblock/e0a/140_140_1/e0a380e85654f02208771ef8724649bb.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/e0a/210_210_1/e0a380e85654f02208771ef8724649bb.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/e0a/70_70_1/e0a380e85654f02208771ef8724649bb.jpg, https://jackys-store.ru/upload/resize_cache/iblock/e0a/140_140_1/e0a380e85654f02208771ef8724649bb.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/e0a/210_210_1/e0a380e85654f02208771ef8724649bb.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/e0a/70_70_1/e0a380e85654f02208771ef8724649bb.jpg" title="Фото 4" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 4" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
 									</div>
+
 									<div class="swiper-slide">
-										<img src="images/pc_2x1.jpg" srcset="images/pc_2x2.jpg 2x,images/pc_2x3.jpg 3x" class="special-offers__img catalog__img">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/14f/70_70_1/14f29e8eee7bcb0636e52768c55e025a.webp, https://jackys-store.ru/upload/resize_cache/iblock/14f/140_140_1/14f29e8eee7bcb0636e52768c55e025a.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/14f/210_210_1/14f29e8eee7bcb0636e52768c55e025a.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/14f/70_70_1/14f29e8eee7bcb0636e52768c55e025a.jpg, https://jackys-store.ru/upload/resize_cache/iblock/14f/140_140_1/14f29e8eee7bcb0636e52768c55e025a.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/14f/210_210_1/14f29e8eee7bcb0636e52768c55e025a.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/14f/70_70_1/14f29e8eee7bcb0636e52768c55e025a.jpg" title="Фото 5" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 5" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
 									</div>
+
 									<div class="swiper-slide">
-										<img src="images/pc_3x1.jpg" srcset="images/pc_3x2.jpg 2x,images/pc_3x3.jpg 3x" class="special-offers__img catalog__img">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/dc7/70_70_1/dc7cb15332ef1662f505939bb151bbf2.webp, https://jackys-store.ru/upload/resize_cache/iblock/dc7/140_140_1/dc7cb15332ef1662f505939bb151bbf2.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/dc7/210_210_1/dc7cb15332ef1662f505939bb151bbf2.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/dc7/70_70_1/dc7cb15332ef1662f505939bb151bbf2.jpg, https://jackys-store.ru/upload/resize_cache/iblock/dc7/140_140_1/dc7cb15332ef1662f505939bb151bbf2.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/dc7/210_210_1/dc7cb15332ef1662f505939bb151bbf2.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/dc7/70_70_1/dc7cb15332ef1662f505939bb151bbf2.jpg" title="Фото 6" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 6" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
 									</div>
+
 									<div class="swiper-slide">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n7xbo0FVEaY" frameborder="0" allowfullscreen=""></iframe>
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/095/70_70_1/09528f87bb33c4cec00e631e5b3b1af1.webp, https://jackys-store.ru/upload/resize_cache/iblock/095/140_140_1/09528f87bb33c4cec00e631e5b3b1af1.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/095/210_210_1/09528f87bb33c4cec00e631e5b3b1af1.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/095/70_70_1/09528f87bb33c4cec00e631e5b3b1af1.jpg, https://jackys-store.ru/upload/resize_cache/iblock/095/140_140_1/09528f87bb33c4cec00e631e5b3b1af1.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/095/210_210_1/09528f87bb33c4cec00e631e5b3b1af1.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/095/70_70_1/09528f87bb33c4cec00e631e5b3b1af1.jpg" title="Фото 7" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 7" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
 									</div>
+
+									<div class="swiper-slide">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/ce1/70_70_1/ce18a37a24d76948c052133c47aeea5f.webp, https://jackys-store.ru/upload/resize_cache/iblock/ce1/140_140_1/ce18a37a24d76948c052133c47aeea5f.webp 2x, https://jackys-store.ru/upload/resize_cache/iblock/ce1/210_210_1/ce18a37a24d76948c052133c47aeea5f.webp 3x"
+											/>
+											<source type="image/png" data-srcset="https://jackys-store.ru/upload/resize_cache/iblock/ce1/70_70_1/ce18a37a24d76948c052133c47aeea5f.jpg, https://jackys-store.ru/upload/resize_cache/iblock/ce1/140_140_1/ce18a37a24d76948c052133c47aeea5f.jpg 2x,https://jackys-store.ru/upload/resize_cache/iblock/ce1/210_210_1/ce18a37a24d76948c052133c47aeea5f.jpg 3x"
+											/>
+
+											<img data-src="https://jackys-store.ru/upload/resize_cache/iblock/ce1/70_70_1/ce18a37a24d76948c052133c47aeea5f.jpg" title="Фото 8" alt="Купить Холодильник Side-by-Side Siemens JLF FI1860  preview 8" class="special-offers__img catalog__img lazyload" />
+										</picture>
+
+									</div>
+
 								</div>
 							</div>
-
 						</div>
 						<div class="product-card__info">
 							<div class="product__header product__header_top">
@@ -387,20 +641,21 @@
 								<span class="product-card__key">Код товара: 327944</span>
 								<div class="product-card__social">
 									<!-- <a href="#" class="item js-share">
-					<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-					<script src="//yastatic.net/share2/share.js"></script>
-					<img src="images/share.svg" alt="">
-					Поделиться
-				</a> -->
+				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+				<script src="//yastatic.net/share2/share.js"></script>
+				<img src="images/share.svg" alt="">
+				Поделиться
+			</a> -->
 									<div class="share__items">
-										<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter"></div>
+										<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter">
+										</div>
 									</div>
-									<a href="#" class="item favorite active">
+									<a href="#" class="item favorite">
 										<p>
 											Отложено
 										</p>
 									</a>
-									<a href="#" class="item compare active">
+									<a href="#" class="item compare">
 										<p>
 											В сравнении
 										</p>
@@ -412,8 +667,16 @@
 								<span class="product-card__date">Обновление цен от 14 июля 2018</span>
 							</div>
 							<div class="product__header product__header_bottom">
-								<span class="product-card__price">54 800<b>руб.</b>
+								<span class="product-card__price price__dashed">354 800 <b>руб.</b>
+									<span class="price__absolute">354 800 руб.
+									</span>
 								</span>
+								<div class="product-card__cheaper cheaper">
+									Нашли дешевле?
+									<a href="">
+										Снизим цену
+									</a>
+								</div>
 								<div class="product-card__button">
 									<a href="#" class="product-card__icons">
 										Купить в 1 клик
@@ -423,197 +686,151 @@
 									</a>
 								</div>
 							</div>
+							<div class="product-card__type-payment type-payment">
+								<div class="type-payment__item" data-text='Клиент оплачивает стоимость заказа на сайте до получения товара.'>
+									<img src="images/Payment_cash.svg" alt="">
+									<img src="images/Payment_cash — color.svg" alt="">Наличными
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text='Клиент оплачивает стоимость заказа на сайте до получения товара.'>
+									<img src="images/Payment_credit.svg" alt="">
+									<img src="images/Payment_credit — color.svg" alt="">Картой при получении
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text='Клиент оплачивает стоимость заказа на сайте до получения товара.'>
+									<img src="images/Payment_bank.svg" alt="">
+									<img src="images/Payment_bank — color.svg" alt="">Банковский перевод
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text='Клиент оплачивает стоимость заказа на сайте до получения товара.'>
+									<img src="images/Combined_Shape.svg" alt="">
+									<img src="images/Combined_Shape — color.svg" alt="">Онлайн-оплата
+								</div>
+								<!-- /.type-payment__item -->
+							</div>
+							<!-- /.product-card__type-payment type-payment -->
+							<div class="product-card__delivery delivery">
+								<div class="delivery__info">
+									Доставка в Нижний Новгород
+									<a href="" class="delivery__link">
+										после 30 октября
+									</a>
+									<!-- /.delivery__link -->
+								</div>
+								<!-- /.delivery__info -->
+								<div class="delivery__info">
+									Стоимость доставки
+									<a href="" class="delivery__link">
+										380 руб.
+									</a>
+									<!-- /.delivery__link -->
+								</div>
+								<!-- /.delivery__info -->
+							</div>
 							<div class="product-card__announcing">
-
 								<div class="announcing__item">
-									<img src="images/big/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
+									<img src="images/big/tools.svg" alt="" title="">
+									<img src="images/big/tools-grey.svg" alt="" title="" class="mobile">
+									<div class="announcing__info">
+										Удобная
+										<a href="#" class="announcing__link">
+											установка
+										</a>
+									</div>
 								</div>
 								<div class="announcing__item">
-									<img src="images/big/tools.svg" alt="Бесплатное подключение" title="Бесплатное подключение">
+									<img src="images/big/flag-ger.svg" alt="Производство Германия" title="Cделано в Германия">Сделано в
+									<br>Германии
 								</div>
 								<div class="announcing__item">
-									<img src="images/big/flag.svg" alt="Cделано в Болгарии" title="Cделано в Болгарии">
+									<img src="images/big/warranty.svg" alt="Гарантия 5 лет" title="Гарантия 5 лет">Гарантия
+									<br>5 лет
 								</div>
-								<!-- <div class="announcing__item">
-				<img src="images/big/best.svg" alt="Лучшее предложение" title="Лучшее предложение">
-			</div>
-			<div class="announcing__item">
-				<img src="images/big/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-			</div> -->
-							</div>
-							<div class="product-card__rel">
-								<h4>Модели этой серии</h4>
-								<div class="swiper-pagination rel__pagination"></div>
-								<div class="swiper-button-prev rel__prev"></div>
-								<div class="swiper-button-next rel__next"></div>
-								<table class="swiper-container js-product-card__rel">
-									<tbody class="swiper-wrapper">
-										<tr class="swiper-slide">
-											<th>
-												<img src="images/rel_img.png" alt="">
-											</th>
-											<td>
-												<a href="">
-													CTPsl 2921
-												</a>
-
-												21 570 руб.
-											</td>
-										</tr>
-										<tr class="swiper-slide">
-											<th>
-												<img src="images/rel_img.png" alt="">
-											</th>
-											<td>
-												<a href="">
-													CTPsl 2922
-												</a>
-
-												21 570 руб.
-											</td>
-										</tr>
-										<tr class="swiper-slide">
-											<th>
-												<img src="images/rel_img.png" alt="">
-											</th>
-											<td>
-												<a href="">
-													CTPsl 2923
-												</a>
-
-												21 570 руб.
-											</td>
-										</tr>
-										<tr class="swiper-slide">
-											<th>
-												<img src="images/rel_img.png" alt="">
-											</th>
-											<td>
-												<a href="">
-													CTPsl 2924
-												</a>
-
-												21 570 руб.
-											</td>
-										</tr>
-										<tr class="swiper-slide">
-											<th>
-												<img src="images/rel_img.png" alt="">
-											</th>
-											<td>
-												<a href="">
-													CTPsl 2925
-												</a>
-
-												21 570 руб.
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="product-card__promo">
-								<div class="item">
-									<img src="images/promo.png" alt="">
-								</div>
-								<a href="#diagram" data-scroll class="item">
-									Cравни похожие товары!
-								</a>
 							</div>
 							<div class="product-card__description text-default">
 								<h2>Описание</h2>
-								<p>
-									Liebherr CTP 2921 Comfort — практичная модель в элегантном дизайне SwingLine. Прибор характеризуется отдельностоящим типом размещения, но при этом поддерживает возможность установки вплотную к стене или в готовую нишу. Технология SmartFrost позволяет
-									значительно реже размораживать холодильник вручную.
-								</p>
+								<div class="description__text">
+									Siemens SBS 7212 — вместительный холодильник комфорт-класса, который состоит из двух независимых приборов SGN 3063 и SK 4240, а также комплекта соединительных планок.
+								</div>
 								<a href="#new-description" data-scroll class="description__link">Читать полностью</a>
+							</div>
+							<div class="catalog__prop">
+								<h6>Ключевые особенности</h6>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2410">
+									<img data-src="images/FryingSensor.png" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/FryingSensor.png" data-was-processed="true">
+									<div class="popup-prop">
+										<img data-src="https://l-rus.ru/upload/iblock/a4b/a4b9bd89a429e045a31248febaa4ac88.jpg" alt="BiofreshPlus" class="popup-prop__img lazyload">
+
+										<div class="popup-prop__title">BiofreshPlus</div>
+										<div class="popup-prop__text">Обеспечивает еще большую функциональность и&nbsp;позволяет рационально использовать внутреннее пространство холодильника в&nbsp;зависимости от&nbsp;Ваших потребностей. Электронная система управления встроена в&nbsp;пластину, расположенную между
+											холодильной и&nbsp;морозильной камерами. С&nbsp;ее&nbsp;помощью, например, можно установить значение температуры в&nbsp;верхнем контейнере 2°С, создав тем самым оптимальные условия для хранения рыбы.&nbsp;
+											<br>
+											<br>Одновременная установка низкого уровня влажности позволит сохранить рыбу свежей на&nbsp;максимально длительный срок, в&nbsp;то&nbsp;время как установка в&nbsp;другом контейнере высокого уровня влажности при температуре +6°С создаст оптимальные
+											условия для хранения овощей и&nbsp;фруктов. Использование современных технологий позволяет устанавливать в&nbsp;верхнем контейнере секции BioFresh любое необходимое значение температуры. Для нижнего контейнера можно установить любой уровень
+											влажности при сохранении уровня температуры около 0°С.</div>
+
+										<a href="/glossary/?param=2410" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2681">
+									<img data-src="images/FryingSensor.png" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/FryingSensor.png" data-was-processed="true">
+									<div class="popup-prop">
+										<img data-src="https://l-rus.ru/upload/iblock/d91/d91a4b986f69190a62ade6d907fb3809.jpg" alt="IceMaker" class="popup-prop__img lazyload">
+
+										<div class="popup-prop__title">IceMaker</div>
+										<div class="popup-prop__text">IceMaker - инновационное решение для производства кубиков льда даже при отсутствии стационарной подачи или недостаточно высоком качестве питьевой воды. Для наполнения водой резервуар легко извлекается из холодильника.</div>
+
+										<a href="/glossary/?param=2681" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2680">
+									<img data-src="images/FryingSensor.png" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/FryingSensor.png" data-was-processed="true">
+									<div class="popup-prop">
+										<img data-src="https://l-rus.ru/upload/iblock/fc2/fc25dfc6444fe8b35dfa43fe708973da.jpg" alt="NoFrost" class="popup-prop__img lazyload">
+
+										<div class="popup-prop__title">NoFrost</div>
+										<div class="popup-prop__text">NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея на стенках
+											морозильного отделения, и тем самым забыть о процедуре размораживания.
+										</div>
+
+										<a href="/glossary/?param=2680" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
+									<img data-src="images/FryingSensor.png" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/FryingSensor.png" data-was-processed="true">
+									<div class="popup-prop">
+										<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность класса A++" class="popup-prop__img lazyload">
+
+										<div class="popup-prop__title">Энергоэффективность класса A++</div>
+										<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
+
+										<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2410">
+									<img data-src="images/FryingSensor.png" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/FryingSensor.png" data-was-processed="true">
+									<div class="popup-prop">
+										<img data-src="https://l-rus.ru/upload/iblock/a4b/a4b9bd89a429e045a31248febaa4ac88.jpg" alt="BiofreshPlus" class="popup-prop__img lazyload">
+
+										<div class="popup-prop__title">BiofreshPlus</div>
+										<div class="popup-prop__text">Обеспечивает еще большую функциональность и&nbsp;позволяет рационально использовать внутреннее пространство холодильника в&nbsp;зависимости от&nbsp;Ваших потребностей. Электронная система управления встроена в&nbsp;пластину, расположенную между
+											холодильной и&nbsp;морозильной камерами. С&nbsp;ее&nbsp;помощью, например, можно установить значение температуры в&nbsp;верхнем контейнере 2°С, создав тем самым оптимальные условия для хранения рыбы.&nbsp;
+											<br>
+											<br>Одновременная установка низкого уровня влажности позволит сохранить рыбу свежей на&nbsp;максимально длительный срок, в&nbsp;то&nbsp;время как установка в&nbsp;другом контейнере высокого уровня влажности при температуре +6°С создаст оптимальные
+											условия для хранения овощей и&nbsp;фруктов. Использование современных технологий позволяет устанавливать в&nbsp;верхнем контейнере секции BioFresh любое необходимое значение температуры. Для нижнего контейнера можно установить любой уровень
+											влажности при сохранении уровня температуры около 0°С.</div>
+
+										<a href="/glossary/?param=2410" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
 							</div>
 						</div>
 						<div class="product-card__middle">
-							<div class="middle__header">
-								<div class="product-card__back">
-									<div class="catalog__link">
-										<a href="#" data-url="ajax/ask-question.html" data-ajax="" class="catalog-question">
-											Задать вопрос об этом товаре
-										</a>
-										<a href="#" class="catalog-back">Вернуться в каталог</a>
-									</div>
-									<div class="labels">
-										<img src="images/new.svg" alt="Новинка">
-										<img src="images/sale.svg" alt="Акция">
-										<img src="images/hit.svg" alt="Хит продаж">
-									</div>
-								</div>
-
-								<div class="catalog__prop">
-									<h6>Ключевые особенности 444</h6>
-
-
-									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2410">
-										<img data-src="https://l-rus.ru/upload/iblock/d27/d278fb9a6ee4236565727b7a432b4513.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="https://l-rus.ru/upload/iblock/d27/d278fb9a6ee4236565727b7a432b4513.svg" data-was-processed="true">
-										<div class="popup-prop">
-											<img data-src="https://l-rus.ru/upload/iblock/a4b/a4b9bd89a429e045a31248febaa4ac88.jpg" alt="BiofreshPlus" class="popup-prop__img lazyload">
-
-											<div class="popup-prop__title">BiofreshPlus</div>
-											<div class="popup-prop__text">Обеспечивает еще большую функциональность и&nbsp;позволяет рационально использовать внутреннее пространство холодильника в&nbsp;зависимости от&nbsp;Ваших потребностей. Электронная система управления встроена в&nbsp;пластину, расположенную между
-												холодильной и&nbsp;морозильной камерами. С&nbsp;ее&nbsp;помощью, например, можно установить значение температуры в&nbsp;верхнем контейнере 2°С, создав тем самым оптимальные условия для хранения рыбы.&nbsp;
-												<br>
-												<br>Одновременная установка низкого уровня влажности позволит сохранить рыбу свежей на&nbsp;максимально длительный срок, в&nbsp;то&nbsp;время как установка в&nbsp;другом контейнере высокого уровня влажности при температуре +6°С создаст оптимальные
-												условия для хранения овощей и&nbsp;фруктов. Использование современных технологий позволяет устанавливать в&nbsp;верхнем контейнере секции BioFresh любое необходимое значение температуры. Для нижнего контейнера можно установить любой уровень
-												влажности при сохранении уровня температуры около 0°С.</div>
-
-											<a href="/glossary/?param=2410" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
-										</div>
-									</div>
-
-
-
-
-									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2681">
-										<img data-src="https://l-rus.ru/upload/iblock/81d/81ddf5366e51d6dc9abe5a52d7932560.svg" class="icons-prop-item loaded lazyloaded" title="IceMaker" src="https://l-rus.ru/upload/iblock/81d/81ddf5366e51d6dc9abe5a52d7932560.svg" data-was-processed="true">
-										<div class="popup-prop">
-											<img data-src="https://l-rus.ru/upload/iblock/d91/d91a4b986f69190a62ade6d907fb3809.jpg" alt="IceMaker" class="popup-prop__img lazyload">
-
-											<div class="popup-prop__title">IceMaker</div>
-											<div class="popup-prop__text">IceMaker - инновационное решение для производства кубиков льда даже при отсутствии стационарной подачи или недостаточно высоком качестве питьевой воды. Для наполнения водой резервуар легко извлекается из холодильника.</div>
-
-											<a href="/glossary/?param=2681" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
-										</div>
-									</div>
-
-
-
-
-									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2680">
-										<img data-src="https://l-rus.ru/upload/iblock/5d3/5d360f7f95aee14384f0c0901588db8e.svg" class="icons-prop-item loaded lazyloaded" title="NoFrost" src="https://l-rus.ru/upload/iblock/5d3/5d360f7f95aee14384f0c0901588db8e.svg" data-was-processed="true">
-										<div class="popup-prop">
-											<img data-src="https://l-rus.ru/upload/iblock/fc2/fc25dfc6444fe8b35dfa43fe708973da.jpg" alt="NoFrost" class="popup-prop__img lazyload">
-
-											<div class="popup-prop__title">NoFrost</div>
-											<div class="popup-prop__text">NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея на стенках
-												морозильного отделения, и тем самым забыть о процедуре размораживания.</div>
-
-											<a href="/glossary/?param=2680" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
-										</div>
-									</div>
-
-
-
-
-									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
-										<img data-src="https://l-rus.ru/upload/iblock/daa/daad1bb98d6319577f6f96b031dff5d8.svg" class="icons-prop-item loaded lazyloaded" title="Энергоэффективность класса A++" src="https://l-rus.ru/upload/iblock/daa/daad1bb98d6319577f6f96b031dff5d8.svg" data-was-processed="true">
-										<div class="popup-prop">
-											<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность класса A++" class="popup-prop__img lazyload">
-
-											<div class="popup-prop__title">Энергоэффективность класса A++</div>
-											<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
-
-											<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
-										</div>
-									</div>
-
-
-								</div>
-							</div>
 							<div class="tabs">
 								<a href="#" class="tabs__link">Характеристики</a>
 								<div class="hide-tabs">
@@ -703,7 +920,6 @@
 										<span class="characteristic__dashed"></span>
 										<span class="characteristic__property">
 											BluPerformance
-
 
 											<div class="characteristic-glossary js-characteristic-glossary">
 												<div class="icon-gloss"></div>
@@ -1199,36 +1415,24 @@
 							</div>
 							<div class="sidebar-right">
 								<div class="documentation">
-									<span class="documentation__title">Скачать инструкцию</span>
+									<span class="documentation__title">Скачать инструкцию для холодильника Jacky’s SBS 7212</span>
 
-									<a href="/upload/" class="doc_loading doc_loading_first" title="Схема встраивания">
+									<a href="https://jackys-store.ru/upload/" class="doc_loading doc_loading_first" title="Схема встраивания">
 										<i class="icon_doc"></i>
 										<span>Инструкция на русском языке</span>
 										PDF, 1.24 Мб
 									</a>
-									<a href="/upload/" class="doc_loading" title="Инструкция на русском языке">
+									<a href="https://jackys-store.ru/upload/" class="doc_loading" title="Инструкция на русском языке">
 
 										<i class="icon_doc"></i>
 										<span>Схема встраивания</span>
 										JPG, 272.73 Кб
 									</a>
 								</div>
-								<ul class="work-link">
-									<li class="work-link__item">
-										<a class="work-link__a" href="/service/">Сервисные центры</a>
-									</li>
-									<li class="work-link__item">
-										<a class="work-link__a" href="/documentation/">Техническая документация
-										</a>
-									</li>
-									<li class="work-link__item">
-										<a class="work-link__a" href="/warranty/">Официальная гарантия
-										</a>
-									</li>
-								</ul>
+
 								<div class="upsale swiper-container-upsale js-container-upsale">
 									<span class="upsale__title">Аксессуары для</span>
-									<span class="upsale__subtitle">Liebherr СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
+									<span class="upsale__subtitle">Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
 									<div class="upsale__items swiper-wrapper">
 										<div class="upsale__item swiper-slide">
 											<div class="upsale__pic">
@@ -1359,143 +1563,40 @@
 									<div class="swiper-button-prev upsale__prev"></div>
 									<div class="swiper-button-next upsale__next"></div>
 								</div>
-								<div class="download-catalogs">
-									<div class="download-catalogs__title">Скачать каталоги</div>
-									<div class="download-catalogs__items js-download-catalogs swiper-container">
-										<div class="swiper-wrapper">
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-1.png" alt="">
-													</div>
-													<div class="download-catalogs__text">Новая линейка комбинированных холодильников-морозильников
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
 
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-2.png" alt="">
-													</div>
-													<div class="download-catalogs__text">BioFresh 2018/2019
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-3.png" alt="">
-													</div>
-													<div class="download-catalogs__text">Дизайнерская серия ColourLine
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-1.png" alt="">
-													</div>
-													<div class="download-catalogs__text">Новая линейка комбинированных холодильников-морозильников
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-2.png" alt="">
-													</div>
-													<div class="download-catalogs__text">BioFresh 2018/2019
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-3.png" alt="">
-													</div>
-													<div class="download-catalogs__text">Дизайнерская серия ColourLine
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-1.png" alt="">
-													</div>
-													<div class="download-catalogs__text">Новая линейка комбинированных холодильников-морозильников
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-2.png" alt="">
-													</div>
-													<div class="download-catalogs__text">BioFresh 2018/2019
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-											<div class="download-catalogs__item swiper-slide">
-												<a href="#" class='download-catalogs__link'>
-													<div class="download-catalogs__pic">
-														<img src="images/download-catalogs-3.png" alt="">
-													</div>
-													<div class="download-catalogs__text">Дизайнерская серия ColourLine
-														<i>PDF 2.47 MB</i>
-													</div>
-												</a>
-
-											</div>
-										</div>
-										<div class="swiper-pagination-download-catalogs"></div>
-										<div class="swiper-button-prev download-catalogs__prev"></div>
-										<div class="swiper-button-next download-catalogs__next"></div>
-									</div>
-								</div>
-								<div class="articles swiper-container js-sidebar-articles">
+								<div class="articles">
 									<span class="articles__title">Может быть полезно</span>
 									<a href="#" class="articles__link">Посмотреть все статьи</a>
-									<div class="articles__items swiper-wrapper">
-										<div class="articles__item swiper-slide">
-											<a class="articles__pic" href="#">
-												<img src="images/articles_1.jpg" srcset="images/articles_1@2x.jpg 2x,images/articles_1@3x.jpg 3x" class="articles__img">
-											</a>
-											<a href="#" class="articles__text">Как правильно разморозить холодильник Либхер</a>
-											<span class="articles__date">25 марта 2018</span>
+									<div class="swiper-container" data-swiper data-options='{"slidesPerView": 1,"slidesPerGroup": 1,"spaceBetween": 12,"breakpoints": {"767":	{"slidesPerView": 3,"slidesPerGroup": 1,"spaceBetween": 16}}}'>
+										<div class="articles__items swiper-wrapper">
+											<div class="articles__item swiper-slide">
+												<a class="articles__pic" href="#">
+													<img src="images/articles_4.jpg" srcset="images/articles_4@2x.jpg 2x,images/articles_4@3x.jpg 3x" class="articles__img">
+												</a>
+												<a href="#" class="articles__text">Новые холодильники Siemens</a>
+												<span class="articles__date">25 марта 2018</span>
+												<span class="articles__info">Производитель Siemens порадовал обновлением ассортимента моделей. В новом сезоне 2018 года с конвейера выпущено около 30 моделей …</span>
+											</div>
+											<div class="articles__item swiper-slide">
+												<a class="articles__pic" href="#">
+													<img src="images/articles_3.jpg" srcset="images/articles_3@2x.jpg 2x,images/articles_3@3x.jpg 3x" class="articles__img">
+												</a>
+												<a href="#" class="articles__text">Сравнение холодильника SiemensCNbs 4015 Comfort NoFrost и Siemens CN 4813
+												</a>
+												<span class="articles__date">25 марта 2018</span>
+												<span class="articles__info">Холодильники Либхер сочетают доступную цену и надежное немецкое качество. Современные технологии позволяют …</span>
+											</div>
+											<div class="articles__item swiper-slide">
+												<a class="articles__pic" href="#">
+													<img src="images/articles_1.jpg" srcset="images/articles_1@2x.jpg 2x,images/articles_1@3x.jpg 3x" class="articles__img">
+												</a>
+												<a href="#" class="articles__text">Как правильно разморозить холодильник Либхер</a>
+												<span class="articles__date">25 марта 2018</span>
+												<span class="articles__info">Проблема разморозки холодильника рано или поздно встает перед любой хозяйкой. Этого требуют экономичность и чистоплотность, ведь скопление …</span>
+											</div>
 										</div>
-										<div class="articles__item swiper-slide">
-											<a class="articles__pic" href="#">
-												<img src="images/articles_2.jpg" srcset="images/articles_2@2x.jpg 2x,images/articles_2@3x.jpg 3x" class="articles__img">
-											</a>
-											<a href="#" class="articles__text">Преимущества встраиваемых микроволновых печей Liebherr</a>
-											<span class="articles__date">25 марта 2018</span>
-										</div>
-										<div class="articles__item swiper-slide">
-											<a class="articles__pic" href="#">
-												<img src="images/articles_3.jpg" srcset="images/articles_3@2x.jpg 2x,images/articles_3@3x.jpg 3x" class="articles__img">
-											</a>
-											<a href="#" class="articles__text">Сравнение холодильника Liebherr CNbs 4015 Comfort NoFrost и Liebherr CN 4813
-											</a>
-											<span class="articles__date">25 марта 2018</span>
-										</div>
+										<div class="swiper-pagination-articles articles__pagination js-swiper-pagination"></div>
 									</div>
-									<div class="swiper-pagination-articles articles__pagination"></div>
 								</div>
 
 								<div class="yandex">
@@ -1521,10 +1622,10 @@
 						</div>
 						<div class="description text-default" id="new-description">
 							<h2 class="description__title">
-								Описание модели Liebherr СКЕР 34562 COMFORT BIOFRESH NOFROST NEW
+								Описание модели Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW
 							</h2>
 							<p>
-								Холодильник Liebherr SBNes 3210 — отдельностоящий, с двумя независимыми отделениями: морозильным и холодильным. Модель входит в премиальную линейку.
+								Холодильник Siemens SBNes 3210 — отдельностоящий, с двумя независимыми отделениями: морозильным и холодильным. Модель входит в премиальную линейку.
 							</p>
 							<p>
 								Функция BioFresh — это особая технология, которая помогает сохранять свежесть продуктов. Она постоянно держит температуру в определенной зоне около 0 градусов, благодаря чему рыба, мясо и овощи не только остаются в привлекательном состоянии, но и сохраняют
@@ -1538,7 +1639,7 @@
 
 							</p>
 							<p>
-								Кроме того, холодильник Либхерр SBNes 3210 оснащен инновационным дисплеем MagicEye с цифровой индикацией температуры. Раздельная регулировка в рабочих камерах позволяет настраивать оптимальный температурный режим.
+								Кроме того, холодильник Siemensр SBNes 3210 оснащен инновационным дисплеем MagicEye с цифровой индикацией температуры. Раздельная регулировка в рабочих камерах позволяет настраивать оптимальный температурный режим.
 
 							</p>
 							<p>
@@ -1554,7 +1655,7 @@
 						</div>
 						<div class="practical-features js-practical-features">
 							<div class="practical-features__title">
-								Практичные функции холодильников LIEBHERR
+								Практичные функции холодильников Siemens
 							</div>
 							<div class="swiper-pagination-practical-features"></div>
 							<div class="swiper-button-prev practical-features__prev"></div>
@@ -1633,7 +1734,7 @@
 							</div>
 						</div>
 						<div class="reviews" id="reviews">
-							<h2 class="reviews__title">Отзывы о Либхер СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</h2>
+							<h2 class="reviews__title">Отзывы о Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</h2>
 							<div class="reviews__top">
 								<a href="#" data-url="ajax/reviews.html" data-ajax="" class="reviews__link">оставить отзыв</a>
 								<div class="reviews__section">
@@ -1791,392 +1892,26 @@
 								</div>
 							</div>
 						</div>
-						<div class=diagram id='diagram'>
-							<div class="diagram__title">Похожие на Liebherr СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</div>
-							<div class="diagram__subtitle">
-								Данные товары можно сравнить более детально, нажав на кнопку «Сравнить эти модели». Вы будете перенаправлены на страницу сравнения.
-								<a href="#" class="diagram__comparison">Сравнить эти модели</a>
-							</div>
-							<div class="diagram__items">
-								<div class="diagram__sidebar">
-									<div class="diagram__tabs js-diagram__param1 active">Стоимость товара</div>
-									<div class="diagram__tabs js-diagram__param2">Полезный объем холодильной камеры
-									</div>
-									<div class="diagram__tabs js-diagram__param3">Полезный объем морозильной камеры
-									</div>
-									<div class="diagram__tabs js-diagram__param4">Годовой расход электроэнергии
-									</div>
-									<div class="diagram__tabs js-diagram__param5">Годовой расход электроэнергии
-									</div>
-									<div class="diagram__tabs js-diagram__param6">Годовой расход электроэнергии
-									</div>
-								</div>
-								<div class="diagram__slider js-diagram__slider">
-									<div class="swiper-container">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=82000 data-param2=519 data-param3=153 data-param4=157 data-param5=157 data-param6=200 class="diagram__pic">
-														<img src="images/new-items_3.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Текущая модель холодильника
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=27000 data-param2=289 data-param3=114 data-param4=202 data-param5=15 data-param6=2 class="diagram__pic">
-														<img src="images/new-items_2.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr EWTgw 3583 Vinidor</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=240000 data-param2=262 data-param3=262 data-param4=122 data-param5=151 data-param6=300 class="diagram__pic">
-														<img src="images/new-items_1.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=342000 data-param2=384 data-param3=115 data-param4=298 data-param5=19 data-param6=400 class="diagram__pic">
-														<img src="images/new-items_4.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr IKF 3510 Comfort</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=37500 data-param2=367 data-param3=268 data-param4=255 data-param5=300 data-param6=133 class="diagram__pic">
-														<img src="images/new-items_1.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr IKF 3510 Comfort</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=200000 data-param2=289 data-param3=114 data-param4=202 data-param5=15 data-param6=2 class="diagram__pic">
-														<img src="images/new-items_2.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr EWTgw 3583 Vinidor</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=240000 data-param2=262 data-param3=262 data-param4=122 data-param5=151 data-param6=300 class="diagram__pic">
-														<img src="images/new-items_1.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=28000 data-param2=384 data-param3=115 data-param4=298 data-param5=19 data-param6=400 class="diagram__pic">
-														<img src="images/new-items_4.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr IKF 3510 Comfort</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="schedule">
-													<div class="diagram__text"></div>
-												</div>
-												<div class="diagram__item">
-													<a href="#" data-param1=150000 data-param2=367 data-param3=268 data-param4=0 data-param5=300 data-param6=133 class="diagram__pic">
-														<img src="images/new-items_1.jpg" alt="">
-													</a>
-													<a href="#" class="diagram__name">Liebherr IKF 3510 Comfort</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="diagram__maxvalue"></div>
-
-							</div>
-							<div class="swiper-pagination diagram__pagination"></div>
-							<div class="diagram__next swiper-button-next"></div>
-							<div class="diagram__prev swiper-button-prev"></div>
-						</div>
-						<div class="special-offers similar-models">
-							<div class="container">
-								<span class="special-offers__title">Популярные товары</span>
-								<!-- Slider main container -->
-								<div class="catalog swiper-container swiper-container-four  js-swiper-four">
-									<!-- Additional required wrapper -->
-									<div class="swiper-wrapper special-offers__wrapper">
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-											<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor
-											</a>
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">134 200
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-											<div class="announcing announcing__germany"></div>
-											<div class="announcing announcing_2 announcing__new"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__service"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-											<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
-
-
-
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">98 400
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__bulgaria"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-
-											<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost
-											</a>
-
-
-
-											<div class="special-offers__sale catalog__sale price__dashed">
-												<span class="special-offers__price catalog__price">115 000
-													<i class="special-offers__rub catalog__rub">руб.</i>
-													<span class="price__absolute">122 750 руб.</span>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__austria"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-											<div class="announcing announcing_5 announcing__sale"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_4.jpg" srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-
-											<a href="#" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
-
-
-
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">134 200
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__germany"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-											<div class="announcing announcing_5 announcing__sale"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-											<a href="#" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor
-											</a>
-
-
-
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">134 200
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__bulgaria"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-											<div class="announcing announcing_5 announcing__sale"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-											<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor
-											</a>
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">134 200
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-											<div class="announcing announcing__germany"></div>
-											<div class="announcing announcing_2 announcing__new"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__service"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-											<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
-
-
-
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">98 400
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__bulgaria"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-
-											<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort NoFrost
-											</a>
-
-
-
-											<div class="special-offers__sale catalog__sale price__dashed">
-												<span class="special-offers__price catalog__price">115 000
-													<i class="special-offers__rub catalog__rub">руб.</i>
-													<span class="price__absolute">122 750 руб.</span>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__austria"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-											<div class="announcing announcing_5 announcing__sale"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_4.jpg" srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-
-											<a href="#" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)</a>
-
-
-
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">134 200
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__germany"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-											<div class="announcing announcing_5 announcing__sale"></div>
-										</div>
-										<div class="catalog__item swiper-slide special-offers__slide">
-											<a class="catalog__pic" href="#">
-												<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img catalog__img">
-											</a>
-											<a href="#" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor
-											</a>
-
-
-
-											<div class="special-offers__sale catalog__sale">
-												<span class="special-offers__price catalog__price">134 200
-													<i class="special-offers__rub catalog__rub">руб.</i>
-												</span>
-												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
-											</div>
-
-											<div class="announcing announcing__bulgaria"></div>
-											<div class="announcing announcing_2 announcing__service"></div>
-											<div class="announcing announcing_3 announcing__delivery"></div>
-											<div class="announcing announcing_4 announcing__new"></div>
-											<div class="announcing announcing_5 announcing__sale"></div>
-										</div>
-									</div>
-									<!-- If we need pagination -->
-
-									<!-- If we need navigation buttons -->
-									<!-- If we need scrollbar -->
-									<div class="swiper-scrollbar"></div>
-								</div>
-								<div class="swiper-pagination_2"></div>
-								<div class="swiper-button-prev special-offers_prev"></div>
-								<div class="swiper-button-next special-offers_next"></div>
-							</div>
-						</div>
-						<div class="recently-watched js-recently-watched">
+						<div class="recently-watched">
 							<div class="recently-watched__title">
 								Вы недавно смотрели
 							</div>
-							<div class="swiper-pagination-recently-watched swiper-pagination"></div>
-							<div class="swiper-button-prev recently-watched__prev"></div>
-							<div class="swiper-button-next recently-watched__next"></div>
+							<div class="swiper-pagination-recently-watched swiper-pagination js-swiper-pagination"></div>
+							<div class="swiper-button-prev recently-watched__prev js-swiper__prev"></div>
+							<div class="swiper-button-next recently-watched__next js-swiper__next"></div>
 							<a href="#" class="recently-watched__reset">Сбросить просмотренное</a>
-							<div class="swiper-container">
+							<div class="swiper-container" data-swiper data-options='{"slidesPerView": 6,"slidesPerGroup": 1,"spaceBetween": 25,"touchRatio": 1,"breakpoints": {"480": {"slidesPerView": 2.5,"slidesPerGroup": 1,"allowTouchMove": true,"spaceBetween": 16},"767": {"allowTouchMove": true,"slidesPerView": 3.5,"slidesPerGroup": 1,"spaceBetween": 24}}}'>
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<a href="#" class="recently-watched__pic">
 											<img src="images/new-items_3.jpg" alt="">
 										</a>
 										<a href='#' class="recently-watched__text">
-											Винный шкаф Liebherr EWTgw 3583 Vinidor
+											Винный шкаф Siemens EWTgw 3583 Vinidor
 											<span class="recently-watched__price">134 200
 												<i class="recently-watched__rub">руб.</i>
 											</span>
 										</a>
-
 										<div class="recently-watched__close"></div>
 									</div>
 									<div class="swiper-slide">
@@ -2184,7 +1919,7 @@
 											<img src="images/new-items_1.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+											Холодильник Siemens CBNPbs 4858 Premium BioFresh NoFrost
 											<span class="recently-watched__price">
 												34 200
 												<i class="recently-watched__rub">руб.</i>
@@ -2197,7 +1932,7 @@
 											<img src="images/new-items_2.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Морозильник Liebherr GN 2723 Comfort NoFrost
+											Морозильник Siemens GN 2723 Comfort NoFrost
 											<span class="recently-watched__price">
 												14 200
 												<i class="recently-watched__rub">руб.</i>
@@ -2210,7 +1945,7 @@
 											<img src="images/new-items_1.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+											Холодильник Siemens CBNPbs 4858 Premium BioFresh NoFrost
 											<span class="recently-watched__price">
 												13 200
 												<i class="recently-watched__rub">руб.</i>
@@ -2223,7 +1958,7 @@
 											<img src="images/new-items_3.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Винный шкаф Liebherr EWTgw 3583 Vinidor
+											Винный шкаф Siemens EWTgw 3583 Vinidor
 											<span class="recently-watched__price">
 												1 200
 												<i class="recently-watched__rub">руб.</i>
@@ -2236,7 +1971,7 @@
 											<img src="images/new-items_1.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+											Холодильник Siemens CBNPbs 4858 Premium BioFresh NoFrost
 										</a>
 										<div class="recently-watched__close"></div>
 									</div>
@@ -2245,7 +1980,7 @@
 											<img src="images/new-items_2.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Морозильник Liebherr GN 2723 Comfort NoFrost
+											Морозильник Siemens GN 2723 Comfort NoFrost
 										</a>
 										<div class="recently-watched__close"></div>
 									</div>
@@ -2254,14 +1989,61 @@
 											<img src="images/new-items_1.jpg" alt="">
 										</a>
 										<a href="#" class="recently-watched__text">
-											Холодильник Liebherr CBNPbs 4858 Premium BioFresh NoFrost
+											Холодильник Siemens CBNPbs 4858 Premium BioFresh NoFrost
 										</a>
 										<div class="recently-watched__close"></div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="newsletter">
+							<div class="newsletter__pic">
+								<img src="images/newsletter.png" alt="">
+							</div>
+							<!-- /.newsletter__pic -->
+							<div class="newsletter__items">
+								<div class="newsletter__title">
+									Мы помним, что вас интересовало, получите выгодное предложение
+								</div>
+								<!-- /.newsletter__title -->
+								<div class="newsletter__subtitle">
+									Подпишитесь, чтобы первыми узнавать о новостях, акциях и выгодных предложениях
+								</div>
+								<!-- /.newsletter__subtitle -->
+								<div class="newsletter__form">
+									<form class="newslette__form js-form" action="" method="post">
+										<strong class="abuse-popup__name newslette__name">Ваше имя:
+											<span class="abuse-popup__req newslette__req">*</span>
+										</strong>
+										<input type="text" name="F[NAME]" value="" placeholder="Ваше имя">
+
+										<strong class="abuse-popup__name newslette__name">Ваше телефон:
+											<span class="abuse-popup__req newslette__req">*</span>
+										</strong>
+										<input type="email" name="F[PHONE]" value="" placeholder="Email *" im-insert="true" required="">
+										<input type="submit" value="Подписаться" class="btn-sub3 abuse-popup__submit js-go">
+										<div class="abuse-popup__item">
+											<label class="checkbox checkbox_oferta js-checkbox">
+												<input class="checkbox__input js-check" type="checkbox" checked="checked">
+												<span class="checkbox__icon js-check_icon"></span>
+												<span class="checkbox__text">Согласен с
+													<a target="_blank" href="/personal-data/">использованием персональных данных</a>для обработки обращения
+												</span>
+											</label>
+
+											<input type="hidden" name="F[PAGE]" class="js-form_page noCheck" value="https://gr-russia.ru/catalog/termostaty/termostat-dlya-vanny-Siemens-grandera-19934ig0-verkhnyaya-montazhnaya-chast.html">
+											<input type="hidden" name="action" value="callbackAdd">
+
+										</div>
+									</form>
+								</div>
+								<!-- /.newsletter__form -->
+							</div>
+							<!-- /.newsletter__items -->
+						</div>
+						<!-- /.newsletter -->
 					</div>
+
 				</div>
 				<!-- END WORKAREA -->
 			</div>
@@ -2278,64 +2060,82 @@
 				<div class="footer__col">
 					<nav class="menu-footer">
 						<ul class="menu-footer__list">
-							<li class="menu-footer__title js-menu-footer__title">Бытовые холодильники</li>
+							<li class="menu-footer__title js-menu-footer__title">Каталог товаров</li>
 							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Холодильники</a>
-							</li>
-							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Отдельностоящие морозильные камеры
+								<a class="menu-footer__link" href="#">
+									Варочные панели
+
 								</a>
 							</li>
 							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Встраиваемые холодильники
+								<a class="menu-footer__link" href="#">
+									Духовые шкафы
 								</a>
 							</li>
 							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Встраиваемые морозильные камеры
+								<a class="menu-footer__link" href="#">
+									Вытяжки
 								</a>
 							</li>
 							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Винные шкафы</a>
+								<a class="menu-footer__link" href="#">
+									Микроволновые печи
+								</a>
 							</li>
 							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Хьюмидоры</a>
+								<a class="menu-footer__link" href="#">
+									Пароварки
+								</a>
 							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Кофемашины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Подогреватели
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Посудомоечные машины
+
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Холодильники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Стиральные машины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Сушильные машины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Аксессуары
+								</a>
+							</li>
+
 						</ul>
 					</nav>
 				</div>
 				<!-- /.footer__col -->
-				<div class="footer__col">
-					<nav class="menu-footer">
-						<ul class="menu-footer__list">
-							<li class="menu-footer__title js-menu-footer__title">Профессиональная техника</li>
-							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Медицинское и лабораторное оборудование
-								</a>
-							</li>
-							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Для гостиниц и ресторанов
-								</a>
-							</li>
-							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Для охлаждения напитков</a>
-							</li>
-							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Для пекарен</a>
-							</li>
-							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">Для хранения замороженных продуктов и мороженого
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+
 				<!-- /.footer__col -->
 				<div class="footer__col">
 					<nav class="menu-footer">
 						<ul class="menu-footer__list">
-							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+							<li class="menu-footer__title js-menu-footer__title">Мир Siemens</li>
 							<li class="menu-footer__item">
-								<a class="menu-footer__link" href="#">О Liebherr</a>
+								<a class="menu-footer__link" href="#">О Мир Siemens</a>
 							</li>
 							<li class="menu-footer__item">
 								<a class="menu-footer__link" href="#">Акции и статьи</a>
@@ -2366,17 +2166,18 @@
 				</div>
 				<!-- /.footer__col -->
 				<div class="footer__col">
-					<div class="footer__text footer__text_first">Интернет-магазин Liebherr</div>
-					<a href="tel:+74951912633" class="footer__tel">+7 495 191-26-33</a>
-					<a href="tel:+78003331936" class="footer__tel">+7 800 333-19-36</a>
-					<a href="#" data-url="ajax/callback.html" data-ajax="" class="footer__call-phone-button js-callback">
-						<span>
-							Заказать звонок
-						</span>
+					<div class="footer__text footer__text_first">Интернет-магазин Siemens</div>
+					<a href="tel:74951201129" class="footer__tel">+7 495 120-11-29</a>
+					<a href="tel:78005559804" class="footer__tel">+7 800 555-98-04</a>
 
+					<a href="" class="footer__call-phone-button js-viewForm" data-action="callback">
+						<span>Заказать звонок
+						</span>
 					</a>
-					<a href="mailto:shop@l-rus.ru" class="footer__email">
-						<i></i>shop@l-rus.ru</a>
+
+					<a href="mailto:shop@jackys-store.ru" class="footer__email">
+						<i>Email:</i>shop@jackys-store.ru</a>
+
 					<div class="footer__text footer__text_two">Режим работы</div>
 					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
 						<br>Сб-Вс: 09:00—22:00</div>
@@ -2385,7 +2186,7 @@
 			</div>
 			<div class="footer__row">
 				<div class="footer__copyright">
-					© 2004 – 2019 Магазин LIEBHERR.
+					© 2004 – 2019 Магазин Siemens.
 					<br>«NTK LTD TM all rights reserved»
 				</div>
 				<div class="social-items">
@@ -2409,6 +2210,7 @@
 
 	</div>
 	<!-- /.footer -->
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 	<script src="js/frontend-works.js"></script>

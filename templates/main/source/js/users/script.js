@@ -279,6 +279,9 @@ $(document).ready(function () {
 		}
 		$(".labels__popup").css('left', handel);
 	});
+	$(".labels__sale").hover(function () {
+		$(this).toggleClass('active')
+	});
 
 	$(".catalog__prop .js-link-pop-glossary").hover(function () {
 
@@ -1564,56 +1567,56 @@ $(document).ready(function () {
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();
-	setTimeout(function () {
+	// setTimeout(function () {
 
-		var galleryThumbs = new Swiper('.js-gallery-thumbs', {
-			spaceBetween: 12,
-			slidesPerView: 6,
-			freeMode: true,
-			direction: "vertical",
-			watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			touchRatio: 0.2,
-			slideToClickedSlide: true,
-			breakpoints: {
-				// when window width is <= 320px
-				// 420: {
-				//   slidesPerGroup: 1,
-				//   slidesPerView: 1,
-				//   spaceBetween: 0
-				// },
-				// // // when window width is <= 480px
-				// // 480: {
-				// 700: {
-				//   slidesPerView: 2,
-				//   slidesPerGroup: 2,
-				//   spaceBetween: 20
-				// },
-				768: {
+	// 	var galleryThumbs = new Swiper('.js-gallery-thumbs', {
+	// 		spaceBetween: 12,
+	// 		slidesPerView: 6,
+	// 		freeMode: true,
+	// 		direction: "vertical",
+	// 		watchSlidesVisibility: true,
+	// 		watchSlidesProgress: true,
+	// 		touchRatio: 0.2,
+	// 		slideToClickedSlide: true,
+	// 		breakpoints: {
+	// 			// when window width is <= 320px
+	// 			// 420: {
+	// 			//   slidesPerGroup: 1,
+	// 			//   slidesPerView: 1,
+	// 			//   spaceBetween: 0
+	// 			// },
+	// 			// // // when window width is <= 480px
+	// 			// // 480: {
+	// 			// 700: {
+	// 			//   slidesPerView: 2,
+	// 			//   slidesPerGroup: 2,
+	// 			//   spaceBetween: 20
+	// 			// },
+	// 			768: {
 
-					spaceBetween: 14
-				}
-			},
-			navigation: {
-				nextEl: ".thumbs-next",
-				prevEl: ".thumbs-prev"
-			},
-		});
-		var galleryTop = new Swiper('.js-gallery-top', {
-			spaceBetween: 0,
-			// navigation: {
-			// 	nextEl: '.swiper-button-next',
-			// 	prevEl: '.swiper-button-prev',
-			// },
-			pagination: {
-				el: ".gallery-top__pagination",
-				clickable: true
-			},
-			thumbs: {
-				swiper: galleryThumbs
-			}
-		});
-	}, 100);
+	// 				spaceBetween: 14
+	// 			}
+	// 		},
+	// 		navigation: {
+	// 			nextEl: ".thumbs-next",
+	// 			prevEl: ".thumbs-prev"
+	// 		},
+	// 	});
+	// 	var galleryTop = new Swiper('.js-gallery-top', {
+	// 		spaceBetween: 0,
+	// 		// navigation: {
+	// 		// 	nextEl: '.swiper-button-next',
+	// 		// 	prevEl: '.swiper-button-prev',
+	// 		// },
+	// 		pagination: {
+	// 			el: ".gallery-top__pagination",
+	// 			clickable: true
+	// 		},
+	// 		thumbs: {
+	// 			swiper: galleryThumbs
+	// 		}
+	// 	});
+	// }, 100);
 
 	if ($(".filter-new").length) {
 		$('.filter-new .bx-filter-parameters-box-container').each(function () {
@@ -1834,48 +1837,48 @@ $(window).on('load', function () {
 
 	}
 
-	(function () {
-		let moreText = document.querySelector('.js-button');
-		let mainTags = document.querySelector('.tags__list');
+	// (function () {
+	// 	let moreText = document.querySelector('.js-button');
+	// 	let mainTags = document.querySelector('.tags__list');
 
-		if (moreText) {
+	// 	if (moreText) {
 
-			moreText.classList.add('show');
-			moreText.onclick = showTags;
-			showTags();
+	// 		moreText.classList.add('show');
+	// 		moreText.onclick = showTags;
+	// 		showTags();
 
-			function showTags() {
-				var num = 0;
-				var lastItemIndex = 0;
-				var tagsList = mainTags.querySelectorAll('.tags__item');
-				tagsList.forEach((element, index) => {
-
-
-
-					if (element.classList.contains("show") === false && num < 7) {
-						element.classList.add('show');
-						num++;
-						lastItemIndex = index;
-					}
-					if (num <= 7) {
-						return false;
-					}
-				});
-
-				if (tagsList.length <= lastItemIndex + 1) {
-
-					moreText.classList.remove('show');
-				}
-			}
-		} else {
-			var tagsList = mainTags.querySelectorAll('.tags__item');
-			tagsList.forEach((element, index) => {
-				element.classList.add('show');
-			});
-		}
+	// 		function showTags() {
+	// 			var num = 0;
+	// 			var lastItemIndex = 0;
+	// 			var tagsList = mainTags.querySelectorAll('.tags__item');
+	// 			tagsList.forEach((element, index) => {
 
 
-	})();
+
+	// 				if (element.classList.contains("show") === false && num < 7) {
+	// 					element.classList.add('show');
+	// 					num++;
+	// 					lastItemIndex = index;
+	// 				}
+	// 				if (num <= 7) {
+	// 					return false;
+	// 				}
+	// 			});
+
+	// 			if (tagsList.length <= lastItemIndex + 1) {
+
+	// 				moreText.classList.remove('show');
+	// 			}
+	// 		}
+	// 	} else {
+	// 		var tagsList = mainTags.querySelectorAll('.tags__item');
+	// 		tagsList.forEach((element, index) => {
+	// 			element.classList.add('show');
+	// 		});
+	// 	}
+
+
+	// })();
 
 
 });

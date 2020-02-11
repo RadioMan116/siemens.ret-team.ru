@@ -8,7 +8,7 @@
             <g id="карточка" transform="translate(131.000000, 181.000000)">
                 <g id="цена-и-информация" transform="translate(601.000000, 104.000000)">
                     <g id="truck" transform="translate(0.000000, 144.000000)">
-                        <rect id="Rectangle" fill="#394791" x="0" y="0" width="40" height="40" rx="2"></rect>
+                        <rect id="Rectangle" fill="#00b2b2" x="0" y="0" width="40" height="40" rx="2"></rect>
                         <g id="delivery-truck" transform="translate(5.000000, 5.000000)" stroke-width="1">
                             <g>
                                 <rect id="Rectangle-4" x="0" y="0" width="30" height="30"></rect>
