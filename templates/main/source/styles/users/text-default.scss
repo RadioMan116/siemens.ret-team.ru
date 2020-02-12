@@ -1,13 +1,14 @@
 .text-default,
 .articles-main__info,
 .about-store,
+.about-brand,
 .description {
-	margin-bottom: 14px;
+	margin-bottom: 48px;
 	display: flex;
 	flex-direction: column;
 
 	img {
-		display: block;
+		// display: block;
 		max-width: 100%;
 
 		// margin-bottom: 28px;
@@ -69,15 +70,15 @@
 	}
 
 	p {
-		display: block;
+		// display: block;
 		width: 100%;
 		color: #333333;
-		font-family: Arial, sans-serif;
+		font-family: Arial;
 		font-size: 14px;
 		line-height: 22px;
 		text-align: left;
 		z-index: 99;
-		margin: 6px 0 16px;
+		margin: 6px 0 15px;
 
 		a {
 			color: $base;
@@ -98,7 +99,7 @@
 		span {
 			width: 100%;
 			padding: 5px 0;
-			font-family: Arial, sans-serif;
+			font-family: Arial;
 			font-weight: 700;
 		}
 
@@ -128,13 +129,16 @@
 		img {
 			margin-right: 0;
 			margin-left: 0;
-			margin-bottom: 34px;
+			margin-bottom: 0px;
 		}
 	}
 
+
+
+
 	ol {
 		color: #333333;
-		font-family: Arial, sans-serif;
+		font-family: Arial;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 22px;
@@ -170,11 +174,27 @@
 		b {
 			margin-bottom: 16px
 		}
+
+		ul {
+			margin-bottom: 0;
+
+			+p {
+				margin: 4px 0 12px;
+
+				+p {
+					margin: 4px 0 12px;
+				}
+			}
+
+			li {
+				margin-bottom: 2px;
+			}
+		}
 	}
 
 	li {
 		color: #333333;
-		font-family: Arial, sans-serif;
+		font-family: Arial;
 		font-size: 14px;
 		line-height: 20px;
 		text-align: left;
@@ -185,10 +205,11 @@
 
 	strong {
 		color: #333333;
-		font-family: Arial, sans-serif;
+		font-family: Arial;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 22px;
+		margin: 5px 0;
 	}
 
 
@@ -211,43 +232,55 @@
 		&:first-child {
 			td {
 				color: #666666;
-				font-family: Arial, sans-serif;
+				font-family: Arial;
 				font-size: 12px;
 				font-weight: 700;
-
+				padding: 11px 7px 13px;
 
 			}
 		}
 
 		td:not(:first-child) {
 			flex-grow: 1;
-			min-width: 80px;
+			min-width: 150px;
+			flex-shrink: 0;
+			max-width: 200px;
+			// margin-left: auto;
+		}
+
+		p {
+			margin: 0;
+			width: auto;
 		}
 	}
 
 	td {
-		font-family: Arial, sans-serif;
+		font-family: "Arial";
 		color: #333333;
 		font-size: 14px;
 		display: flex;
-		flex-direction: column;
-		padding: 11px 0 11px 13px;
+		flex-direction: row;
+		padding: 11px 11px 13px;
+		align-items: center;
 
 		&:first-child {
-			width: 286px;
-			flex-shrink: 0;
+			// width: 286px;
+			// flex-shrink: 0;
+			margin-right: auto;
+			max-width: 575px;
+			width: 100%;
 		}
 
 		i {
 			color: #666666;
-			font-family: Arial, sans-serif;
+			font-family: Arial;
 			font-size: 14px;
 			font-style: normal;
 		}
 
 		b {
 			color: #666666;
-			font-family: Arial, sans-serif;
+			font-family: Arial;
 			font-size: 12px;
 			font-weight: 700;
 			padding: 0;
@@ -273,7 +306,7 @@
 
 			.table_td {
 				color: #333333;
-				font-family: Arial, sans-serif;
+				font-family: Arial;
 				font-size: 14px;
 				font-weight: 400;
 				padding: 8px 0 7px 13px;
@@ -336,7 +369,7 @@
 
 		a {
 			color: $base;
-			font-family: Arial, sans-serif;
+			font-family: Arial;
 			font-size: 12px;
 			margin-right: 26px;
 		}
@@ -355,35 +388,13 @@
 			font-weight: 400;
 			line-height: 24px;
 		}
-
-		&:first-of-type {
-			background: red;
-		}
-
-		.container {
-			* {
-				display: none;
-				&:nth-child(-n+5) {
-					display: block;
-				}
-			}
-			&.active{
-				*{
-					display: block;
-				}
-			}
-		}
 	}
 
-	&.official-dealers {
+	.official-dealers {
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
 		margin-bottom: 29px;
-
-		.container {
-			display: flex;
-		}
 
 		h2 {
 			text-align: center;
@@ -403,13 +414,14 @@
 
 		// .official-dealers__link
 
-		.official-dealers__link {
+		&__link {
 			width: calc(50%-16px);
 			display: flex;
 			position: relative;
 			overflow: hidden;
 			margin-bottom: 19px;
-			margin-top: 14px;
+			margin-top: 29px;
+			flex-direction: column;
 
 			&:nth-of-type(1) {
 				margin-right: 29px;
@@ -427,7 +439,7 @@
 				left: 0;
 				top: 0;
 				width: 100%;
-				height: 100%;
+				height: calc(100% - 0px);
 			}
 
 			&:hover {
@@ -436,17 +448,72 @@
 				}
 			}
 
-			picture {
-				min-height: 340px;
+			span {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				background: white;
+				width: 100%;
+				// margin-top: 16px;
+				height: 45px;
+				display: flex;
+				align-items: flex-end;
+				z-index: 9;
 			}
 		}
 	}
 
-	.about-store__button {
+	.about-store__button,
+	.seo-text__button,
+	.about-brand__button {
+		display: none;
+	}
+
+	.mobile {
 		display: none;
 	}
 
 
+	.pic_left {
+		float: left;
+		margin: 20px 25px 20px 0;
+	}
+
+	.pic_right {
+		float: right;
+		margin: 20px 0 25px 20px;
+	}
+
+	.table_delivery {
+		tr {
+
+			td:last-child {
+				b {
+					font-family: Arial;
+					color: #333;
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+
+
+			td {
+
+				padding: 11px 7px 13px;
+
+				&[colspan="2"] {
+					b {
+						font-size: 14px;
+						font-weight: 700;
+					}
+				}
+
+
+			}
+		}
+	}
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
@@ -454,7 +521,7 @@
 		img {
 			// max-height: 52px;
 			margin-top: -5px;
-			margin-bottom: 24px !important;
+			margin-bottom: 24px;
 		}
 
 		h3 {
@@ -539,7 +606,7 @@
 				font-size: 22px;
 				font-weight: 400;
 				line-height: 26px;
-				margin-bottom: 26px;
+				margin-bottom: 16px;
 			}
 
 			img {
@@ -550,14 +617,20 @@
 			}
 		}
 
-		&.official-dealers {
-			.official-dealers__link {
-				width: calc(100%);
-				display: flex;
+		.official-dealers {
+			&__link {
+				width: auto;
+				display: flex !important;
 				position: relative;
 				overflow: hidden;
 				margin-bottom: 5px;
 				margin-top: 14px;
+				order: 1 !important;
+				width: calc(100% + 32px);
+
+				@media screen and (max-width: 480px) {
+					margin: 0 -16px 12px !important;
+				}
 
 				&:nth-of-type(1) {
 					margin-right: 0px;
@@ -569,12 +642,54 @@
 					height: auto !important;
 				}
 
-				picture {
-					min-height: 100%;
+				span {
+					color: #333333;
+					font-family: "Roboto Condensed";
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 26px;
+					padding: 0 20px 0 12px;
+					height: auto;
+				}
+
+				&:after {
+					height: calc(105% - 36px)
 				}
 			}
-			p{
-				margin-bottom: 23px;
+
+			h2 {
+				text-align: left;
+			}
+
+			p,
+			ul {
+				display: none;
+			}
+
+			.mobile {
+				display: block;
+				color: #262626;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 16px;
+			}
+
+			a {
+				display: block;
+			}
+
+			&.active {
+
+				p,
+				ul {
+					display: block;
+				}
+
+				.mobile {
+					display: none;
+				}
+
 			}
 		}
 
@@ -615,7 +730,7 @@
 				}
 
 				.table_td {
-					font-family: Arial, sans-serif;
+					font-family: Arial;
 					font-size: 14px;
 					font-weight: normal;
 					font-style: normal;
@@ -683,48 +798,74 @@
 
 		&.seo-text {
 			// height: 700px;
-			overflow: hidden;
+			// overflow: hidden;
 			position: relative;
+
+			.container {
+				display: flex;
+
+				&:first-child {
+
+					:nth-child(5),
+					:nth-child(6) {
+						display: none;
+					}
+
+					:nth-child(-n+6) {
+						order: -1;
+					}
+
+					&.active {
+
+						:nth-child(5),
+						:nth-child(6) {
+							display: block;
+						}
+					}
+				}
+
+			}
+
 		}
 
-		.about-store__button {
-			position: absolute;
-			bottom: -10px;
-			left: 0;
-			width: 100%;
-			background: white;
-			padding: 8px 15px;
+		.seo-text__button {
 			color: $base;
-			font-family: Arial, sans-serif;
+			font-family: Arial;
 			font-size: 14px;
-			display: flex !important;
-			align-items: center;
-
-			&:before {
-				content: "";
-				width: 119px;
-				position: absolute;
-				height: 1px;
-				border-bottom: 1px dashed $base;
-				bottom: 10px;
-			}
+			display: none;
+			padding-bottom: 2px;
+			border-bottom: 1px dashed $base;
+			width: fit-content !important;
+			position: relative;
+			// left: 16px;
+			// bottom: 13px;
+			// width: 100%;
+			// padding: 0 16px;
+			height: auto;
+			opacity: 1;
+			display: block;
+			margin: 0 16px 14px 0;
+			height: auto;
+			opacity: 1;
 
 			&:after {
+				background: url('https://icongr.am/entypo/chevron-small-down.svg?color=2e2e2e&size=50') no-repeat;
 				content: '';
-				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") center/16px no-repeat;
-				width: 16px;
-				height: 16px;
+				width: 20px;
+				height: 20px;
 				position: absolute;
-				left: calc(145px);
+				background-size: contain;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -22px;
 			}
 		}
 
-		.active {
+		&.active {
 			height: auto;
 
 			.about-store__button {
 				position: static;
-				padding-left: 0;
 
 				&:before {
 					width: 63px;
@@ -733,7 +874,7 @@
 				&:after {
 					content: '';
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=666666") center/16px no-repeat;
-					left: 100px;
+					left: 80px;
 				}
 			}
 
