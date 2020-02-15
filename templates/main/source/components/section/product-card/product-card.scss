@@ -1091,7 +1091,7 @@
 				line-height: 1;
 				letter-spacing: normal;
 				text-align: left;
-				color: $base;
+				  color: #999999;
 				padding: 10px 8px 10px 60px;
 				border: 1px solid #eeeeee;
 				align-items: center;
@@ -1109,8 +1109,8 @@
 				}
 
 				span {
-					// color: $base;
-					color: #333;
+					color: $base;
+					// color: #333;
 					font-family: "Roboto Condensed";
 					font-size: 14px;
 					font-weight: 400;
