@@ -631,7 +631,7 @@
 
 .yandex__img {
 	max-width: 100%;
-	display: none;
+	// display: none;
 }
 
 .yandex__button {
@@ -694,10 +694,10 @@
 }
 
 .yandex__logo {
-	background: url("../images/yamarket.svg") no-repeat;
+	// background: url("../images/yamarket.svg") no-repeat;
 	width: 160px;
-	height: 106px;
-	margin-bottom: 12px;
+	// height: 106px;
+	margin-bottom: 18px;
 }
 
 
@@ -804,6 +804,9 @@
 		border: 1px solid #eeeeee;
 		width: 100%;
 		padding-bottom: 36px;
+		&.swiper-container{
+			padding: 0 0 ;
+		}
 	}
 
 	&__prev {}
@@ -812,7 +815,7 @@
 
 	&__item {
 		border-bottom: 1px solid #eeeeee;
-		padding: 15px 11px;
+		padding: 15px 18px;
 		display: flex;
 		margin-top: 0 !important;
 
@@ -859,6 +862,7 @@
 	.swiper-pagination-download-catalogs {
 		padding: 10px 10px 19px;
 		width: auto;
+		// position: absolute;
 
 		.swiper-pagination-bullet {
 			margin: 0 16px 0 0;

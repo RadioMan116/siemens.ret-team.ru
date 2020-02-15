@@ -4,7 +4,7 @@
 	font-size: 12px;
 	line-height: 24px;
 	text-align: left;
-	margin-top: 24px;
+	margin-top: 28px;
 	width: 100%;
 
 	div {
@@ -27,7 +27,8 @@
 
 	@media screen and (max-width: 767px) {
 		line-height: 17px;
-		margin-top: 18px;
+		margin-top: 21px;
+		margin-bottom:6px;
 
 		&__sep {
 			margin: 0 ;

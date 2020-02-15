@@ -18,7 +18,7 @@
     <rect width="23" height="23" x=".5" y=".5" stroke="#000"/>
     <rect width="24" height="1" y="8" fill="#000"/>
     <use fill="#000" filter="url(#пароварка-a)" xlink:href="#пароварка-b"/>
-    <rect width="17" height="10" x="3.5" y="10.5" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <rect width="17" height="10" x="3.5" y="10.5" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#пароварка-c)" xlink:href="#пароварка-d"/>
     <use fill="#B00" xlink:href="#пароварка-d"/>
     <circle cx="6" cy="3" r="1" fill="#000"/>

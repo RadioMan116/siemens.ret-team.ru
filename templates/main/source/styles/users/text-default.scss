@@ -467,7 +467,7 @@
 
 	.about-store__button,
 	.seo-text__button,
-	.about-brand__button {
+	.about-brand__button,.switch {
 		display: none;
 	}
 
@@ -828,11 +828,11 @@
 
 		}
 
-		.seo-text__button {
+		.seo-text__button,.switch {
 			color: $base;
 			font-family: Arial;
 			font-size: 14px;
-			display: none;
+			// display: none;
 			padding-bottom: 2px;
 			border-bottom: 1px dashed $base;
 			width: fit-content !important;
@@ -843,7 +843,7 @@
 			// padding: 0 16px;
 			height: auto;
 			opacity: 1;
-			display: block;
+			display: block !important;
 			margin: 0 16px 14px 0;
 			height: auto;
 			opacity: 1;

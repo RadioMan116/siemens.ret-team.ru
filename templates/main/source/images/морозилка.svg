@@ -70,22 +70,22 @@
     <rect width="11" height="1" x="2" y="2" fill="#040404"/>
     <rect width="11" height="1" x="2" y="4" fill="#000" opacity=".152"/>
     <use fill="#000" filter="url(#морозилка-a)" xlink:href="#морозилка-b"/>
-    <rect width="10" height="13" x="2.5" y="8.5" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <rect width="10" height="13" x="2.5" y="8.5" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-c)" xlink:href="#морозилка-d"/>
-    <circle cx="5.5" cy="19.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="5.5" cy="19.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-e)" xlink:href="#морозилка-f"/>
-    <circle cx="5.5" cy="16.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="5.5" cy="16.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-g)" xlink:href="#морозилка-h"/>
-    <circle cx="5.5" cy="13.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="5.5" cy="13.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-i)" xlink:href="#морозилка-j"/>
-    <circle cx="5.5" cy="10.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="5.5" cy="10.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-k)" xlink:href="#морозилка-l"/>
-    <circle cx="9.5" cy="19.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="9.5" cy="19.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-m)" xlink:href="#морозилка-n"/>
-    <circle cx="9.5" cy="16.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="9.5" cy="16.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-o)" xlink:href="#морозилка-p"/>
-    <circle cx="9.5" cy="13.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="9.5" cy="13.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#морозилка-q)" xlink:href="#морозилка-r"/>
-    <circle cx="9.5" cy="10.5" r="1" fill="#D0021B" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="9.5" cy="10.5" r="1" fill="#af235f" fill-opacity=".149" stroke="#B00" stroke-linejoin="square"/>
   </g>
 </svg>

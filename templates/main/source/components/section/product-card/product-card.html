@@ -15,7 +15,7 @@
 		<div class="labels">
 
 			<img class=" loaded lazyloaded" src="images/new.svg" alt="Новинка">
-			<!-- <img class=" loaded lazyloaded" src="images/sale.svg" alt="Акция"> -->
+			<img class=" loaded lazyloaded" src="images/sale.svg" alt="Акция">
 			<img class=" loaded lazyloaded" src="images/hit.svg" alt="Хит продаж">
 			<div class="labels__sale">
 				<img class=" loaded lazyloaded" src="images/goods-action.svg" alt="Товар со скидкой 10 000 руб."
@@ -28,7 +28,7 @@
 			</div>
 		</div>
 		<div class="swiper-pagination gallery-top__pagination"></div>
-		<div class="swiper-container gallery-top " data-swiper data-options='{ "spaceBetween": 0}'>
+		<div class="swiper-container gallery-top  js-gallery-top">
 			<div class="swiper-wrapper">
 
 				<div class="swiper-slide">
@@ -204,8 +204,7 @@
 			<!-- <div class="swiper-button-next swiper-button-white"></div>
 				<div class="swiper-button-prev swiper-button-white"></div> -->
 		</div>
-		<div class="swiper-container gallery-thumbs s" data-swiper
-			data-options='{"slidesPerView": 5,"spaceBetween": 20,"freeMode": true,"touchRatio": 1,"watchSlidesVisibility":true,"watchSlidesProgress": true,"breakpoints": {"767": {"spaceBetween": 14}}}'>
+		<div class="swiper-container gallery-thumbs js-gallery-thumbs">
 			<div class="thumbs-next js-swiper__next"></div>
 			<div class="thumbs-prev js-swiper__prev"></div>
 			<div class="swiper-wrapper">
@@ -1067,30 +1066,6 @@
 				</div>
 
 				<div class="characteristic__row">
-					<span class="characteristic__name">Система SoftTelescopic</span>
-					<span class="characteristic__dashed"></span>
-					<span class="characteristic__property">
-						есть
-						<div class="characteristic-glossary js-characteristic-glossary">
-							<div class="icon-gloss"></div>
-							<div class="popup-gloss">
-								<img src="images/characteristic-glossary__img.png" alt=""
-									class="characteristic-glossary__img">
-								<div class="characteristic-glossary__title">Климатический класс SN-T
-								</div>
-								<div class="characteristic-glossary__text">Благодаря использованию
-									технологии SmartFrost
-									внутренняя поверхность
-									стенок морозильной камеры очень гладкая,
-									поэтому ее легко мыть.</div>
-								<a href="/glossary/" class="characteristic-glossary__link">Перейти в
-									глоссарий</a>
-							</div>
-						</div>
-					</span>
-				</div>
-
-				<div class="characteristic__row">
 					<span class="characteristic__name">Количество ящиков DrySafe</span>
 					<span class="characteristic__dashed"></span>
 					<span class="characteristic__property">
@@ -1262,141 +1237,264 @@
 					JPG, 272.73 Кб
 				</a>
 			</div>
+			<div class="upsale">
+				<div class="swiper-container" data-swiper
+					data-options='{"slidesPerView": 1,"slidesPerColumn": 2,"spaceBetween": 24,"allowTouchMove": false,"breakpoints": {"767": {"allowTouchMove": true,"slidesPerView": 1,"slidesPerColumn": 2}}}'>
+					<span class="upsale__title">Аксессуары для</span>
+					<span class="upsale__subtitle">Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
+					<div class="upsale__items swiper-wrapper">
+						<div class="upsale__item swiper-slide">
+							<div class="upsale__pic">
+								<a class=upsale__parent href="#"><img src="images/upsale.jpg"
+										srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x"
+										class="upsale__img"></a>
+							</div>
+							<div class="upsale__aside">
+								<div class="upsale__text">
+									<a href="#" class="upsale__description">Влажные салфетки Topperr для
+										изделий из
+										нержавеющей
+										стали
+										3622
+									</a>
 
-			<div class="upsale swiper-container-upsale js-container-upsale">
-				<span class="upsale__title">Аксессуары для</span>
-				<span class="upsale__subtitle">Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</span>
-				<div class="upsale__items swiper-wrapper">
-					<div class="upsale__item swiper-slide">
-						<div class="upsale__pic">
-							<a class=upsale__parent href="#"><img src="images/upsale.jpg"
-									srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x" class="upsale__img"></a>
+								</div>
+								<div class="upsale__info">
+									<span class="upsale__sale">1 100<i>руб.</i></span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax
+										class="upsale__link upsale__link_two"><b>купить</b></a>
+								</div>
+							</div>
 						</div>
-						<div class="upsale__aside">
-							<div class="upsale__text">
-								<a href="#" class="upsale__description">Влажные салфетки Topperr для
-									изделий из
-									нержавеющей
-									стали
-									3622
-								</a>
+						<div class="upsale__item swiper-slide">
+							<div class="upsale__pic">
+								<a class=upsale__parent href="#"><img src="images/upsale.jpg"
+										srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x"
+										class="upsale__img"></a>
+							</div>
+							<div class="upsale__aside">
+								<div class="upsale__text">
+									<a href="#" class="upsale__description">
+										Скребок для чистки стеклокерамических
+										поверхностей
+										Topperr SC1
+									</a>
+								</div>
+								<div class="upsale__info">
+									<span class="upsale__sale">1 100<i>руб.</i></span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax
+										class="upsale__link upsale__link_two"><b>купить</b></a>
+								</div>
+							</div>
+						</div>
+						<div class="upsale__item swiper-slide">
+							<div class="upsale__pic">
+								<a class=upsale__parent href="#"><img src="images/upsale.jpg"
+										srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x"
+										class="upsale__img"></a>
+							</div>
+							<div class="upsale__aside">
+								<div class="upsale__text">
+									<a href="#" class="upsale__description">Набор для ухода за
+										кухонными плитами Topperr
+										3415</a>
+								</div>
+								<div class="upsale__info">
+									<span class="upsale__sale">1 100<i>руб.</i></span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax
+										class="upsale__link upsale__link_two"><b>купить</b></a>
+								</div>
+							</div>
+						</div>
+						<div class="upsale__item swiper-slide">
+							<div class="upsale__pic">
+								<a class=upsale__parent href="#"><img src="images/upsale.jpg"
+										srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x"
+										class="upsale__img"></a>
+							</div>
+							<div class="upsale__aside">
+								<div class="upsale__text">
+									<a href="#" class="upsale__description">Влажные салфетки Topperr для
+										изделий из
+										нержавеющей
+										стали
+										3622
+									</a>
 
+								</div>
+								<div class="upsale__info">
+									<span class="upsale__sale">1 100<i>руб.</i></span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax
+										class="upsale__link upsale__link_two"><b>купить</b></a>
+								</div>
 							</div>
-							<div class="upsale__info">
-								<span class="upsale__sale">1 100<i>руб.</i></span>
-								<a href="#" data-url="ajax/add-cart.html" data-ajax
-									class="upsale__link upsale__link_two"><b>купить</b></a>
+						</div>
+						<div class="upsale__item swiper-slide">
+							<div class="upsale__pic">
+								<a class=upsale__parent href="#"><img src="images/upsale.jpg"
+										srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x"
+										class="upsale__img"></a>
+							</div>
+							<div class="upsale__aside">
+								<div class="upsale__text">
+									<a href="#" class="upsale__description">
+										Скребок для чистки стеклокерамических
+										поверхностей
+										Topperr SC1
+									</a>
+								</div>
+								<div class="upsale__info">
+									<span class="upsale__sale">1 100<i>руб.</i></span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax
+										class="upsale__link upsale__link_two"><b>купить</b></a>
+								</div>
+							</div>
+						</div>
+						<div class="upsale__item swiper-slide">
+							<div class="upsale__pic">
+								<a class=upsale__parent href="#"><img src="images/upsale.jpg"
+										srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x"
+										class="upsale__img"></a>
+							</div>
+							<div class="upsale__aside">
+								<div class="upsale__text">
+									<a href="#" class="upsale__description">Набор для ухода за
+										кухонными плитами Topperr
+										3415</a>
+								</div>
+								<div class="upsale__info">
+									<span class="upsale__sale">1 100<i>руб.</i></span>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax
+										class="upsale__link upsale__link_two"><b>купить</b></a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="upsale__item swiper-slide">
-						<div class="upsale__pic">
-							<a class=upsale__parent href="#"><img src="images/upsale.jpg"
-									srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x" class="upsale__img"></a>
-						</div>
-						<div class="upsale__aside">
-							<div class="upsale__text">
-								<a href="#" class="upsale__description">
-									Скребок для чистки стеклокерамических
-									поверхностей
-									Topperr SC1
-								</a>
-							</div>
-							<div class="upsale__info">
-								<span class="upsale__sale">1 100<i>руб.</i></span>
-								<a href="#" data-url="ajax/add-cart.html" data-ajax
-									class="upsale__link upsale__link_two"><b>купить</b></a>
-							</div>
-						</div>
-					</div>
-					<div class="upsale__item swiper-slide">
-						<div class="upsale__pic">
-							<a class=upsale__parent href="#"><img src="images/upsale.jpg"
-									srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x" class="upsale__img"></a>
-						</div>
-						<div class="upsale__aside">
-							<div class="upsale__text">
-								<a href="#" class="upsale__description">Набор для ухода за
-									кухонными плитами Topperr
-									3415</a>
-							</div>
-							<div class="upsale__info">
-								<span class="upsale__sale">1 100<i>руб.</i></span>
-								<a href="#" data-url="ajax/add-cart.html" data-ajax
-									class="upsale__link upsale__link_two"><b>купить</b></a>
-							</div>
-						</div>
-					</div>
-					<div class="upsale__item swiper-slide">
-						<div class="upsale__pic">
-							<a class=upsale__parent href="#"><img src="images/upsale.jpg"
-									srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x" class="upsale__img"></a>
-						</div>
-						<div class="upsale__aside">
-							<div class="upsale__text">
-								<a href="#" class="upsale__description">Влажные салфетки Topperr для
-									изделий из
-									нержавеющей
-									стали
-									3622
-								</a>
-
-							</div>
-							<div class="upsale__info">
-								<span class="upsale__sale">1 100<i>руб.</i></span>
-								<a href="#" data-url="ajax/add-cart.html" data-ajax
-									class="upsale__link upsale__link_two"><b>купить</b></a>
-							</div>
-						</div>
-					</div>
-					<div class="upsale__item swiper-slide">
-						<div class="upsale__pic">
-							<a class=upsale__parent href="#"><img src="images/upsale.jpg"
-									srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x" class="upsale__img"></a>
-						</div>
-						<div class="upsale__aside">
-							<div class="upsale__text">
-								<a href="#" class="upsale__description">
-									Скребок для чистки стеклокерамических
-									поверхностей
-									Topperr SC1
-								</a>
-							</div>
-							<div class="upsale__info">
-								<span class="upsale__sale">1 100<i>руб.</i></span>
-								<a href="#" data-url="ajax/add-cart.html" data-ajax
-									class="upsale__link upsale__link_two"><b>купить</b></a>
-							</div>
-						</div>
-					</div>
-					<div class="upsale__item swiper-slide">
-						<div class="upsale__pic">
-							<a class=upsale__parent href="#"><img src="images/upsale.jpg"
-									srcset="images/upsale@2x.jpg 2x,images/upsale@3x.jpg 3x" class="upsale__img"></a>
-						</div>
-						<div class="upsale__aside">
-							<div class="upsale__text">
-								<a href="#" class="upsale__description">Набор для ухода за
-									кухонными плитами Topperr
-									3415</a>
-							</div>
-							<div class="upsale__info">
-								<span class="upsale__sale">1 100<i>руб.</i></span>
-								<a href="#" data-url="ajax/add-cart.html" data-ajax
-									class="upsale__link upsale__link_two"><b>купить</b></a>
-							</div>
-						</div>
-					</div>
+					<div class="swiper-pagination-upsale js-swiper-pagination"></div>
+					<div class="swiper-button-prev upsale__prev js-swiper__prev"></div>
+					<div class="swiper-button-next upsale__next js-swiper__next"></div>
 				</div>
-				<div class="swiper-pagination-upsale"></div>
-				<div class="swiper-button-prev upsale__prev"></div>
-				<div class="swiper-button-next upsale__next"></div>
 			</div>
+			<div class="download-catalogs">
+				<div class="download-catalogs__title">Скачать каталоги</div>
+				<div class="download-catalogs__items swiper-container" data-swiper
+					data-options='{"slidesPerView": 1,"slidesPerColumn": 3,"spaceBetween": 24,"allowTouchMove": false,"breakpoints": {"767": {"allowTouchMove": true}}}'>
+					<div class="swiper-wrapper">
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-1.png" alt="">
+								</div>
+								<div class="download-catalogs__text">Новая линейка комбинированных
+									холодильников-морозильников
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
 
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-2.png" alt="">
+								</div>
+								<div class="download-catalogs__text">BioFresh 2018/2019
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-3.png" alt="">
+								</div>
+								<div class="download-catalogs__text">Дизайнерская серия ColourLine
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-1.png" alt="">
+								</div>
+								<div class="download-catalogs__text">Новая линейка комбинированных
+									холодильников-морозильников
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-2.png" alt="">
+								</div>
+								<div class="download-catalogs__text">BioFresh 2018/2019
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-3.png" alt="">
+								</div>
+								<div class="download-catalogs__text">Дизайнерская серия ColourLine
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-1.png" alt="">
+								</div>
+								<div class="download-catalogs__text">Новая линейка комбинированных
+									холодильников-морозильников
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-2.png" alt="">
+								</div>
+								<div class="download-catalogs__text">BioFresh 2018/2019
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+						<div class="download-catalogs__item swiper-slide">
+							<a href="#" class='download-catalogs__link'>
+								<div class="download-catalogs__pic">
+									<img src="images/download-catalogs-3.png" alt="">
+								</div>
+								<div class="download-catalogs__text">Дизайнерская серия ColourLine
+									<i>PDF 2.47 MB</i>
+								</div>
+							</a>
+
+						</div>
+					</div>
+					<div class="swiper-pagination-download-catalogs js-swiper-pagination"></div>
+					<div class="swiper-button-prev download-catalogs__prev js-swiper__prev"></div>
+					<div class="swiper-button-next download-catalogs__next js-swiper__next"></div>
+				</div>
+			</div>
 			<div class="articles">
 				<span class="articles__title">Может быть полезно</span>
 				<a href="#" class="articles__link">Посмотреть все статьи</a>
-				<div class="swiper-container" data-swiper data-options='{"slidesPerView": 1,"slidesPerGroup": 1,"spaceBetween": 12,"breakpoints": {"767":	{"slidesPerView": 3,"slidesPerGroup": 1,"spaceBetween": 16}}}'>
+				<div class="swiper-container" data-swiper data-options='{"slidesPerView": 1,"slidesPerGroup": 1,"spaceBetween": 12,"breakpoints":
+				 {"767": {"slidesPerView":3,"slidesPerGroup": 1,"spaceBetween": 16},
+				 "480": {"slidesPerView": 1,"slidesPerGroup": 1,"spaceBetween": 12},
+				 "600": {"slidesPerView": 2,"slidesPerGroup": 1,"spaceBetween": 12}}}'>
 					<div class="articles__items swiper-wrapper">
 						<div class="articles__item swiper-slide">
 							<a class="articles__pic" href="#">
@@ -1406,11 +1504,7 @@
 							</a>
 							<a href="#" class="articles__text">Новые холодильники Siemens</a>
 							<span class="articles__date">25 марта 2018</span>
-							<span class="articles__info">Производитель Siemens порадовал обновлением ассортимента
-								моделей. В
-								новом
-								сезоне
-								2018 года с конвейера выпущено около 30 моделей …</span>
+
 						</div>
 						<div class="articles__item swiper-slide">
 							<a class="articles__pic" href="#">
@@ -1423,9 +1517,7 @@
 								CN
 								4813</a>
 							<span class="articles__date">25 марта 2018</span>
-							<span class="articles__info">Холодильники Либхер сочетают доступную цену и надежное немецкое
-								качество.
-								Современные технологии позволяют …</span>
+
 						</div>
 						<div class="articles__item swiper-slide">
 							<a class="articles__pic" href="#">
@@ -1435,13 +1527,12 @@
 							</a>
 							<a href="#" class="articles__text">Как правильно разморозить холодильник Либхер</a>
 							<span class="articles__date">25 марта 2018</span>
-							<span class="articles__info">Проблема разморозки холодильника рано или поздно встает перед
-								любой
-								хозяйкой. Этого
-								требуют экономичность и чистоплотность, ведь скопление …</span>
+
 						</div>
 					</div>
 					<div class="swiper-pagination-articles articles__pagination js-swiper-pagination"></div>
+					<div class="swiper-button-prev articles__prev js-swiper__prev"></div>
+					<div class="swiper-button-next articles__next js-swiper__next"></div>
 				</div>
 			</div>
 
@@ -1538,14 +1629,15 @@
 
 		</p>
 	</div>
-	<div class="practical-features js-practical-features">
+	<div class="practical-features">
 		<div class="practical-features__title">
 			Практичные функции холодильников Siemens
 		</div>
-		<div class="swiper-pagination-practical-features"></div>
-		<div class="swiper-button-prev practical-features__prev"></div>
-		<div class="swiper-button-next practical-features__next"></div>
-		<div class="swiper-container">
+		<div class="swiper-pagination-practical-features js-swiper-pagination"></div>
+		<div class="swiper-button-prev practical-features__prev js-swiper__prev"></div>
+		<div class="swiper-button-next practical-features__next js-swiper__next"></div>
+		<div class="swiper-container" data-swiper
+			data-options='{"slidesPerView": 1,"spaceBetween": 0,"allowTouchMove": false,"breakpoints": {"767": {"allowTouchMove": true}}}'>
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="practical-features__pic">
@@ -1826,6 +1918,156 @@
 			</div>
 		</div>
 	</div>
+	<div class=diagram id='diagram'>
+		<div class="diagram__title">Похожие на Siemens СКЕР 34562 COMFORT BIOFRESH NOFROST NEW</div>
+		<div class="diagram__subtitle">
+			Данные товары можно сравнить более детально, нажав на
+			кнопку «Сравнить эти модели». Вы будете перенаправлены
+			на
+			страницу сравнения.
+			<a href="#" class="diagram__comparison">Сравнить эти модели</a>
+		</div>
+		<div class="diagram__items">
+			<div class="diagram__sidebar">
+				<div class="diagram__tabs js-diagram__param1 active">Стоимость товара</div>
+				<div class="diagram__tabs js-diagram__param2">Полезный объем холодильной
+					камеры</div>
+				<div class="diagram__tabs js-diagram__param3">Полезный объем морозильной
+					камеры</div>
+				<div class="diagram__tabs js-diagram__param4">Годовой расход электроэнергии
+				</div>
+				<div class="diagram__tabs js-diagram__param5">Годовой расход электроэнергии
+				</div>
+				<div class="diagram__tabs js-diagram__param6">Годовой расход электроэнергии
+				</div>
+			</div>
+			<div class="diagram__slider js-diagram__slider">
+				<div class="swiper-container" data-swiper data-options='{"slidesPerView": 4,"slidesPerGroup": 1,"spaceBetween": 12,"touchRatio": 1,"allowTouchMove":
+					false,"breakpoints": {"600": {"slidesPerView": 2,"slidesPerGroup": 1,"allowTouchMove": true,"spaceBetween":
+					16},"767": {"allowTouchMove": true,"slidesPerView": 2,"slidesPerGroup": 1,"spaceBetween": 24}}}'>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=82000 data-param2=519 data-param3=153 data-param4=157
+									data-param5=157 data-param6=200 class="diagram__pic">
+									<img src="images/new-items_3.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Текущая модель
+									холодильника</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=27000 data-param2=289 data-param3=114 data-param4=202
+									data-param5=15 data-param6=2 class="diagram__pic">
+									<img src="images/new-items_2.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens EWTgw 3583 Vinidor</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=240000 data-param2=262 data-param3=262 data-param4=122
+									data-param5=151 data-param6=300 class="diagram__pic">
+									<img src="images/new-items_1.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens SBS 66I2 Premium NoFrost (SICN 3386 + ICN
+									3386)</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=342000 data-param2=384 data-param3=115 data-param4=298
+									data-param5=19 data-param6=400 class="diagram__pic">
+									<img src="images/new-items_4.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens IKF 3510 Comfort</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=37500 data-param2=367 data-param3=268 data-param4=255
+									data-param5=300 data-param6=133 class="diagram__pic">
+									<img src="images/new-items_1.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens IKF 3510 Comfort</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=200000 data-param2=289 data-param3=114 data-param4=202
+									data-param5=15 data-param6=2 class="diagram__pic">
+									<img src="images/new-items_2.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens EWTgw 3583 Vinidor</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=240000 data-param2=262 data-param3=262 data-param4=122
+									data-param5=151 data-param6=300 class="diagram__pic">
+									<img src="images/new-items_1.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens SBS 66I2 Premium NoFrost (SICN 3386 + ICN
+									3386)</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=28000 data-param2=384 data-param3=115 data-param4=298
+									data-param5=19 data-param6=400 class="diagram__pic">
+									<img src="images/new-items_4.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens IKF 3510 Comfort</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="schedule">
+								<div class="diagram__text"></div>
+							</div>
+							<div class="diagram__item">
+								<a href="#" data-param1=150000 data-param2=367 data-param3=268 data-param4=0
+									data-param5=300 data-param6=133 class="diagram__pic">
+									<img src="images/new-items_1.jpg" alt="">
+								</a>
+								<a href="#" class="diagram__name">Siemens IKF 3510 Comfort</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination diagram__pagination  js-swiper-pagination"></div>
+				<div class="diagram__next swiper-button-next js-swiper__next"></div>
+				<div class="diagram__prev swiper-button-prev js-swiper__prev"></div>
+			</div>
+			<div class="diagram__maxvalue"></div>
+
+		</div>
+
+	</div>
 	<div class="recently-watched">
 		<div class="recently-watched__title">
 			Вы недавно смотрели
@@ -1835,7 +2077,7 @@
 		<div class="swiper-button-next recently-watched__next js-swiper__next"></div>
 		<a href="#" class="recently-watched__reset">Сбросить просмотренное</a>
 		<div class="swiper-container" data-swiper
-			data-options='{"slidesPerView": 6,"slidesPerGroup": 1,"spaceBetween": 25,"touchRatio": 1,"breakpoints": {"480": {"slidesPerView": 2.5,"slidesPerGroup": 1,"allowTouchMove": true,"spaceBetween": 16},"767": {"allowTouchMove": true,"slidesPerView": 3.5,"slidesPerGroup": 1,"spaceBetween": 24}}}'>
+			data-options='{"slidesPerView": 6,"slidesPerGroup": 1,"spaceBetween": 25,"touchRatio": 1,"breakpoints": {"480": {"slidesPerView": 2.3,"slidesPerGroup": 1,"allowTouchMove": true,"spaceBetween": 8},"767": {"allowTouchMove": true,"slidesPerView": 3.5,"slidesPerGroup": 1,"spaceBetween": 12}}}'>
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<a href="#" class="recently-watched__pic">
