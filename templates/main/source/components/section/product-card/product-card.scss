@@ -264,6 +264,7 @@
 			padding: 4px;
 			cursor: pointer;
 			height: auto;
+			border: 2px solid #eeeeee;
 
 			picture {
 				height: 100%;
@@ -272,7 +273,7 @@
 			}
 
 			&-thumb-active {
-				border: 1px solid $base;
+				border: 2px solid $base;
 			}
 
 			iframe {
@@ -1090,7 +1091,7 @@
 				line-height: 1;
 				letter-spacing: normal;
 				text-align: left;
-				color: #666666;
+				color: $base;
 				padding: 10px 8px 10px 60px;
 				border: 1px solid #eeeeee;
 				align-items: center;
@@ -2760,11 +2761,15 @@
 					background-size: 100% 70px;
 					height: calc(100% - 104px);
 
-					// .schedule{
-					// 	// background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
-					// 	// background: linear-gradient(0deg,#b5bdc88f 0,#828c9591 36%,#28343b82);
-					// 	background: linear-gradient(0deg,rgb(255, 255, 255),hsla(0, 0%, 62%, 0) 36%,#F44336);
-					// }
+					.schedule{
+						// background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+						// background: linear-gradient(0deg,#b5bdc88f 0,#828c9591 36%,#28343b82);
+					 background: linear-gradient(0deg, #FFD4E6, #AF235F);
+
+					}
+					 &:after{
+						  background: linear-gradient(0deg, #FFD4E6  0%, #FFD4E6  100%);
+					 }
 					.diagram__name {
 						color: #212121;
 						font-family: Arial, sans-serif;
@@ -3540,50 +3545,7 @@
 		.js-go {}
 	}
 
-	.recently-watched {
-		order: 99;
-		padding-bottom: 40px;
-
-		.recently-watched__title {
-			color: #333333;
-			font-family: "Roboto Condensed";
-			font-size: 22px;
-			font-weight: 400;
-			line-height: 30px;
-			margin-bottom: 15px;
-		}
-
-		.recently-watched__next,
-		.recently-watched__prev {
-			display: none !important;
-		}
-
-		.recently-watched__reset {
-			bottom: 0;
-			top: unset;
-			position: unset;
-			order: 5;
-			display: flex;
-			justify-content: center;
-			text-decoration: none !important;
-		}
-
-		.recently-watched__text {
-			align-items: baseline;
-			padding-top: 13px;
-		}
-
-		.swiper-pagination-recently-watched {
-			position: unset;
-			order: 4;
-			margin-bottom: 26px;
-			display: block;
-		}
-
-		.swiper-container {
-			margin-bottom: 10px;
-		}
-	}
+	.recently-watched {}
 
 	.labels {
 		margin-left: 0px;
