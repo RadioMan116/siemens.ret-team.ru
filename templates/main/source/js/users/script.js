@@ -289,12 +289,14 @@ $(document).ready(function () {
 		let firstAllParent = document.querySelectorAll('.new-gallery .swiper-slide');
 		let gallery = document.querySelector('.new-gallery');
 		let num = 0;
+		let pagination = document.querySelector('.gallery__pagination');
 
 		if (gallery) {
 			firstAllParent.forEach(point => {
 
 				let firstParent = point.querySelectorAll('.gallery__parent');
 				firstParent[0].classList.add('active');
+
 			})
 
 			point.forEach((el) => {
@@ -311,8 +313,11 @@ $(document).ready(function () {
 
 				}, true);
 
+				let div = document.createElement('div');
+				div.classList.add('swiper-pagination-bullet')
+				pagination.append(div);
 			})
-
+			let paginationDots = document.querySelectorAll('.swiper-pagination-bullet');
 
 			let slideIndex = 1;
 			showSlides(slideIndex);
@@ -328,15 +333,15 @@ $(document).ready(function () {
 			}
 
 			/* Устанавливает текущий слайд */
-			// function currentSlide(n) {
-			// 	showSlides(slideIndex = n);
-			// }
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
 
 			/* Основная функция слайдера */
 			function showSlides(n) {
 				let i;
 				let slides = document.getElementsByClassName("gallery__parent");
-				// var dots = document.getElementsByClassName("slider-dots_item");
+				let dots = document.getElementsByClassName("swiper-pagination-bullet");
 				if (n > slides.length) {
 					slideIndex = 1
 				}
@@ -346,17 +351,19 @@ $(document).ready(function () {
 				for (i = 0; i < slides.length; i++) {
 					slides[i].classList.remove('active');
 				}
-				// for (i = 0; i < dots.length; i++) {
-				//     dots[i].className = dots[i].className.replace(" active", "");
-				// }
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" swiper-pagination-bullet-active", "");
+				}
 				slides[slideIndex - 1].classList.add('active');
-				// dots[slideIndex - 1].className += " active";
+				dots[slideIndex - 1].className += " swiper-pagination-bullet-active";
 			}
 			buttonNext.addEventListener('click', plusSlide)
 			buttonPrev.addEventListener('click', minusSlide)
+			paginationDots.forEach((el, index) => el.addEventListener('click', function () {
+				currentSlide(index+1)
+			}))
+			// paginationDots.forEach((el, index) => el.setAttribute('onclick', `currentSlide(${index})`))
 		}
-
-
 	})()
 	$(".catalog__prop .js-link-pop-glossary").hover(function () {
 
