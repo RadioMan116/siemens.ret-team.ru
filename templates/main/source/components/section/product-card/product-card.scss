@@ -165,7 +165,7 @@
 						height: 32px;
 						position: absolute;
 						right: -16px;
-					top: -45px;
+						top: -45px;
 					}
 				}
 
@@ -1114,7 +1114,7 @@
 				line-height: 1;
 				letter-spacing: normal;
 				text-align: left;
-				  color: #999999;
+				color: #999999;
 				padding: 10px 8px 10px 60px;
 				border: 1px solid #eeeeee;
 				align-items: center;
@@ -2739,7 +2739,7 @@
 				flex-direction: column;
 				flex-basis: unset;
 				padding: 0 0 0 0;
-				height: calc(100% - 60px);
+				height: calc(100% - 75px);
 				// height: calc(100% - 104px);
 				position: relative;
 				display: flex;
@@ -2784,15 +2784,17 @@
 					background-size: 100% 70px;
 					height: calc(100% - 75px);
 
-					.schedule{
+					.schedule {
 						// background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
 						// background: linear-gradient(0deg,#b5bdc88f 0,#828c9591 36%,#28343b82);
-					 background: linear-gradient(0deg, #FFD4E6, #AF235F);
+						background: linear-gradient(0deg, #FFD4E6, #AF235F);
 
 					}
-					 &:after{
-						  background: linear-gradient(0deg, #FFD4E6  0%, #FFD4E6  100%);
-					 }
+
+					&:after {
+						background: linear-gradient(0deg, #FFD4E6 0%, #FFD4E6 100%);
+					}
+
 					.diagram__name {
 						color: #212121;
 						font-family: Arial, sans-serif;
@@ -2820,6 +2822,7 @@
 
 			.swiper-container {
 				width: 100%;
+				padding: 0;
 				// margin-right: 30px;
 			}
 
@@ -2880,7 +2883,7 @@
 			width: inherit;
 			position: absolute;
 			display: flex;
-			padding:  0 0;
+			padding: 0 0;
 			bottom: -76px;
 			// background: white;
 			background: transparent;
@@ -2922,7 +2925,7 @@
 			margin-top: auto;
 			width: 100%;
 			// background-image: linear-gradient(to top, #9da7db 0%, $base 100%);
-			 background: linear-gradient(0deg, #BEF4F4, #00B2B2);
+			background: linear-gradient(0deg, #BEF4F4, #00B2B2);
 			// min-height: 20px;
 		}
 
@@ -4491,9 +4494,11 @@
 					line-height: 1.29 !important;
 					text-align: left;
 				}
-				.characteristic-glossary{
+
+				.characteristic-glossary {
 					position: static;
 				}
+
 				.popup-gloss {
 					left: 0;
 				}
@@ -5124,6 +5129,10 @@
 				}
 			}
 
+			.swiper-slide {
+				height: calc(100% - 85px) !important;
+			}
+
 			.diagram__pic {
 				height: 0;
 				width: 0;
@@ -5132,9 +5141,9 @@
 			}
 
 			.diagram__item {
-				padding-top: 11px;
+				padding-top: 0px;
 				height: 70px;
-				bottom: -93px;
+				bottom: -71px;
 				background: white;
 			}
 
@@ -5143,7 +5152,7 @@
 				color: $base;
 				font-family: Arial, sans-serif;
 				font-size: 14px;
-				line-height: 20px;
+				line-height: 1.2;
 				padding: 0 4px;
 			}
 
