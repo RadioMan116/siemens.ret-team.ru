@@ -714,6 +714,13 @@
 				display: none;
 			}
 		}
+
+		.gallery__pagination {
+			display: flex;
+			position: static;
+			order: 4;
+			margin: 30px 0;
+		}
 	}
 
 	// .fixed {
