@@ -221,6 +221,9 @@ picture {
 	// justify-content: center;
 	display: block;
 }
+input:required {
+	box-shadow: none;
+}
 
 @media screen and (max-width: 767px) {
 	h1.title {
