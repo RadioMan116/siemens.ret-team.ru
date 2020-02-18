@@ -290,13 +290,13 @@
 			max-height: 100%;
 			display: flex;
 			flex-wrap: wrap;
-			padding-top: 44px;
+			padding-top: 24px;
 			// background: #0000006b
 		}
 
 		&__title {
 
-			max-width: 512px;
+			max-width: 550px;
 			display: flex;
 			flex-direction: column;
 			// flex-wrap: wrap;
@@ -305,7 +305,7 @@
 			margin-top: 0;
 			border-radius: 3px;
 			background-color: #00b2b2cf;
-			padding: 30px 54px 30px 41px;
+			padding: 30px 41px 30px 41px;
 
 			.span {
 

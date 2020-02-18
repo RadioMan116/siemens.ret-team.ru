@@ -1125,7 +1125,7 @@
 		// .advantages__title
 
 		&__title {
-		  color: #212121;
+			color: #212121;
 			font-family: "Roboto Condensed";
 			font-size: 26px;
 			font-weight: 400;
@@ -1395,9 +1395,8 @@
 		// .instructions__items
 
 		&__items.swiper-container {
-			margin: 0;
-			padding: 0;
-			width: 100%;
+
+			// height: 300px;
 		}
 
 		// .instructions__item
@@ -1427,13 +1426,48 @@
 			// .catalog__item
 
 			&__item {
-				padding-bottom: 11px;
+
+				align-items: flex-start;
+				align-content: baseline;
+				position: relative;
+				min-height: 288px;
+				max-height: 311px;
+				background: white;
+				overflow: hidden;
+
+
+
+				a:nth-of-type(n+6) {
+					display: none;
+				}
+
+				&:hover {
+					overflow: visible;
+					height: fit-content;
+					max-height: 1000px;
+
+					// .doc {
+					// 	// .doc_loading
+
+					// 	&_loading {
+					// 		transition: 0s;
+					// 		opacity: 1;
+					// 		height: auto;
+					// 		// padding: 7px 0 8px 46px;
+					// 	}
+
+
+					// }
+					a:nth-of-type(n+6) {
+						display: flex;
+					}
+				}
 			}
 
 			// .catalog__pic
 
 			&__pic {
-				height: 127px;
+
 
 				img {
 					max-height: 100%;
@@ -1582,7 +1616,7 @@
 					font-size: 12px;
 					font-weight: 400;
 					line-height: 10px;
-					padding: 2px 12px 17px 31px;
+					padding: 2px 12px 12px 31px;
 					align-items: flex-start;
 					// text-decoration: to-upper-case;
 					text-transform: uppercase;
@@ -2901,7 +2935,10 @@
 
 			// .instructions__items
 
-			&__items {}
+			&__items {
+
+			}
+
 
 			// .instructions__item
 
@@ -2913,14 +2950,19 @@
 
 			&__all {}
 
-			.swiper-wrapper {}
+			.swiper-wrapper {
+				height: calc(100% - 50px);
+			}
 
 
 			.catalog {
 
 				// .catalog__item
 
-				&__item {}
+				&__item {
+					margin-bottom: 0;
+					min-height: 100%;
+				}
 
 				// .catalog__pic
 
@@ -2948,6 +2990,7 @@
 			.swiper-pagination-instructions {
 				display: block;
 				margin-bottom: 14px;
+				margin-top: 14px;
 
 				.swiper-pagination-bullet {
 					&:first-child {

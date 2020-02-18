@@ -94,7 +94,7 @@
 
 			&:checked+.checkbox-custom {
 				color: #ffffff;
-				background: #d82300;
+				background: #af235f;
 				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 			}
 
@@ -325,7 +325,7 @@
 
 			&.active {
 				color: #fff;
-				background: #d82300;
+				background: #af235f;
 			}
 		}
 
@@ -1172,7 +1172,7 @@
 
 			&:checked+.bx-filter-param-text {
 				color: #ffffff;
-				background: #d82300;
+				background: #af235f;
 
 				span {
 					color: #ffffff;
@@ -1198,6 +1198,7 @@
 
 	.bx-filter-button-box {
 		padding: 0 17px;
+		width: 100%;
 
 		.bx-filter-block {
 			border-bottom: 0;
@@ -1322,14 +1323,14 @@
 		// background: white;
 		box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
 		border-radius: 3px;
-		background-color: $base;
+		background-color: $white;
 		border-image: none;
-		color: #ffffff;
+		color: black;
 		font-family: Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 700;
 		border-width: unset;
-		border: 0;
+		border: 1px solid $base;
 		margin-left: 17px;
 
 		align-items: center;
@@ -1339,13 +1340,22 @@
 			content: '';
 			width: 31px;
 			height: 31px;
-			// transform:;
+			border: 1px solid $base;
 			border-radius: 4px;
-			background-color: $base;
+			background-color: white;
 			top: 42%;
 			transform: rotate(-45deg)translateY(-50%);
 			left: 5px;
 			position: absolute;
+			z-index: -2;
+		}
+		&:after{
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: white;
+			position: absolute;
+			left: 0;
 			z-index: -1;
 		}
 
@@ -1353,7 +1363,7 @@
 		// 	display: none;
 		// }
 		a {
-			color: #ffffff;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 700;
@@ -1389,7 +1399,7 @@
 	input#del_filter {
 		display: flex;
 		align-items: center;
-		width: 176px;
+		width: 100%;
 		height: 40px;
 		border-radius: 3px;
 		padding: 9px 43px 8px 16px;
