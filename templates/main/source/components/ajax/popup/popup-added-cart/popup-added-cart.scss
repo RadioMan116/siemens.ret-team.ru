@@ -222,8 +222,9 @@
 		width: 190px;
 		min-width: 100px;
 		flex-shrink: 0;
-		height: 100%;
-
+		a{
+height: 100%;
+		}
 	}
 
 	&:last-child {
