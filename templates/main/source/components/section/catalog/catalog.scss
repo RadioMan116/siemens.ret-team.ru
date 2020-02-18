@@ -1430,7 +1430,7 @@
 				align-items: flex-start;
 				align-content: baseline;
 				position: relative;
-				min-height: 288px;
+				min-height: 100%;
 				max-height: 311px;
 				background: white;
 				overflow: hidden;
@@ -1545,19 +1545,20 @@
 			align-items: flex-start;
 			padding-top: 12px;
 
-			&__item {
+			&__item.catalog__item {
 				min-width: unset;
 				flex-basis: auto;
 				width: calc(25% - 12px);
 				padding: 18px 11px 9px;
 				flex-grow: 0;
+				// min-height: ;
 
 				&:nth-child(3n-1) {
-					margin: 0 16px 20px 0;
+					margin: 0 16px 00px 0;
 				}
 
 				margin-right: 16px;
-				margin-bottom: 20px;
+				margin-bottom: 0;
 
 				&:last-child {
 					margin-right: 0;
@@ -1567,6 +1568,7 @@
 
 			&__items {
 				overflow: visible;
+				margin-bottom: 20px;
 			}
 
 			.catalog {
@@ -2935,9 +2937,7 @@
 
 			// .instructions__items
 
-			&__items {
-
-			}
+			&__items {}
 
 
 			// .instructions__item
