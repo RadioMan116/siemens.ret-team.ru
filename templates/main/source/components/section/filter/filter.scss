@@ -1349,14 +1349,18 @@
 			position: absolute;
 			z-index: -2;
 		}
-		&:after{
+
+		&:after {
 			content: '';
-		    width: calc(100% - 5px);
-		    height: calc(100% - 2px);
+			// width: calc(100% - 5px);
+			// height: calc(100% - 2px);
 			background: white;
 			position: absolute;
-			left: 0;
+			left: 1px;
 			z-index: -1;
+			bottom: 2px;
+			top: 1px;
+			right: 1px;
 		}
 
 		// br {
