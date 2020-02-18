@@ -11,7 +11,7 @@
 		right: 15px;
 		top: 15px;
 		font-size: 24px;
-		color: #394791;
+		color: $base;
 		padding-right: 5px;
 	}
 
@@ -194,7 +194,7 @@
 		background-position: center;
 		width: 56px;
 		height: 36px;
-		background-color: #394791;
+		background-color: $base;
 		background-repeat: no-repeat;
 		border-radius: 2px;
 
@@ -222,6 +222,7 @@
 		width: 210px;
 		min-width: 100px;
 		flex-shrink: 0;
+		align-items: center;
 
 		a {
 			height: 100%;
