@@ -5,17 +5,21 @@
 	margin-top: 28px;
 
 	.upsale {
-		display: flex;
-		margin: 0 0 28px 0;
 		width: 100%;
-		padding: 15px 14px 56px 14px;
-		background-color: #ffffff;
-		border: solid 1px #eeeeee;
-		display: flex;
-		// flex-wrap: wrap;
-		flex-direction: column;
-		overflow: hidden;
-		position: relative;
+		.swiper-container {
+			display: flex;
+			margin: 0 0 28px 0;
+			width: 100%;
+			padding: 15px 14px 56px 14px;
+			background-color: #ffffff;
+			border: solid 1px #eeeeee;
+			display: flex;
+			// flex-wrap: wrap;
+			flex-direction: column;
+			overflow: hidden;
+			position: relative;
+		}
+
 
 		&:hover {
 			box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);

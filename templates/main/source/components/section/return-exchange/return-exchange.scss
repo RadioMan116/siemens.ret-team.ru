@@ -52,19 +52,19 @@
 	}
 
 	&__required {
-		color: #394791;
+		color: $base;
 	}
 
 	&__copyright {
 		width: 100%;
 		color: #666666;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 12px;
 		line-height: 18px;
 		margin-bottom: 15px;
 
 		a {
-			color: #394791;
+			color: $base;
 		}
 
 		i {
@@ -94,7 +94,7 @@
 		}
 
 		a {
-			color: #394791;
+			color: $base;
 		}
 	}
 
@@ -129,12 +129,12 @@
 			width: 133px;
 			height: 34px;
 			border-radius: 2px;
-			border: 1px solid  $base;
+			border: 1px solid $base;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin-bottom: 5px;
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;

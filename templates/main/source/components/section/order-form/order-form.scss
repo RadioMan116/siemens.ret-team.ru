@@ -62,6 +62,7 @@
 			max-height: 114px;
 			justify-content: center;
 			padding-left: 0px;
+			height: 100%;
 
 			img {
 				// width: 56px;
@@ -75,7 +76,7 @@
 			width: 15%;
 			display: flex;
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 
@@ -96,7 +97,7 @@
 			display: flex;
 			width: 52%;
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 		}
@@ -109,7 +110,7 @@
 			display: flex;
 			align-items: center;
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 			height: 34px;
@@ -144,7 +145,7 @@
 			.decr,
 			.incr {
 				color: #999999;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 19px;
 				font-weight: 700;
 				position: absolute;
@@ -306,20 +307,20 @@
 
 		label:not(.ordering__payment-label) {
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 32px;
 			flex-basis: 199px;
 			margin-bottom: 0;
 
 			.sof-req {
-				color: #394791;
+				color: $base;
 			}
 		}
 
 		.copyright {
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 			padding: 8px 0;
@@ -418,14 +419,14 @@
 			line-height: 1.5;
 			letter-spacing: normal;
 			text-align: left;
-			// color: #394791;
+			// color: $base;
 			margin: 28px 0 24px !important;
 			display: flex;
 			align-items: flex-start;
 			width: 100%;
 
 			a {
-				color: #394791;
+				color: $base;
 				margin: 0 3px;
 			}
 		}
@@ -434,7 +435,7 @@
 			width: 172px;
 			height: 40px;
 			border-radius: 3px;
-			background-color: #394791;
+			background-color: $base;
 			color: #ffffff;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
@@ -449,7 +450,7 @@
 		}
 
 		.checkbox__text {
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			line-height: 18px;
 
@@ -541,7 +542,7 @@
 					.ordering__payment-item {
 						padding: 20px 10px 9px;
 						border-color: transparent;
-						border: 2px solid #394791;
+						border: 2px solid $base;
 					}
 				}
 
@@ -559,7 +560,7 @@
 
 			&-text {
 				color: #333333;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 				margin-bottom: 11px;
@@ -571,7 +572,7 @@
 
 				&:checked+.ordering__payment-item {
 					padding: 20px 10px 9px;
-					border: 2px solid #394791;
+					border: 2px solid $base;
 
 					.ordering__payment-circle:after {
 						transform: scale(1);
@@ -581,8 +582,8 @@
 		}
 	}
 
-	.order.js-basket_props.js-ecom_order-ready{
-		+.ordering__payment-label{
+	.order.js-basket_props.js-ecom_order-ready {
+		+.ordering__payment-label {
 			display: none;
 		}
 	}
@@ -682,7 +683,7 @@
 				.decr,
 				.incr {
 					color: #999999;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 18px;
 					font-weight: 700;
 					position: absolute;
@@ -905,7 +906,7 @@
 			.item__title {
 				display: flex;
 				color: #999999;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 				font-weight: 700;
 				flex: 0 1 53%;
@@ -1166,7 +1167,7 @@
 						.ordering__payment-item {
 							padding: 20px 4px 9px;
 							border-color: transparent;
-							border: 2px solid #394791;
+							border: 2px solid $base;
 						}
 					}
 				}
@@ -1177,7 +1178,7 @@
 
 				&-text {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 					margin-bottom: 4px;
 					line-height: 14px;
@@ -1188,7 +1189,7 @@
 
 					&:checked+.ordering__payment-item {
 						padding: 20px 4px 9px;
-						border: 2px solid #394791;
+						border: 2px solid $base;
 
 						.ordering__payment-circle:after {
 							transform: scale(1);

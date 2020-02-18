@@ -79,7 +79,9 @@
 			<span class="special-offers__title">Не забудьте купить</span>
 			<!-- Slider main container -->
 
-			<div class="swiper-container swiper-container-two  js-swiper-two">
+		<div class="swiper-container"
+			data-options='{"slidesPerView": "4","lazy": true, "spaceBetween": 36,"allowTouchMove": false,"breakpoints": {"767": {"allowTouchMove": true,"slidesPerGroup":1,"spaceBetween": 22,"slidesPerView": 2},"600": {"allowTouchMove": true,"slidesPerGroup": 1,"slidesPerView": 1,"spaceBetween": 10}}}'
+			data-swiper>
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper special-offers__wrapper">
 					<div class="swiper-slide special-offers__slide">
@@ -138,6 +140,34 @@
 									class="special-offers__buy">купить</a>
 							</div>
 					</div>
+					<div class="swiper-slide special-offers__slide">
+						<a class=upsale__parent href="#">
+							<img src="images/Do-not-forget__4.jpg"
+								srcset="images/Do-not-forget__4@2x.jpg 2x,images/Do-not-forget__4@3x.jpg 3x"
+								class="special-offers__img">
+							<a href="#" class="special-offers__text">Средство для очистки холодильников и морозильных
+								камер
+								Topperr 3102</a>
+							<div class="special-offers__sale">
+								<span class="special-offers__price">134<i class="special-offers__rub">руб.</i></span>
+								<a href="#" data-url="ajax/add-cart.html" data-ajax
+									class="special-offers__buy">купить</a>
+							</div>
+					</div>
+					<div class="swiper-slide special-offers__slide">
+						<a class=upsale__parent href="#">
+							<img src="images/Do-not-forget__4.jpg"
+								srcset="images/Do-not-forget__4@2x.jpg 2x,images/Do-not-forget__4@3x.jpg 3x"
+								class="special-offers__img">
+							<a href="#" class="special-offers__text">Средство для очистки холодильников и морозильных
+								камер
+								Topperr 3102</a>
+							<div class="special-offers__sale">
+								<span class="special-offers__price">134<i class="special-offers__rub">руб.</i></span>
+								<a href="#" data-url="ajax/add-cart.html" data-ajax
+									class="special-offers__buy">купить</a>
+							</div>
+					</div>
 				</div>
 				<!-- If we need pagination -->
 
@@ -146,8 +176,9 @@
 				<div class="swiper-scrollbar"></div>
 			</div>
 			<div class="swiper-pagination_2"></div>
-			<div class="swiper-button-prev special-offers_prev"></div>
-			<div class="swiper-button-next special-offers_next"></div>
+			<div class="swiper-button-prev special-offers_prev js-swiper__prev"></div>
+			<div class="swiper-button-next special-offers_next js-swiper__next"></div>
+
 		</div>
 	</div>
 
