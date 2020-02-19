@@ -6,6 +6,7 @@
 	position: relative;
 	padding-bottom: 30px;
 	overflow: unset !important;
+	width: 100%;
 
 	thead {
 		display: flex;
@@ -76,7 +77,7 @@
 
 		td {
 			color: #2e2e2e;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 500;
 			// line-height: 30px;
@@ -234,7 +235,7 @@
 	&__link {
 		padding: 0px 14px;
 		color: #2e2e2e;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 25px;
 		position: relative;
@@ -280,7 +281,7 @@
 	.comparison__filter {
 		padding: 0 16px 16px 45px;
 		background: url("../images/comparison-delete.svg") 21px 0px/12px no-repeat;
-		color: #394791;
+		color: $base;
 		margin-top: 16px;
 		display: block !important;
 
@@ -290,8 +291,8 @@
 	}
 
 	.open-all {
-		color: #394791;
-		font-family: Arial,sans-serif;
+		color: $base;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: auto;
@@ -331,7 +332,7 @@
 			height: 52px;
 			display: flex;
 			width: 100%;
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
@@ -354,7 +355,7 @@
 			margin-bottom: 14px;
 
 			td {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 18px;
 				font-weight: 400;
@@ -503,7 +504,7 @@
 		&-drag {
 			height: 10px;
 			border-radius: 8.5px;
-			background-color: #394791;
+			background-color: $base;
 		}
 	}
 
@@ -578,7 +579,7 @@
 			&.characteristic__row {
 				td {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 700;
 					// line-height: 30px;
@@ -644,6 +645,7 @@
 		}
 
 		.diagram {
+
 			position: absolute;
 			max-width: 100%;
 			width: 1172px;
@@ -688,7 +690,7 @@
 			}
 
 			&__tabs {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -706,7 +708,7 @@
 				cursor: pointer;
 
 				&.active {
-					background-color: #394791;
+					background-color: $base;
 					color: #ffffff;
 					border: 0;
 				}
@@ -723,6 +725,9 @@
 				background-position: 100% 0px;
 				padding-left: 25px;
 
+				.swiper-container {
+					width: 100%;
+				}
 
 				.swiper-slide {
 					flex-direction: column;
@@ -747,7 +752,7 @@
 					bottom: 75px;
 					left: 0px;
 					color: #d6d6d6;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 				}
 
@@ -816,8 +821,8 @@
 			&__name {
 				width: 100%;
 				padding: 0 12px;
-				color: #394791;
-				font-family: Arial,sans-serif;
+				color: $base;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 1;
 			}
@@ -829,7 +834,7 @@
 			.schedule {
 				margin-top: auto;
 				width: 100%;
-				background-image: linear-gradient(to top, #9da7db 0%, #394791 100%);
+				background-image: linear-gradient(to top, #9da7db 0%, $base 100%);
 			}
 
 			.diagram__maxvalue {
@@ -837,7 +842,7 @@
 				top: -15px;
 				left: 243px;
 				color: #d6d6d6;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 			}
 
@@ -868,6 +873,8 @@
 		display: flex;
 		box-shadow: 0 2px 25px rgba(0, 0, 0, .14);
 		background: white;
+		max-width: 100%;
+		width: 1176px;
 
 		&:before {
 			content: '';
@@ -968,14 +975,15 @@
 
 		&__text {
 			line-height: 1;
-			color: #394791;
-			font-family: Arial,sans-serif;
+			color: $base;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 		}
 	}
 
 	@media screen and (max-width: 767px) {
+		background: #fff;
 
 		.fixed-header {
 			max-width: 100%;
@@ -1030,8 +1038,8 @@
 			}
 
 			.fixed-header__text {
-				color: #394791;
-				font-family: Arial,sans-serif;
+				color: $base;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 			}
@@ -1100,7 +1108,7 @@
 					td {
 						padding: 0 0 0px 0 !important;
 						border: 0 !important;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 14px;
 						font-weight: 700;
 						line-height: 20px;
@@ -1217,7 +1225,7 @@
 					border: 1px solid #d6d6d6;
 					background-color: #ffffff;
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					text-align: left;
 					justify-content: flex-start;
@@ -1258,8 +1266,8 @@
 
 				.diagram__name {
 					text-align: center;
-					color: #394791;
-					font-family: Arial,sans-serif;
+					color: $base;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					line-height: 20px;
 					padding: 0 6px;
@@ -1327,6 +1335,7 @@
 		}
 
 		.swiper-block {
+			// padding-top: 28px;
 			padding-top: 28px;
 			font-size: 12px !important;
 			font-weight: normal;
@@ -1511,8 +1520,8 @@
 			margin-top: 0;
 			padding-left: 30px;
 			background-position: 5px 0;
-			color: #394791;
-			font-family: Arial,sans-serif;
+			color: $base;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 

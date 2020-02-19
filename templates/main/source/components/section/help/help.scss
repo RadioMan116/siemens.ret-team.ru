@@ -27,7 +27,7 @@
 
 		&-open {
 			background: url("https://icongr.am/fontawesome/caret-up.svg?color=666666") 99% 20px/20px no-repeat;
-			color: #394791;
+			color: $base;
 		}
 
 		&:hover {
@@ -56,6 +56,9 @@
 
 
 	@media screen and (max-width: 768px) {
+		margin-top: -10px;
+			padding-bottom: 0;
+
 		&__row {
 			color: #2e2e2e;
 			// font-family: "Gotham Pro Medium";
@@ -64,7 +67,7 @@
 			line-height: 24px;
 
 			&-open {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -86,7 +89,7 @@
 			line-height: 24px;
 
 			&-open {
-				color: #394791;
+				color: $base;
 			}
 		}
 

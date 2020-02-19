@@ -2138,7 +2138,7 @@
 				background-position: left;
 				color: $base;
 				font-size: 13px;
-				background-size: 22px;
+				background-size: 22px !important;
 				width: 101px;
 
 				&.active {
@@ -2154,7 +2154,7 @@
 				background-position: left;
 				color: $base;
 				font-size: 13px;
-				background-size: 22px;
+				background-size: 22px !important;
 				width: 85px;
 
 				&.active {
