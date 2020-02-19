@@ -2494,8 +2494,9 @@
 		width: calc(75% - 6px);
 		position: relative;
 		padding-top: 6px;
-		padding-bottom: 0px;
-		margin-bottom: 60px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid #eeeeee;
+		margin-bottom: 58px;
 
 		// .practical-features__title
 
@@ -2520,23 +2521,31 @@
 
 		&__pic {
 			flex-shrink: 0;
-			max-width: 372px;
-			width: 100%;
+			max-width: 48px;
 			display: flex;
-			flex-grow: 1;
+			// flex-grow: 1;
+			width: 48px;
+			margin-bottom: 16px;
+			margin-right: 24px;
 
 			align-items: baseline;
 
 			// justify-content: center;
-			img {}
+			img {
+				&[src*=svg] {
+					width: 100%;
+				}
+			}
 		}
 
 		// .practical-features__info
 
 		&__info {
-			margin-left: 28px;
+			margin-left: 0px;
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
 		}
 
 		// .practical-features__subtitle
@@ -2548,13 +2557,14 @@
 			font-weight: 400;
 			line-height: 24px;
 			margin-bottom: 16px;
+			width: calc(100% - 74px);
 		}
 
 		// .practical-features__text
 
 		&__text {
 			color: #262626;
-			font-family: Arial;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 		}
@@ -2569,8 +2579,8 @@
 			line-height: 20px;
 			flex-grow: 1;
 			display: flex;
-			align-items: flex-end;
-			padding-bottom: 14px;
+			align-items: flex-start;
+			padding-bottom: 0px;
 			margin-top: 12px;
 		}
 
@@ -2614,16 +2624,10 @@
 			}
 		}
 
-		.swiper-container {
-			padding: 0;
-		}
-
 		.swiper-wrapper {}
 
 		.swiper-slide {
 			display: flex;
-			padding-bottom: 40px;
-			border-bottom: 1px solid #eee;
 		}
 	}
 
@@ -4980,11 +4984,10 @@
 
 			.swiper-pagination-practical-features {
 				top: unset;
-				bottom: 24px;
+				bottom: 4px;
 				right: unset;
 				left: 50%;
 				transform: translateX(-50%);
-				z-index: 2;
 
 				.swiper-pagination-bullet {
 					margin-left: 0;
@@ -5005,15 +5008,16 @@
 			}
 
 			.practical-features__pic {
-				width: 100%;
-				max-width: 100%;
-				max-height: 191px;
-				margin-bottom: 23px;
+				// width: 100%;
+				// max-width: 100%;
+				// max-height: 150px;
+				// margin-bottom: 23px;
 
 				// height: 100%;
-				img {
-					max-height: inherit;
-				}
+				// img {
+				// 	max-height: inherit;
+				// 	width: 150px;
+				// }
 			}
 
 			.practical-features__info {
@@ -5025,6 +5029,7 @@
 				margin-bottom: 18px;
 			}
 		}
+
 
 		.diagram {
 			padding: 0px;

@@ -205,12 +205,12 @@
 
 			}
 
-			.swiper-pagination_2 {
+			.swiper-pagination {
 				top: 61px;
 			}
 
-			.swiper-button-prev.special-offers_prev,
-			.swiper-button-next.special-offers_next {
+			.swiper-button-prev,
+			.swiper-button-next {
 				top: 68px;
 			}
 
@@ -236,6 +236,7 @@
 				.link-pop-glossary {
 					max-height: 39px;
 				}
+
 			}
 
 			.container {
@@ -263,6 +264,9 @@
 			margin-right: 0;
 			align-content: baseline;
 			margin-bottom: 30px;
+			&:nth-child(6) ~ *{
+				display: none;
+			}
 		}
 
 		&__text {
@@ -601,7 +605,7 @@
 			}
 		}
 
-		.swiper-pagination_2 {
+		.swiper-pagination {
 			display: flex;
 			bottom: 10px !important;
 			width: 100%;

@@ -423,7 +423,8 @@
 								<div class="container">
 									<span class="special-offers__title">Рекомендованные товары</span>
 									<!-- Slider main container -->
-									<div class="swiper-container swiper-container-two">
+									<div class="swiper-container" data-options='{"slidesPerView": "4","lazy": true, "spaceBetween": 36,"allowTouchMove": false,"breakpoints": {"767": {"allowTouchMove": true,"slidesPerGroup":1,"spaceBetween": 22,"slidesPerView": 2},"600": {"allowTouchMove": true,"slidesPerGroup": 1,"slidesPerView": 1,"spaceBetween": 10}}}'
+									data-swiper>
 										<!-- Additional required wrapper -->
 										<div class="swiper-wrapper special-offers__wrapper js-ecom_product-list" data-list="Article Detail">
 
@@ -1269,13 +1270,13 @@
 											</div>
 
 										</div>
-										<div class="swiper-scrollbar"></div>
+										<div class="swiper-scrollbar js-swiper-scrollbar"></div>
 										<!-- If we need pagination -->
 									</div>
 
-									<div class="swiper-pagination_2"></div>
-									<div class="swiper-button-prev special-offers_prev"></div>
-									<div class="swiper-button-next special-offers_next"></div>
+									<div class="swiper-pagination js-swiper-pagination"></div>
+									<div class="swiper-button-prev js-swiper__prev"></div>
+									<div class="swiper-button-next js-swiper__next"></div>
 								</div>
 							</div>
 						</div>

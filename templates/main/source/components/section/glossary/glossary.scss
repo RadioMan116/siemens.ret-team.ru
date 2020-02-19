@@ -26,7 +26,7 @@
 		}
 
 		.glossary__item {
-			color: #394791;
+			color: $base;
 		}
 	}
 
@@ -46,7 +46,7 @@
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 24px;
-		background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") #394791 22px 24px/18px no-repeat;
+		background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") $base 22px 24px/18px no-repeat;
 		padding: 22px 56px;
 	}
 
@@ -54,7 +54,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		padding: 0 56px 22px;
-		background: #394791;
+		background: $base;
 		margin-top: -1px;
 
 	}
@@ -76,23 +76,40 @@
 	}
 
 	&__img {
-		width: 150px;
-		height: 150px;
-		margin-right: 2rem;
+		flex-shrink: 0;
+		max-width: 48px;
+		display: flex;
+		// flex-grow: 1;
+		width: 48px;
+		margin-bottom: 16px;
+		margin-right: 24px;
+
+		align-items: baseline;
+
+		// justify-content: center;
+		img {
+			&[src*=svg] {
+				width: 100%;
+			}
+		}
 	}
 
 	&__li {
 		display: flex;
-		margin-top: 2rem;
+		margin-top: 24px;
 		height: 30px;
 		overflow: hidden;
 		transition: 0.4s;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-bottom: 24px;
+
 
 
 		.glossary__b {
 			display: block;
-			width: 100%;
-			margin-bottom: 18px;
+			margin-bottom: 16px;
+			width: calc(100% - 74px);
 			color: #333333;
 			font-family: "Roboto Condensed";
 			font-size: 18px;
@@ -106,7 +123,7 @@
 		.glossary__desc {
 			width: 100%;
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 			text-align: left;
@@ -115,7 +132,8 @@
 			margin: 0 !important;
 		}
 
-		.glossary__img {
+		.glossary__img,
+		picture {
 			// max-height: 0;
 			max-width: 0;
 			transform: scale(0);
@@ -125,11 +143,14 @@
 			height: unset;
 			overflow: visible;
 			transition: all 0.4s;
+			border-bottom: 1px solid #eee;
 
-			.glossary__img {
+			.glossary__img,
+			picture {
 				max-width: 100%;
 				transform: scale(1);
 				// max-height: 100%;
+				flex-shrink: 0;
 			}
 		}
 	}
@@ -140,11 +161,19 @@
 		border-top: 1px solid #e2e2e2;
 	}
 
+	&__decs {
+		color: #333333;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+	}
 
-	@media screen and (max-width: 768px) {
+
+	@media screen and (max-width:767px) {
 		&__img {
-			width: 120px;
-			height: 120px;
+			// width: 120px;
+			// height: 120px;
 		}
 
 		&__item {
@@ -156,17 +185,18 @@
 		}
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width:767px) {
 		&__img {
-			width: 75px;
-			height: 75px;
-			margin-bottom: 1rem;
+			// width: 75px;
+			// height: 75px;
+			// margin-bottom: 1rem;
 		}
 
 		&__li {
-			flex-direction: column;
-			margin-top: 16px;
-			height: 35px;
+			// flex-direction: column;
+			// margin-top: 16px;
+			// height: 35px;
+			// align-items: center;
 
 			.glossary__desc {
 				font-size: 14px;
@@ -174,19 +204,27 @@
 			}
 
 			b {
-				display: block;
-				width: 100%;
-				margin-bottom: 18px;
-				font-size: 16px;
-				font-weight: 400;
-				line-height: 24px;
+				// display: block;
+				// width: 100%;
+				// margin-bottom: 18px;
+				// font-size: 16px;
+				// font-weight: 400;
+				// line-height: 24px;
+			}
+
+			&__b {
+				 color: #2e2e2e;
+				 font-family: "Roboto Condensed";
+				 font-size: 16px;
+				 font-weight: 400;
+				 line-height: 24px;
 			}
 		}
 
 		&__title {
 			padding: 12px 46px;
 			font-size: 18px !important;
-			background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") #394791 18px 15px/18px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") $base 18px 15px/18px no-repeat;
 		}
 
 		&.closed {
