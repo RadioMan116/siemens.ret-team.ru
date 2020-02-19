@@ -50,9 +50,10 @@
 		&__items {
 			display: flex;
 			background-color: #ffffff;
-			max-height: 131px;
+			height: 131px;
 			position: relative;
 			padding: 8px 0;
+			// height: 100%;
 		}
 
 		&__link {
@@ -63,6 +64,7 @@
 			justify-content: center;
 			padding-left: 0px;
 			height: 100%;
+			align-items: center;
 
 			img {
 				// width: 56px;
@@ -104,6 +106,7 @@
 
 		&__text {
 			padding-left: 8%;
+			padding-right: 16px;
 		}
 
 		.how-many {
