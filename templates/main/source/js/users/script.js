@@ -270,25 +270,31 @@ $(document).ready(function () {
 		// $('.share__items').
 
 	});
-	$(".labels>img").hover(function () {
-		var alt = $(this).attr('alt');
-		var handel = $(this).position().left - 15;
-		console.log(handel)
-		if ($('.labels .labels__popup').length) {
-			if ($('.labels .labels__popup').text() == alt) {
-				$(".labels .labels__popup").remove();
-			} else {
-				$(".labels .labels__popup").remove();
-				$(".labels").append('<div class="labels__popup" title="' + alt + '">' + '<span>' + alt +'</span>' + '</div>');
-			}
-		} else {
-			$(".labels").append('<div class="labels__popup" title="' + alt + '">' + '<span>' + alt +'</span>' + '</div>');
-		}
-		$(".labels__popup").css('left', handel);
-	});
+	// $(".labels>img").hover(function () {
+	// 	var alt = $(this).attr('alt');
+	// 	var handel = $(this).position().left;
+	// 	// var handel2 = $(this).position().right - 15;
+	// 	// console.log(handel)
+	// 	// console.log(handel2)
+	// 	if ($('.labels .labels__popup').length) {
+	// 		if ($('.labels .labels__popup').text() == alt) {
+	// 			$(".labels .labels__popup").remove();
+	// 		} else {
+	// 			$(".labels .labels__popup").remove();
+	// 			$(".labels").append('<div class="labels__popup" title="' + alt + '">' + alt + '</div>');
+	// 		}
+	// 	} else {
+	// 		$(".labels").append('<div class="labels__popup" title="' + alt + '">' + alt + '</div>');
+	// 	}
+	// 	$(".labels__popup").css('left', handel);
+	// });
 	$(".labels__sale").hover(function () {
 		$(this).toggleClass('active')
 	});
+	$(".labels__item").hover(function () {
+		$(this).toggleClass('active')
+	});
+
 	(function () {
 		let point = document.querySelectorAll('.gallery__point');
 		let buttonNext = document.querySelector('.gallery__next');
