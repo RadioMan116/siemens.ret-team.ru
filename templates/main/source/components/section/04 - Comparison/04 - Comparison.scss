@@ -29,7 +29,7 @@
 	}
 
 	.special-offers__sale {
-		margin-top: auto;
+		margin-top: 10px;
 		flex-grow: unset;
 
 		.special-offers__price {
@@ -448,7 +448,7 @@
 		width: 100%;
 
 		.special-offers__text {
-			padding: 0 0 20px;
+			padding: 20px 0;
 			// height: 100px;
 			display: flex;
 			max-height: unset;
@@ -460,12 +460,11 @@
 			margin-bottom: auto;
 		}
 
-
 		.special-offers__pic {
 			height: 200px;
 		}
 		.catalog__presence {
-			margin-top: 20px;
+			margin-top: 10px;
 		}
 	}
 
