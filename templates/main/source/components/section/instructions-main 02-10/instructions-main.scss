@@ -56,7 +56,7 @@
 	&__list {
 		// height: 81px;
 		width: 100%;
-		background-color: #394791;
+		background-color: $base;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -77,6 +77,7 @@
 		// text-decoration: underline;
 
 	}
+
 	.special-offers {
 
 		// .special-offers__img
