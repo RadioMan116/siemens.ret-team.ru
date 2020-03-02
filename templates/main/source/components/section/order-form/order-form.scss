@@ -650,7 +650,7 @@
 			}
 
 			&__link {
-				width: 85px;
+				// width: 85px;
 				height: 85px;
 				padding-left: 25px;
 
@@ -825,7 +825,7 @@
 			&__items {
 				border-top: 1px solid #eee;
 				flex-wrap: wrap;
-				max-height: 280px;
+				max-height: unset;
 				padding: 16px 0px 43px;
 			}
 
@@ -920,6 +920,7 @@
 			}
 
 			.delete__table {
+				position: absolute;
 				height: 24px;
 				top: unset;
 				bottom: 16px;
