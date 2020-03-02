@@ -758,8 +758,6 @@ $(document).ready(function () {
 		})();
 
 	}
-
-
 	$(".js-comparison__select").click(function () {
 		if ($(this).hasClass("active") == true) {
 			$(".comparison__select ").removeClass("active");
@@ -823,9 +821,7 @@ $(document).ready(function () {
 	}
 	$('.filter__slider').draggable();
 	hamburger("js-hamburger", "js-menu");
-
-
-
+d
 	$(".filter__tags").click(function () {
 		$(this).addClass('active');
 	});
@@ -840,7 +836,6 @@ $(document).ready(function () {
 	// $(function () {
 	// 	$(".js-datepicker").datepicker();
 	// });
-
 	$(function () {
 		$.datepicker.regional['ru'] = {
 			closeText: 'Закрыть',
@@ -1540,7 +1535,6 @@ $(document).ready(function () {
 
 
 	});
-
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
 		setTimeout(function () {
 			console.log('inputmask')
@@ -1585,10 +1579,6 @@ $(document).ready(function () {
 	if ($('.page__title.content-top__title.content-top__title_top span').length > 0) {
 		$(".content-top").addClass("content-top__tags");
 	}
-
-
-
-
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();
@@ -1668,7 +1658,6 @@ $(window).on('load', function () {
 			}
 		});
 	}, 100);
-
 	if ($(".filter-new").length) {
 		$('.filter-new .bx-filter-parameters-box-container').each(function () {
 			if ($(this).find('.checkbox').length >= 4) {
@@ -1818,10 +1807,7 @@ $(window).on('load', function () {
 				}, 4000);
 			}
 		});
-
-
 	}
-
 	if ($('a[data-fancybox="gallery"] img').length) {
 		// $('a[data-fancybox="gallery"] img').eq(0).each(function () {
 		// 	var img = new Image($(this));
@@ -1849,8 +1835,6 @@ $(window).on('load', function () {
 		// 	});
 		// }, 300);
 	}
-
-
 	if (windowWidth2 > 767) {
 
 	} else {
@@ -1873,8 +1857,6 @@ $(window).on('load', function () {
 
 		})();
 	}
-
-
 	if ($('.MultiFile-intercepted').length) {
 
 		// Убрать прикрепленный файл после отправки рекламации
@@ -1887,8 +1869,6 @@ $(window).on('load', function () {
 		});
 
 	}
-
-
 	(function () {
 		let height = document.querySelector('.instructions__items');
 		if (height) {
@@ -1896,5 +1876,4 @@ $(window).on('load', function () {
 			height.style.height = height.clientHeight + "px";
 		}
 	})()
-
 });
