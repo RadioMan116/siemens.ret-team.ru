@@ -45,6 +45,7 @@
 	}
 
 
+
 	a[data-type="iframe"] {
 		display: flex;
 		flex-direction: column;
@@ -148,6 +149,12 @@
 
 			.load-more {
 				// margin-bottom: 0px;
+			}
+		}
+
+		&.js-news__inner{
+			img{
+				width: 100%;
 			}
 		}
 
