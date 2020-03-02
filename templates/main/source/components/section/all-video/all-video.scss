@@ -38,9 +38,9 @@
 
 	iframe,
 	img {
-
+		max-height: 170px;
 		margin-bottom: 0px;
-
+		object-fit: cover;
 		pointer-events: none;
 	}
 
@@ -157,7 +157,5 @@
 				width: 100%;
 			}
 		}
-
-
 	}
 }
