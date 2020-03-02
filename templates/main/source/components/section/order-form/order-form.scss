@@ -835,9 +835,14 @@
 
 			.table__link {
 				padding-left: 0;
+				justify-content: unset;
 
 				picture {
 					text-align: left;
+				}
+
+				img {
+					object-fit: contain;
 				}
 
 				// justify-content: flex-end;
