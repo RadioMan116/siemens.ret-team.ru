@@ -4565,6 +4565,10 @@
 			.characteristic__copyright {
 				display: none;
 			}
+
+			.description {
+				padding: 0 16px;
+			}
 		}
 
 		.special-offers__title {
@@ -4984,7 +4988,7 @@
 
 		.description {
 			width: 100%;
-			padding: 0 16px;
+			padding: 0;
 
 
 			&__title {
@@ -5001,8 +5005,15 @@
 			p {
 				margin-bottom: 18px;
 
-				&:nth-child(3)~* {
-					display: none;
+
+			}
+
+			&:not(.active) {
+				p {
+
+					&:nth-child(3)~* {
+						display: none;
+					}
 				}
 			}
 
