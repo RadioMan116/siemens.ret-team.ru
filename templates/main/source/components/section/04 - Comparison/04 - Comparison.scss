@@ -49,8 +49,12 @@
 		top: 19px;
 		right: 100px;
 
-		span:nth-child(even) {
-			margin: 0 16px;
+		span {
+			margin: 0 16px 0 0 !important;
+
+			&:last-child {
+				margin-right: 0 !important;
+			}
 		}
 	}
 
@@ -463,6 +467,7 @@
 		.special-offers__pic {
 			height: 200px;
 		}
+
 		.catalog__presence {
 			margin-top: 10px;
 		}
@@ -1028,6 +1033,8 @@
 			height: fit-content;
 			top: 47%;
 			z-index: 9999;
+			max-width: 150px;
+			text-align: left;
 
 			.swiper-pagination-bullet-active {
 				background: $base;
