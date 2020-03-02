@@ -2859,7 +2859,7 @@
 
 		&__next {
 			background: url("../images/special-offers_next.svg") 0/34px no-repeat;
-			top: -85px;
+			top: 22px;
 			right: 0px;
 			width: 34px;
 			height: 34px;
@@ -2872,7 +2872,7 @@
 		&__prev {
 			background: url("../images/special-offers_prev.svg") 0/34px no-repeat;
 			position: absolute;
-			top: -85px;
+			top: 22px;
 			right: 46px;
 			left: unset;
 			width: 34px;
@@ -2908,6 +2908,7 @@
 			img {
 				width: auto;
 				height: 100%;
+				object-fit: cover;
 			}
 		}
 
@@ -2954,7 +2955,7 @@
 		}
 
 		.swiper-pagination {
-			top: -93px;
+			top: 12px;
 			right: 124px;
 			display: flex;
 			justify-content: flex-end;
