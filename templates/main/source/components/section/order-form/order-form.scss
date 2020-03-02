@@ -50,10 +50,9 @@
 		&__items {
 			display: flex;
 			background-color: #ffffff;
-			height: 131px;
+			max-height: 131px;
 			position: relative;
 			padding: 8px 0;
-			// height: 100%;
 		}
 
 		&__link {
@@ -63,8 +62,6 @@
 			max-height: 114px;
 			justify-content: center;
 			padding-left: 0px;
-			height: 100%;
-			align-items: center;
 
 			img {
 				// width: 56px;
