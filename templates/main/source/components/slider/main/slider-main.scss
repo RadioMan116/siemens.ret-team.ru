@@ -408,11 +408,12 @@
 }
 
 .new-gallery {
-	height: 604px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	max-height: 604px;
+	margin-bottom: 39px;
 
 	.new-gallery__title {
 		color: #333333;
@@ -619,7 +620,8 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
-			.gallery__text{
+
+			.gallery__text {
 				padding: 0px 12px 5px 12px;
 			}
 		}
