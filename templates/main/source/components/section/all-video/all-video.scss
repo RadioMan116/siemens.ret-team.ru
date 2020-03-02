@@ -120,15 +120,19 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 		&__item {
-			width: 100%;
+			width: 47%;
 			margin-bottom: 26px;
 
 			&:nth-child(3n-1) {
 				margin: 0 0px 26px;
+			}
+			@media screen and (max-width: 375px){
+				width: 100%;
 			}
 		}
 
@@ -153,6 +157,9 @@
 		}
 
 		&.js-news__inner{
+			.all-video__item{
+
+			}
 			img{
 				width: 100%;
 			}
