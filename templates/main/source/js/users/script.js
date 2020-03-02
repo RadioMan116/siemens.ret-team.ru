@@ -821,7 +821,7 @@ $(document).ready(function () {
 	}
 	$('.filter__slider').draggable();
 	hamburger("js-hamburger", "js-menu");
-d
+
 	$(".filter__tags").click(function () {
 		$(this).addClass('active');
 	});
