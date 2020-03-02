@@ -1471,7 +1471,7 @@
 
 			.bx-filter-parameters-box-container {
 				display: flex;
-				justify-content: center;
+				// justify-content: center;
 			}
 
 
@@ -1587,7 +1587,7 @@
 				align-items: center;
 				position: absolute;
 				bottom: 17px;
-				right: 10px;
+				right: 18px;
 
 				span {
 					color: $base;
@@ -1673,7 +1673,7 @@
 				line-height: 24px;
 				text-transform: uppercase;
 				background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
-				margin-left: -8px;
+				margin-left: 0px;
 			}
 		}
 	}
