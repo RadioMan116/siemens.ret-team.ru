@@ -243,7 +243,7 @@
 	}
 
 	.swiper-wrapper {
-		padding: 10px 10px;
+		// padding: 10px 10px;
 	}
 
 	.special-offers {
@@ -759,6 +759,10 @@
 				max-width: 150px;
 				width: auto;
 			}
+
+			.swiper-wrapper {
+				padding: 0;
+			}
 		}
 
 		.swiper-button-next,
@@ -831,6 +835,7 @@
 
 			.name {
 				width: 100%;
+				order: -3;
 			}
 
 			.table__link {
@@ -862,14 +867,15 @@
 				.incr {
 					position: unset !important;
 					z-index: 99;
-					margin: 0 !important;
+					margin: 3px 0 0 0 !important;
 					height: 35px;
 				}
 
 				&.how-many {
 					display: flex;
-					align-items: center;
-					padding-bottom: 10px !important;
+					align-items: flex-start;
+					padding-bottom: 14px !important;
+					order: -2;
 
 					input {
 						height: 35px;
@@ -892,6 +898,10 @@
 					padding-right: 10px;
 				}
 
+
+				.qt_num {
+					margin-top: 3px;
+				}
 
 			}
 
@@ -928,7 +938,8 @@
 			}
 
 			.delete__table {
-				position: absolute;
+				// position: absolute;
+				order: -1;
 				height: 24px;
 				top: unset;
 				bottom: 16px;
@@ -945,7 +956,8 @@
 				display: flex;
 				right: 16px;
 				background: url("../images/order__pic.png") 95% no-repeat;
-				margin-left: auto;
+				// margin-left: auto;
+				margin-top: -28px;
 
 				&:hover {
 					background: url("../images/order__color.png") 95% no-repeat;
