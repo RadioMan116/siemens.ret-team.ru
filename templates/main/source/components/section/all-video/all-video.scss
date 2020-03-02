@@ -113,7 +113,8 @@
 			width: fit-content;
 			margin-bottom: 11px;
 			text-decoration: none !important;
-			&:hover{
+
+			&:hover {
 				border-color: $base;
 			}
 		}
@@ -121,8 +122,8 @@
 
 	@media screen and (max-width: 767px) {
 		flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: space-between;
 
 		&__item {
 			width: 47%;
@@ -131,8 +132,9 @@
 			&:nth-child(3n-1) {
 				margin: 0 0px 26px;
 			}
-			@media screen and (max-width: 375px){
-				width: 100%;
+
+			@media screen and (max-width: 375px) {
+				width: 100% !important;
 			}
 		}
 
@@ -156,11 +158,10 @@
 			}
 		}
 
-		&.js-news__inner{
-			.all-video__item{
+		&.js-news__inner {
+			.all-video__item {}
 
-			}
-			img{
+			img {
 				width: 100%;
 			}
 		}
