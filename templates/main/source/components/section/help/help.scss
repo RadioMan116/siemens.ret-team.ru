@@ -87,14 +87,19 @@
 			font-size: 14px;
 			font-weight: 500;
 			line-height: 24px;
+			padding: 16px 50px 16px 20px;
+			background: url("https://icongr.am/fontawesome/caret-down.svg?color=666666") calc(100% - 16px) 20px/20px no-repeat;
 
 			&-open {
 				color: $base;
+				background: url("https://icongr.am/fontawesome/caret-up.svg?color=666666") calc(100% - 16px) 20px/20px no-repeat;
 			}
 		}
 
 		&__info {
 			// font-family: "Gotham Pro";
+			width: auto;
+			margin-right: -35px;
 			font-size: 14px;
 			line-height: 22px;
 		}
