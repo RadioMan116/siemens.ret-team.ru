@@ -1842,7 +1842,7 @@
 
 	.reviews {
 		width: calc(75% - 12px);
-		margin-bottom: 24px;
+		margin-bottom: 32px;
 
 		&__title {
 			margin: 0 0 20px;
@@ -1878,7 +1878,9 @@
 				}
 			}
 
-
+			p {
+				margin-top: 12px;
+			}
 		}
 
 		&__link {
@@ -1943,6 +1945,7 @@
 			}
 
 		}
+
 	}
 
 	.similar-models {
@@ -5789,7 +5792,7 @@
 
 		.swiper-slide {
 			display: flex;
-			padding: 14px 10px 16px 6px;
+			padding: 28px 10px 16px 6px;
 			position: relative;
 			border: 1px solid #f1f1f1;
 			background-color: #ffffff;
