@@ -29,7 +29,7 @@
 		&__items,
 		&__total {
 			width: 100%;
-			padding: 0px 33px;
+			// padding: 0px 33px;
 			justify-content: space-between;
 		}
 
@@ -45,6 +45,10 @@
 			color: #333333;
 			border-bottom: 1px solid #e0e0e0;
 			padding-bottom: 6px;
+
+			.title__span.name {
+				padding-left: 20px;
+			}
 		}
 
 		&__items {

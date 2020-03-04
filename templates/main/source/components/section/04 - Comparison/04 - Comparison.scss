@@ -144,6 +144,17 @@
 			height: auto;
 		}
 
+		.price__absolute:before {
+			content: "";
+			width: calc(100% - 24px);
+			position: absolute;
+			height: 1px;
+			background: #af235f;
+			-webkit-transform: rotate(-13deg);
+			transform: rotate(-13deg);
+			bottom: 10px;
+		}
+
 		.swiper__comparison_first {
 			padding: 0;
 			max-width: 300px;
