@@ -1842,7 +1842,7 @@
 
 	.reviews {
 		width: calc(75% - 12px);
-		margin-bottom: 32px;
+		margin-bottom: 36px;
 
 		&__title {
 			margin: 0 0 20px;
@@ -1878,7 +1878,7 @@
 				}
 			}
 
-			p {
+			+p {
 				margin-top: 12px;
 			}
 		}
@@ -2911,7 +2911,12 @@
 			img {
 				width: auto;
 				height: 100%;
-				object-fit: cover;
+				object-fit: contain;
+			}
+
+			picture {
+				display: flex;
+				align-items: center;
 			}
 		}
 
