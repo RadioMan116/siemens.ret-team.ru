@@ -467,7 +467,8 @@
 
 	.about-store__button,
 	.seo-text__button,
-	.about-brand__button,.switch {
+	.about-brand__button,
+	.switch {
 		display: none;
 	}
 
@@ -478,12 +479,12 @@
 
 	.pic_left {
 		float: left;
-		margin: 20px 25px 20px 0;
+		margin: 5px 25px 20px 0;
 	}
 
 	.pic_right {
 		float: right;
-		margin: 20px 0 25px 20px;
+		margin: 5px 0 25px 20px;
 	}
 
 	.table_delivery {
@@ -828,7 +829,8 @@
 
 		}
 
-		.seo-text__button,.switch {
+		.seo-text__button,
+		.switch {
 			color: $base;
 			font-family: Arial;
 			font-size: 14px;
