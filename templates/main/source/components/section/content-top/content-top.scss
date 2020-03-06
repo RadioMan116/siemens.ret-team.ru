@@ -1,6 +1,6 @@
 .content-top {
 	// background: url("../images/catalog.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: auto 100%;
 	max-width: 1436px;
 	margin: 0 auto;
 	min-height: 362px;
@@ -85,9 +85,10 @@
 			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 22px;
-				p~p {
-					display: none;
-				}
+
+			p~p {
+				display: none;
+			}
 		}
 	}
 
