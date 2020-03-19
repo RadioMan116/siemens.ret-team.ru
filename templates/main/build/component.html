@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<link rel="icon" type="image/png" href="images/Icon-16.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change ">
+								<div class="city-change__title">Санкт-Петербург</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
+									<a class="city-change__link" href="#">Регионы</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<!-- <li class="menu__item">
+			<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+		</li> -->
+								<li class="menu__item">
+									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+								</li>
+								<li class="menu__item">
+									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 05 - Help_desktop" class="menu__link">Новости</a>
+								</li>
+								<li class="menu__item">
+									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+							<a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button" id="js-abuse-opener">Обратиться к руководству
+							</a>
+						</div>
+						<!--end menu-->
+
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket  active">
+								<span class="header__number">1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовая техника Siemens</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-1.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Варочные панели</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Газовые
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Индукционные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Электрические
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-2.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Духовые шкафы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Полноразмерные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Компактные
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-3.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Вытяжки</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Встраиваемые
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Настенные
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Островные
+													</a>
+												</li>
+
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-4.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Компактные приборы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Микроволновые печи
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Пароварки
+													</a>
+												</li>
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Кофемашины
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Подогреватели посуды
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-5.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Посудомоечные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Посудомоечные машины 45 см
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Посудомоечные машины 60 см
+													</a>
+												</li>
+											</ul>
+										</li>
+
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-6.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Отдельностоящие
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Встраиваемые
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-7.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Стиральные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Отдельностоящие
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/siemens-menu-8.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Сушильные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Отдельностоящие
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые
+													</a>
+												</li>
+											</ul>
+										</li>
+
+										<li class="dropdown-menu__item accessory" data-bg='images/siemens-menu-9.png'>
+											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Аксессуары</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" target="_blank" href="#">
+														Для варочных панелей
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для духовых шкафов
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для стиральных машин
+													</a>
+												</li>
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для холодильников
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для вытяжек
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для микроволновых печей
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для посудомоечных машин
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Для кофемашин
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#" title="Новинки">Новинки</a>
+								</span>
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#" title="Сервис">Сервис</a>
+								</span>
+							</nav>
+
+							<!-- end menu-content -->
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
+									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@nf-rus.ru" class="time-work__email">
+										<i>Email:</i>shop@nf-rus.ru</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+		<div class="section">
+			<div class="content">
+				<div class="container">
+					<h1 class="product-card__title">
+						ДВУХКАМЕРНЫЙ ХОЛОДИЛЬНИК LIEBHERR СКЕР 34562 COMFORT BIOFRESH NOFROST NEW
+					</h1>
+					<div class="product-card new-product-card">
+						<div class="product-card__slider"></div>
+						<div class="product-card__info">
+							<div class="product__header product__header_top">
+								<div class="ratings ratings_small" itemprop="reviewRating" itemscope="" itemtype="">
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star ratings__none"></div>
+									<b class="ratings__number">4,5</b>
+								</div>
+								<a href="#reviews" data-scroll="" class="reviews__all">5 отзывов</a>
+								<span class="product-card__key">Код товара: 327944</span>
+								<div class="product-card__social">
+									<!-- <a href="#" class="item js-share">
+				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+				<script src="//yastatic.net/share2/share.js"></script>
+				<img src="images/share.svg" alt="">
+				Поделиться
+			</a> -->
+									<div class="share__items">
+										<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter">
+										</div>
+									</div>
+									<a href="#" class="item favorite active">
+										<p>
+											Отложено
+										</p>
+									</a>
+									<a href="#" class="item compare active">
+										<p>
+											В сравнении
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="product__header product__header_middle">
+								<span class="catalog__presence product-card__presence">в наличии</span>
+								<span class="product-card__date">Обновление цен от 14 июля 2018</span>
+							</div>
+							<div class="product__header product__header_bottom">
+								<span class="product-card__price price__dashed">354 800 <b>руб.</b>
+									<span class="price__absolute">354 800 руб.
+									</span>
+								</span>
+								<div class="product-card__cheaper cheaper">
+									Нашли дешевле?
+									<a href="">
+										Снизим цену
+									</a>
+								</div>
+								<div class="product-card__button">
+									<a href="#" class="product-card__icons">
+										Купить в 1 клик
+									</a>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax="" class="product-card__buy js-product-card__buy">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="product-card__type-payment type-payment">
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_cash.svg" alt="">
+									<img src="images/Payment_cash — color.svg" alt="">Наличными
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_credit.svg" alt="">
+									<img src="images/Payment_credit — color.svg" alt="">Картой при получении
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_bank.svg" alt="">
+									<img src="images/Payment_bank — color.svg" alt="">Банковский перевод
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимос��ь заказа на сайте до получения товара.">
+									<img src="images/Combined_Shape.svg" alt="">
+									<img src="images/Combined_Shape — color.svg" alt="">Онлайн-оплата
+								</div>
+								<!-- /.type-payment__item -->
+							</div>
+
+							<div class="product-card__delivery delivery">
+								<div class="delivery__info">
+									Стоимость доставки
+									<a href="/delivery-and-payment/" class="delivery__link">600</a>
+									руб по Москве
+								</div>
+								<!-- /.delivery__info -->
+								<div class="delivery__info">
+									Бесплатная доставка при покупке комплекта крупной бытовой техники
+								</div>
+
+								<!-- /.delivery__info -->
+							</div>
+							<div class="product-card__announcing">
+								<div class="announcing__item">
+									<img class=" lazyloaded" data-src="images/big/tools.svg" alt="Удобная установка" title="Удобная установка" src="images/big/tools.svg">
+									<div class="announcing__info">
+										Удобная
+										<a href="/services/" class="announcing__link">
+											установка
+										</a>
+									</div>
+								</div>
+								<div class="announcing__item">
+									<img src="images/big/flag-ger.svg" alt="Производство Германия" title="Cделано в Германия">
+									<div class="announcing__info">
+										Сделано в
+										<br>Германии
+									</div>
+								</div>
+								<div class="announcing__item">
+									<img src="images/big/warranty.svg" alt="Гарантия 5 лет" title="Гарантия 5 лет">Гарантия
+									<br>5 лет
+								</div>
+
+								<!-- <div class="announcing__item">
+			<img src="images/big/best.svg" alt="Лучшее предложение" title="Лучшее предложение">
+		</div>
+		<div class="announcing__item">
+			<img src="images/big/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+		</div> -->
+								<!-- <div class="goods-action">
+				Все акции и скидки до 46%
+			</div> -->
+								<div class="announcing__item mobile">
+									<img src="images/documentation__pic.svg" alt="" title="">
+									<a href="#">
+										<p>Все</p>
+										<p>инструкции</p>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="product-card__description text-default">
+								<h2>Описание</h2>
+								<div class="description__text">
+
+									Liebherr CTP 2921 Comfort — практичная модель в элегантном дизайне SwingLine. Прибор характеризуется отдельностоящим типом размещения, но при этом поддерживает возможность установки вплотную к стене или в готовую нишу. Технология SmartFrost позволяет
+									значительно реже размораживать холодильник вручную.
+
+								</div>
+								<a href="#new-description" data-scroll="" class="description__link">Читать полностью</a>
+							</div>
+							<div class="catalog__prop">
+								<h6>Ключевые особенности</h6>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2409">
+									<img data-src="https://l-rus.ru/upload/iblock/aef/aef20e7008a921c50bfc2f6ad0e5bfcb.svg" class="icons-prop-item lazyloaded" title="SmartFrost" src="https://l-rus.ru/upload/iblock/aef/aef20e7008a921c50bfc2f6ad0e5bfcb.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/iblock/b44/b4434ab2aa3ba7c773dadcfc075d5511.webp">
+
+												<img data-src="https://l-rus.ru/upload/iblock/b44/b4434ab2aa3ba7c773dadcfc075d5511.jpg" alt="SmartFrost" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">SmartFrost</div>
+										<div class="popup-prop__text">Технология SmartFrost равномерно распределяет хладагент по всему контуру камеры. Оседающий на испарителе иней оттаивает, а образующаяся вода скапливается в специальной емкости, из которой впоследствии испаряется. Благодаря этому отпадает необходимость
+											ручного размораживания холодильного отделения.</div>
+
+										<a href="/glossary/?param=2409" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2684">
+									<img data-src="https://l-rus.ru/upload/iblock/66e/66e36cf92b7a0f674accd2e75ec70d0f.svg" class="icons-prop-item lazyloaded" title="Светодиодное освещение" src="https://l-rus.ru/upload/iblock/66e/66e36cf92b7a0f674accd2e75ec70d0f.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/3f5/226_500_1/3f55e382e78c7e03b57b175624bcc576.webp">
+
+												<img data-src="https://l-rus.ru/upload/resize_cache/iblock/3f5/226_500_1/3f55e382e78c7e03b57b175624bcc576.jpg" alt="Светодиодное освещение" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">Светодиодное освещение</div>
+										<div class="popup-prop__text">Светодиодное освещение в&nbsp;приборах класса Comfort расположено на&nbsp;потолке, в&nbsp;моделях Premium&nbsp;— светодиодные колонны находятся на&nbsp;боковых стенках.
+										</div>
+
+										<a href="/glossary/?param=2684" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
+									<img data-src="https://l-rus.ru/upload/iblock/4cd/4cd1d0f20d7a16b870c4591f6557df3f.svg" class="icons-prop-item lazyloaded" title="Энергоэффективность A++" src="https://l-rus.ru/upload/iblock/4cd/4cd1d0f20d7a16b870c4591f6557df3f.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.webp">
+
+												<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность A++" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">Энергоэффективность A++</div>
+										<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
+
+										<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="product-card new-product-card">
+						<div class="product-card__slider"></div>
+						<div class="product-card__info">
+							<div class="product__header product__header_top">
+								<div class="ratings ratings_small" itemprop="reviewRating" itemscope="" itemtype="">
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star ratings__none"></div>
+									<b class="ratings__number">4,5</b>
+								</div>
+								<a href="#reviews" data-scroll="" class="reviews__all">5 отзывов</a>
+								<span class="product-card__key">Код товара: 327944</span>
+								<div class="product-card__social">
+									<!-- <a href="#" class="item js-share">
+				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+				<script src="//yastatic.net/share2/share.js"></script>
+				<img src="images/share.svg" alt="">
+				Поделиться
+			</a> -->
+									<div class="share__items">
+										<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter">
+										</div>
+									</div>
+									<a href="#" class="item favorite active">
+										<p>
+											Отложено
+										</p>
+									</a>
+									<a href="#" class="item compare active">
+										<p>
+											В сравнении
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="product__header product__header_middle">
+								<span class="catalog__presence product-card__presence">в наличии</span>
+								<span class="product-card__date">Обновление цен от 14 июля 2018</span>
+							</div>
+							<div class="product__header product__header_bottom">
+								<span class="product-card__price price__dashed">354 800 <b>руб.</b>
+									<span class="price__absolute">354 800 руб.
+									</span>
+								</span>
+								<div class="product-card__cheaper cheaper">
+									Нашли дешевле?
+									<a href="">
+										Снизим цену
+									</a>
+								</div>
+								<div class="product-card__button">
+									<a href="#" class="product-card__icons">
+										Купить в 1 клик
+									</a>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax="" class="product-card__buy js-product-card__buy">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="product-card__type-payment type-payment">
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_cash.svg" alt="">
+									<img src="images/Payment_cash — color.svg" alt="">Наличными
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_credit.svg" alt="">
+									<img src="images/Payment_credit — color.svg" alt="">Картой при получении
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_bank.svg" alt="">
+									<img src="images/Payment_bank — color.svg" alt="">Банковский перевод
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимос��ь заказа на сайте до получения товара.">
+									<img src="images/Combined_Shape.svg" alt="">
+									<img src="images/Combined_Shape — color.svg" alt="">Онлайн-оплата
+								</div>
+								<!-- /.type-payment__item -->
+							</div>
+
+							<div class="product-card__delivery delivery">
+								<div class="delivery__info">
+									<a href="/delivery-and-payment/" class="delivery__link">Бесплатная доставка</a>
+									по Москве
+								</div>
+								<!-- /.delivery__info -->
+								<div class="delivery__info">
+								</div>
+
+								<!-- /.delivery__info -->
+							</div>
+							<div class="product-card__announcing">
+								<div class="announcing__item">
+									<img class=" lazyloaded" data-src="images/big/tools.svg" alt="Удобная установка" title="Удобная установка" src="images/big/tools.svg">
+									<div class="announcing__info">
+										Удобная
+										<a href="/services/" class="announcing__link">
+											установка
+										</a>
+									</div>
+								</div>
+								<div class="announcing__item">
+									<img src="images/big/flag-ger.svg" alt="Производство Германия" title="Cделано в Германия">
+									<div class="announcing__info">
+										Сделано в
+										<br>Германии
+									</div>
+								</div>
+								<div class="announcing__item">
+									<img src="images/big/warranty.svg" alt="Гарантия 5 лет" title="Гарантия 5 лет">Гарантия
+									<br>5 лет
+								</div>
+
+								<!-- <div class="announcing__item">
+			<img src="images/big/best.svg" alt="Лучшее предложение" title="Лучшее предложение">
+		</div>
+		<div class="announcing__item">
+			<img src="images/big/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+		</div> -->
+								<!-- <div class="goods-action">
+				Все акции и скидки до 46%
+			</div> -->
+								<div class="announcing__item mobile">
+									<img src="images/documentation__pic.svg" alt="" title="">
+									<a href="#">
+										<p>Все</p>
+										<p>инструкции</p>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="product-card__description text-default">
+								<h2>Описание</h2>
+								<div class="description__text">
+
+									Liebherr CTP 2921 Comfort — практичная модель в элегантном дизайне SwingLine. Прибор характеризуется отдельностоящим типом размещения, но при этом поддерживает возможность установки вплотную к стене или в готовую нишу. Технология SmartFrost позволяет
+									значительно реже размораживать холодильник вручную.
+
+								</div>
+								<a href="#new-description" data-scroll="" class="description__link">Читать полностью</a>
+							</div>
+							<div class="catalog__prop">
+								<h6>Ключевые особенности</h6>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2409">
+									<img data-src="https://l-rus.ru/upload/iblock/aef/aef20e7008a921c50bfc2f6ad0e5bfcb.svg" class="icons-prop-item lazyloaded" title="SmartFrost" src="https://l-rus.ru/upload/iblock/aef/aef20e7008a921c50bfc2f6ad0e5bfcb.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/iblock/b44/b4434ab2aa3ba7c773dadcfc075d5511.webp">
+
+												<img data-src="https://l-rus.ru/upload/iblock/b44/b4434ab2aa3ba7c773dadcfc075d5511.jpg" alt="SmartFrost" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">SmartFrost</div>
+										<div class="popup-prop__text">Технология SmartFrost равномерно распределяет хладагент по всему контуру камеры. Оседающий на испарителе иней оттаивает, а образующаяся вода скапливается в специальной емкости, из которой впоследствии испаряется. Благодаря этому отпадает необходимость
+											ручного размораживания холодильного отделения.</div>
+
+										<a href="/glossary/?param=2409" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2684">
+									<img data-src="https://l-rus.ru/upload/iblock/66e/66e36cf92b7a0f674accd2e75ec70d0f.svg" class="icons-prop-item lazyloaded" title="Светодиодное освещение" src="https://l-rus.ru/upload/iblock/66e/66e36cf92b7a0f674accd2e75ec70d0f.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/3f5/226_500_1/3f55e382e78c7e03b57b175624bcc576.webp">
+
+												<img data-src="https://l-rus.ru/upload/resize_cache/iblock/3f5/226_500_1/3f55e382e78c7e03b57b175624bcc576.jpg" alt="Светодиодное освещение" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">Светодиодное освещение</div>
+										<div class="popup-prop__text">Светодиодное освещение в&nbsp;приборах класса Comfort расположено на&nbsp;потолке, в&nbsp;моделях Premium&nbsp;— светодиодные колонны находятся на&nbsp;боковых стенках.
+										</div>
+
+										<a href="/glossary/?param=2684" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
+									<img data-src="https://l-rus.ru/upload/iblock/4cd/4cd1d0f20d7a16b870c4591f6557df3f.svg" class="icons-prop-item lazyloaded" title="Энергоэффективность A++" src="https://l-rus.ru/upload/iblock/4cd/4cd1d0f20d7a16b870c4591f6557df3f.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.webp">
+
+												<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность A++" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">Энергоэффективность A++</div>
+										<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
+
+										<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="product-card new-product-card">
+						<div class="product-card__slider"></div>
+						<div class="product-card__info">
+							<div class="product__header product__header_top">
+								<div class="ratings ratings_small" itemprop="reviewRating" itemscope="" itemtype="">
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star"></div>
+									<div class="ratings__star ratings__none"></div>
+									<b class="ratings__number">4,5</b>
+								</div>
+								<a href="#reviews" data-scroll="" class="reviews__all">5 отзывов</a>
+								<span class="product-card__key">Код товара: 327944</span>
+								<div class="product-card__social">
+									<!-- <a href="#" class="item js-share">
+				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+				<script src="//yastatic.net/share2/share.js"></script>
+				<img src="images/share.svg" alt="">
+				Поделиться
+			</a> -->
+									<div class="share__items">
+										<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter">
+										</div>
+									</div>
+									<a href="#" class="item favorite active">
+										<p>
+											Отложено
+										</p>
+									</a>
+									<a href="#" class="item compare active">
+										<p>
+											В сравнении
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="product__header product__header_middle">
+								<span class="catalog__presence product-card__presence">в наличии</span>
+								<span class="product-card__date">Обновление цен от 14 июля 2018</span>
+							</div>
+							<div class="product__header product__header_bottom">
+								<span class="product-card__price price__dashed">354 800 <b>руб.</b>
+									<span class="price__absolute">354 800 руб.
+									</span>
+								</span>
+								<div class="product-card__cheaper cheaper">
+									Нашли дешевле?
+									<a href="">
+										Снизим цену
+									</a>
+								</div>
+								<div class="product-card__button">
+									<a href="#" class="product-card__icons">
+										Купить в 1 клик
+									</a>
+									<a href="#" data-url="ajax/add-cart.html" data-ajax="" class="product-card__buy js-product-card__buy">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="product-card__type-payment type-payment">
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_cash.svg" alt="">
+									<img src="images/Payment_cash — color.svg" alt="">Наличными
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_credit.svg" alt="">
+									<img src="images/Payment_credit — color.svg" alt="">Картой при получении
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимость заказа на сайте до получения товара.">
+									<img src="images/Payment_bank.svg" alt="">
+									<img src="images/Payment_bank — color.svg" alt="">Банковский перевод
+								</div>
+								<!-- /.type-payment__item -->
+								<div class="type-payment__item" data-text="Клиент оплачивает стоимос��ь заказа на сайте до получения товара.">
+									<img src="images/Combined_Shape.svg" alt="">
+									<img src="images/Combined_Shape — color.svg" alt="">Онлайн-оплата
+								</div>
+								<!-- /.type-payment__item -->
+							</div>
+
+							<div class="product-card__delivery delivery">
+								<div class="delivery__info">
+									Стоимость доставки
+									<a href="/delivery-and-payment/" class="delivery__link">рассчитать</a>
+								</div>
+								<!-- /.delivery__info -->
+								<div class="delivery__info">
+								</div>
+
+								<!-- /.delivery__info -->
+							</div>
+							<div class="product-card__announcing">
+								<div class="announcing__item">
+									<img class=" lazyloaded" data-src="images/big/tools.svg" alt="Удобная установка" title="Удобная установка" src="images/big/tools.svg">
+									<div class="announcing__info">
+										Удобная
+										<a href="/services/" class="announcing__link">
+											установка
+										</a>
+									</div>
+								</div>
+								<div class="announcing__item">
+									<img src="images/big/flag-ger.svg" alt="Производство Германия" title="Cделано в Германия">
+									<div class="announcing__info">
+										Сделано в
+										<br>Германии
+									</div>
+								</div>
+								<div class="announcing__item">
+									<img src="images/big/warranty.svg" alt="Гарантия 5 лет" title="Гарантия 5 лет">Гарантия
+									<br>5 лет
+								</div>
+
+								<!-- <div class="announcing__item">
+			<img src="images/big/best.svg" alt="Лучшее предложение" title="Лучшее предложение">
+		</div>
+		<div class="announcing__item">
+			<img src="images/big/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+		</div> -->
+								<!-- <div class="goods-action">
+				Все акции и скидки до 46%
+			</div> -->
+								<div class="announcing__item mobile">
+									<img src="images/documentation__pic.svg" alt="" title="">
+									<a href="#">
+										<p>Все</p>
+										<p>инструкции</p>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="product-card__description text-default">
+								<h2>Описание</h2>
+								<div class="description__text">
+
+									Liebherr CTP 2921 Comfort — практичная модель в элегантном дизайне SwingLine. Прибор характеризуется отдельностоящим типом размещения, но при этом поддерживает возможность установки вплотную к стене или в готовую нишу. Технология SmartFrost позволяет
+									значительно реже размораживать холодильник вручную.
+
+								</div>
+								<a href="#new-description" data-scroll="" class="description__link">Читать полностью</a>
+							</div>
+							<div class="catalog__prop">
+								<h6>Ключевые особенности</h6>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2409">
+									<img data-src="https://l-rus.ru/upload/iblock/aef/aef20e7008a921c50bfc2f6ad0e5bfcb.svg" class="icons-prop-item lazyloaded" title="SmartFrost" src="https://l-rus.ru/upload/iblock/aef/aef20e7008a921c50bfc2f6ad0e5bfcb.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/iblock/b44/b4434ab2aa3ba7c773dadcfc075d5511.webp">
+
+												<img data-src="https://l-rus.ru/upload/iblock/b44/b4434ab2aa3ba7c773dadcfc075d5511.jpg" alt="SmartFrost" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">SmartFrost</div>
+										<div class="popup-prop__text">Технология SmartFrost равномерно распределяет хладагент по всему контуру камеры. Оседающий на испарителе иней оттаивает, а образующаяся вода скапливается в специальной емкости, из которой впоследствии испаряется. Благодаря этому отпадает необходимость
+											ручного размораживания холодильного отделения.</div>
+
+										<a href="/glossary/?param=2409" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2684">
+									<img data-src="https://l-rus.ru/upload/iblock/66e/66e36cf92b7a0f674accd2e75ec70d0f.svg" class="icons-prop-item lazyloaded" title="Светодиодное освещение" src="https://l-rus.ru/upload/iblock/66e/66e36cf92b7a0f674accd2e75ec70d0f.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/3f5/226_500_1/3f55e382e78c7e03b57b175624bcc576.webp">
+
+												<img data-src="https://l-rus.ru/upload/resize_cache/iblock/3f5/226_500_1/3f55e382e78c7e03b57b175624bcc576.jpg" alt="Светодиодное освещение" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">Светодиодное освещение</div>
+										<div class="popup-prop__text">Светодиодное освещение в&nbsp;приборах класса Comfort расположено на&nbsp;потолке, в&nbsp;моделях Premium&nbsp;— светодиодные колонны находятся на&nbsp;боковых стенках.
+										</div>
+
+										<a href="/glossary/?param=2684" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+								<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
+									<img data-src="https://l-rus.ru/upload/iblock/4cd/4cd1d0f20d7a16b870c4591f6557df3f.svg" class="icons-prop-item lazyloaded" title="Энергоэффективность A++" src="https://l-rus.ru/upload/iblock/4cd/4cd1d0f20d7a16b870c4591f6557df3f.svg">
+									<div class="popup-prop">
+
+										<picture>
+
+											<source type="image/webp" data-srcset="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.webp">
+
+												<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность A++" class="popup-prop__img lazyload">
+										</picture>
+
+										<div class="popup-prop__title">Энергоэффективность A++</div>
+										<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
+
+										<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Каталог товаров</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Варочные панели
+
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Духовые шкафы
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Вытяжки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Микроволновые печи
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Пароварки
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Кофемашины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Подогреватели
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Посудомоечные машины
+
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Холодильники
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Стиральные машины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Сушильные машины
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Аксессуары
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Мир Siemens</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">О Мир Siemens</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Акции и статьи</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Глоссарий</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Оплата и доставка</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подключение</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Гарантия</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Сервис и обслуживание</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Siemens</div>
+					<a href="tel:74951201129" class="footer__tel">+7 495 120-11-29</a>
+					<a href="tel:78005559804" class="footer__tel">+7 800 555-98-04</a>
+
+					<a href="" class="footer__call-phone-button js-viewForm" data-action="callback">
+						<span>Заказать звонок
+						</span>
+					</a>
+
+					<a href="mailto:shop@jackys-store.ru" class="footer__email">
+						<i>Email:</i>shop@jackys-store.ru</a>
+
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин Siemens.
+					<br>«NTK LTD TM all rights reserved»
+				</div>
+				<div class="social-items">
+					<a href="#" class="social-link vk"></a>
+					<a href="#" class="social-link fb"></a>
+					<a href="#" class="social-link tw"></a>
+					<a href="#" class="social-link ok"></a>
+				</div>
+				<a class="privacy-policy" href="https://lbhr.ret-team.ru/personal-data/">Политика конфиденциальности</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>
