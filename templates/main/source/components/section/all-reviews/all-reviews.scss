@@ -75,10 +75,11 @@
 			flex-wrap: wrap;
 			width: 250px;
 			height: 100%;
+			align-items: center;
 
 			.reviews__all {
 				margin-left: 17px;
-				margin-bottom: 5px;
+				margin-bottom: 2px;
 				border-bottom: 0;
 			}
 		}
@@ -146,7 +147,7 @@
 	.reviews-all__header {
 		display: flex;
 		flex-wrap: wrap;
-		width: 317px;
+		// width: 317px;
 		margin-right: auto;
 		height: 100%;
 		margin-left: 40px;
@@ -172,6 +173,8 @@
 				border-bottom: 0;
 				font-weight: 700;
 			}
+
+
 		}
 
 		a {
@@ -181,6 +184,10 @@
 			&:last-of-type {
 				margin-right: 0;
 			}
+		}
+
+		~.reviews__all {
+			text-decoration: none !important;
 		}
 	}
 
@@ -211,8 +218,13 @@
 		border-bottom: 1px dashed $base;
 
 		&:first-of-type {
+
 			// margin-right: auto;
+
 		}
+
+
+
 
 		&:last-of-type {
 			margin-right: 0;
@@ -967,7 +979,7 @@
 	}
 
 	.reviews-main__link {
-		color:$base;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;

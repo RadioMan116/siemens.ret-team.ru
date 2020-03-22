@@ -119,6 +119,14 @@
 		&__text {
 			font-weight: 700;
 		}
+
+		&__link {
+			color: #ffffff;
+
+			&:last-child span {
+				font-weight: 700;
+			}
+		}
 	}
 
 	&-products {

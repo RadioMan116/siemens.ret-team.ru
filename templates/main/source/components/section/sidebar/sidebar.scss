@@ -6,6 +6,7 @@
 
 	.upsale {
 		width: 100%;
+
 		.swiper-container {
 			display: flex;
 			margin: 0 0 28px 0;
@@ -514,6 +515,19 @@
 
 }
 
+@media screen and (min-width: 768px) {
+	.content-top[data-bg-custom]+.content .col-md-3 {
+		.sidebar {
+			padding-bottom: 400px;
+		}
+	}
+
+	.js-favorite_filter+.sidebar {
+		margin-top: 0;
+	}
+}
+
+
 * {
 	transition: 0.4s;
 }
@@ -808,8 +822,9 @@
 		border: 1px solid #eeeeee;
 		width: 100%;
 		padding-bottom: 36px;
-		&.swiper-container{
-			padding: 0 0 ;
+
+		&.swiper-container {
+			padding: 0 0;
 		}
 	}
 
@@ -850,7 +865,7 @@
 
 		i {
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			text-transform: uppercase;
 			font-style: normal;
