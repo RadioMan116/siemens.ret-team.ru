@@ -1155,7 +1155,12 @@
 				background: white;
 				left: 50%;
 				width: 80%;
-				z-index: 9999;
+				z-index: 10005;
+				display: flex;
+				justify-content: center;
+				.swiper-pagination-total {
+					margin-left: 16px !important;
+				}
 			}
 
 			.fixed-header__text {
