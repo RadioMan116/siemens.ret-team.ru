@@ -1093,9 +1093,13 @@
 
 	@media screen and (max-width: 767px) {
 		background: #fff;
-		.swiper-pagination-total {
-			margin-left: 16px !important;
+
+		.swiper-pagination {
+			.swiper-pagination-total {
+				margin-left: 16px !important;
+			}
 		}
+
 		.fixed-header {
 			max-width: 100%;
 			height: unset;
