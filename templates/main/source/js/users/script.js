@@ -1742,6 +1742,7 @@ $(window).on('load', function () {
 			// if (select.hasClass('active')) {
 			// 	console.log('1')
 			// }
+			$('.comparison__list').height($('.comparison__item.order').innerHeight());
 		}
 
 		if (windowWidth2 > 767) {
