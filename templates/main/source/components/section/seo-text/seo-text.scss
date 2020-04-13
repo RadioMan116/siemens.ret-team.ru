@@ -154,29 +154,29 @@
 			text-align: unset;
 		}
 
-		&:nth-of-type(2) {
+		// &:nth-of-type(2) {
 
-			// margin-bottom: 0px;
-			p~p {
-				// display: none;
-				height: 0;
-				width: 0;
-				// color: transparent;
-				opacity: 0;
-			}
-		}
+		// 	// margin-bottom: 0px;
+		// 	p~p {
+		// 		// display: none;
+		// 		height: 0;
+		// 		width: 0;
+		// 		// color: transparent;
+		// 		opacity: 0;
+		// 	}
+		// }
 
-		&:nth-of-type(3) {
-			margin-bottom: 17px;
+		// &:nth-of-type(3) {
+		// 	margin-bottom: 17px;
 
-			* {
-				// display: none;
-				height: 0;
-				width: 0;
-				// color: transparent;
-				opacity: 0;
-			}
-		}
+		// 	* {
+		// 		// display: none;
+		// 		height: 0;
+		// 		width: 0;
+		// 		// color: transparent;
+		// 		opacity: 0;
+		// 	}
+		// }
 
 		&.active {
 

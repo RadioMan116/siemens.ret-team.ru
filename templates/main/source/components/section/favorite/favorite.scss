@@ -40,7 +40,7 @@
 			.catalog__price {
 				width: calc(100% - 112px);
 				height: 100%;
-				align-items: flex-start;
+				align-items: center;
 				padding-top: 2px;
 				line-height: 1;
 			}
@@ -71,7 +71,7 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				text-decoration: line-through;
+				text-decoration: unset;
 				left: 0;
 				top: unset;
 				bottom: 0;
