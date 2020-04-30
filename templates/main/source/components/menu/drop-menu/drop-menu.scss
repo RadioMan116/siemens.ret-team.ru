@@ -358,12 +358,16 @@
 	}
 
 	.sub-menu__link {
-		text-decoration: none !important;
+		// text-decoration: none !important;
+		position: relative;
+		padding-left: 7px;
 	}
 
 	.sub-menu__link {
 		&:before {
 			content: ' ∙ ';
+			position: absolute;
+			left: 0;
 		}
 
 		&:hover {
