@@ -4262,7 +4262,7 @@
 			justify-content: center;
 			flex-direction: row;
 			flex-wrap: wrap;
-			margin: 0 -8px 29px;
+			margin: 0 -8px 21px;
 			display: flex;
 
 
@@ -4287,6 +4287,10 @@
 					width: auto;
 					height: auto;
 				}
+			}
+
+			.labels__item {
+				margin-bottom: 8px;
 			}
 		}
 
