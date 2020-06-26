@@ -54,54 +54,96 @@
 		display: none;
 	}
 
+	&.connect {
+		margin-top: 0;
 
-	@media screen and (max-width: 767px) {
-		margin-top: -10px;
-		padding-bottom: 0;
+		.help {
 
-		&__row {
-			color: #2e2e2e;
-			// font-family: "Gotham Pro Medium";
-			font-size: 16px;
-			font-weight: 500;
-			line-height: 24px;
+			&__row {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				font-size: 14px;
+				font-weight: 500;
+				text-align: left;
+				color: #333;
+				padding: 8px 32px 7px 40px;
+				width: 100%;
+				border: none;
+				border-bottom: 1px solid #e8e8e8;
+				margin: 0;
+				background-image: url("../images/arrow-black.png");
+				background-position: 10px;
+				transition: none;
 
-			&-open {
-				color: $base;
+				&:nth-child(odd) {
+					background-color: #f8f8f8;
+				}
+
+				&:first-child {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				&-open {
+					padding-bottom: 40px;
+					font-weight: bold;
+					background-image: url("../images/arrow-green.png");
+					background-position-y: 10px;
+
+					.help__price {
+						font-weight: normal;
+					}
+				}
+
+			}
+
+			&__info {
+				margin-top: 0;
+			}
+
+			&__title {
+				color: #AF235F;
+				margin: 24px 0 16px;
+			}
+
+			&__price {
+				margin-left: auto;
+				width: 75px;
 			}
 		}
-
-		.help__info {
-			color: #2e2e2e;
-			// font-family: "Gotham Pro";
-			font-size: 14px;
-			line-height: 22px;
-		}
-
 
 
 	}
 
 	@media screen and (max-width: 767px) {
-		&__row {
-			font-size: 14px;
-			font-weight: 500;
-			line-height: 24px;
-			padding: 16px 50px 16px 20px;
-			background: url("https://icongr.am/fontawesome/caret-down.svg?color=666666") calc(100% - 16px) 20px/20px no-repeat;
 
-			&-open {
-				color: $base;
-				background: url("https://icongr.am/fontawesome/caret-up.svg?color=666666") calc(100% - 16px) 20px/20px no-repeat;
+		&.connect {
+
+			.help {
+
+				&__row {
+					flex-direction: column;
+
+					&-open {
+
+						.help__price {
+							margin-top: 6px;
+						}
+					}
+				}
+
+				&__price {
+					margin-left: unset;
+				}
+
+				&__info {
+					// font-family: "Gotham Pro";
+					line-height: 22px;
+				}
 			}
+
 		}
 
-		&__info {
-			// font-family: "Gotham Pro";
-			width: auto;
-			margin-right: -35px;
-			font-size: 14px;
-			line-height: 22px;
-		}
 	}
 }
