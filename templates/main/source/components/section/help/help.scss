@@ -75,6 +75,7 @@
 				background-image: url("../images/arrow-black.png");
 				background-position: 10px;
 				transition: none;
+				font-family: Arial;
 
 				&:nth-child(odd) {
 					background-color: #f8f8f8;
@@ -105,6 +106,8 @@
 			&__title {
 				color: #AF235F;
 				margin: 24px 0 16px;
+				font-size: 18px;
+				font-family: Roboto Condensed;
 			}
 
 			&__price {
@@ -140,6 +143,10 @@
 				&__info {
 					// font-family: "Gotham Pro";
 					line-height: 22px;
+				}
+
+				&__title {
+					font-size: 16px;
 				}
 			}
 
