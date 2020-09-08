@@ -38,7 +38,6 @@ img {
 // 	z-index: 1;
 // 	width: 100%;
 // }
-
 .popup {
 	display: none;
 
@@ -47,7 +46,6 @@ img {
 		width: 320px;
 
 		&__title {
-
 			font-size: 24px;
 			font-weight: 500;
 			font-style: normal;
@@ -60,7 +58,6 @@ img {
 		}
 
 		&__text {
-
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -113,7 +110,6 @@ h1.title {
 
 .col-md-3 {
 	padding-left: 0;
-
 }
 
 .fancybox-container {
@@ -124,7 +120,6 @@ h1.title {
 	top: 50% !important;
 	transform: translateX(-50%)translateY(-50%)scale(1) !important;
 	left: 50% !important;
-
 	max-width: 100% !important;
 	height: 98% !important;
 	display: flex !important;
@@ -145,21 +140,40 @@ h1.title {
 		max-height: 100%;
 		cursor: pointer !important;
 	}
-
-
 }
 
 .fancybox-container {
 	transition-duration: 500ms !important;
 }
 
-
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
 }
 
-body.fancybox-active {
-	overflow: unset !important;
+body {
+	&.fancybox-active {
+		overflow: unset !important;
+	}
+
+	&.loading-ajax {
+		&:before {
+			content: '';
+			background: url("../images/siemens-loader.svg") rgba(255, 255, 255, .8) no-repeat center 40%;
+			top: 50%;
+			transform: translateX(-50%)translateY(-50%);
+			left: 50%;
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			z-index: 9999;
+			width: 100vw;
+			height: 100vh;
+
+			@media screen and (max-width: 767px) {
+				background: url("../images/siemens-loader.svg") rgba(255, 255, 255, .8) no-repeat center;
+			}
+		}
+	}
 }
 
 .docs-frame {
@@ -249,7 +263,6 @@ input:required {
 		}
 	}
 
-
 	.col-md-3 {
 		padding-right: 0;
 		padding-left: 0;
@@ -270,5 +283,4 @@ input:required {
 			}
 		}
 	}
-
 }

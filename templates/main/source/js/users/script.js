@@ -1381,6 +1381,18 @@ $(document).ready(function() {
 	if ($('.page__title.content-top__title.content-top__title_top span').length > 0) {
 		$(".content-top").addClass("content-top__tags");
 	}
+
+	function loadingAjax() {
+		$.ajax({
+			beforeSend: function() {
+				$("body").addClass('loading-ajax');
+			},
+			success: function(msg) {
+				$("body").removeClass('loading-ajax')
+			}
+		});
+	};
+	$('#load-items').click(loadingAjax);
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
