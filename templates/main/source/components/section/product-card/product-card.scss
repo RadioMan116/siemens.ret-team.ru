@@ -4276,7 +4276,8 @@
 				letter-spacing: normal;
 				text-align: left;
 				color: #2e2e2e !important;
-				padding: 15px 14px 2px
+				padding: 15px 14px 16px;
+				pointer-events: none;
 			}
 
 			.hide-tabs__characteristic.closed {
@@ -5407,6 +5408,7 @@
 
 				.popup-prop {
 					left: 0 !important;
+					bottom: calc(100% - 30px);
 				}
 			}
 		}
