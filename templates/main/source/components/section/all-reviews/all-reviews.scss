@@ -378,7 +378,7 @@
 
 					&:after {
 						content: '';
-						width: -webkit-fill-available;
+						width: fill-available;
 						flex-grow: 1;
 					}
 				}

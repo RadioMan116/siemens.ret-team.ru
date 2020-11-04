@@ -56,7 +56,7 @@ body {
 	background-color: #fff;
 	// height: 100%;
 	width: inherit;
-	min-height: -webkit-fill-available;
+	min-height: fill-available;
 }
 
 [tabindex="-1"]:focus {
