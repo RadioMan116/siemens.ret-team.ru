@@ -59,6 +59,7 @@ $(document).ready(function () {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu),
 			menuList = document.querySelector(".menu"),
+			menuParent = document.querySelector('.header__blocks'),
 			menuBottom = document.getElementById("js-header__block_bottom");
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
@@ -68,6 +69,7 @@ $(document).ready(function () {
 				button.setAttribute("aria-expanded", "false");
 				menuBottom.classList.remove("active");
 				menuList.classList.remove("active");
+				menuParent.classList.remove("active");
 				$("body").removeClass("fixed");
 				$("html").removeClass("js-height");
 				$(".header__overlay").hide();
@@ -76,6 +78,7 @@ $(document).ready(function () {
 				button.className += " opened";
 				button.setAttribute("aria-expanded", "true");
 				menuBottom.classList.add("active");
+				menuParent.classList.add("active");
 				menuList.classList.add("active");
 				$("body").addClass("fixed");
 				$("html").addClass("js-height");
