@@ -1,9 +1,9 @@
 .logo {
 	// margin: auto 0;
 	display: flex;
+
 	// height: 51px;
 	// margin-top: -6px;
-
 	&__link {
 		text-decoration: none;
 		display: block;
@@ -20,7 +20,8 @@
 	@media screen and (max-width: 767px) {
 		position: unset;
 		order: -1;
-		max-width: 94px;
+		// max-width: 94px;
+		max-width: 105px;
 		width: auto;
 		height: 27px;
 		display: flex;
